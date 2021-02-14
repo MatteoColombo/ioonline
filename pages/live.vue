@@ -64,6 +64,13 @@ export default {
 };
 </script>
 
+<style>
+.v-card__text,
+.v-card__title {
+  word-break: normal !important;
+}
+</style>
+
 <style scoped>
 .container {
   position: relative;
