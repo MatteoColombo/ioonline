@@ -68,43 +68,43 @@
                     {
                         "hour": "15:00",
                         "activity": "Finale Clock",
-                        "icon": "event-222",
+                        "icon": "cubing-icon event-clock",
                         "color": "primary"
                     },
                     {
                         "hour": "15:30",
                         "activity": "Finale 4x4x4",
-                        "icon": "",
+                        "icon": "cubing-icon event-444",
                         "color": "secondary"
                     },
                     {
                         "hour": "16:00",
                         "activity": "Finale 3BLD",
-                        "icon": "",
+                        "icon": "cubing-icon event-333bf",
                         "color": "red"
                     },
                     {
                         "hour": "16:30",
                         "activity": "Finale Pyraminx",
-                        "icon": "",
+                        "icon": "cubing-icon event-pyram",
                         "color": "purple"
                     },
                     {
                         "hour": "17:00",
                         "activity": "Finale 2x2x2",
-                        "icon": "",
+                        "icon": "cubing-icon event-222",
                         "color": "red"
                     },
                     {
                         "hour": "17:30",
                         "activity": "Finale Square-1",
-                        "icon": "",
+                        "icon": "cubing-icon event-sq1",
                         "color": "secondary"
                     },
                     {
                         "hour": "18:00",
                         "activity": "Finale 3x3x3",
-                        "icon": "",
+                        "icon": "cubing-icon event-333",
                         "color": "primary"
                     },
                     {
