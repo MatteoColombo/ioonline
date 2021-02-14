@@ -31,35 +31,79 @@
 
       <v-divider></v-divider>
 
-      <v-menu open-on-hover bottom offset-y>
-        <template v-slot:activator="{ on, attrs }">
-          <v-list-item v-bind="attrs" v-on="on" exact>
-            <v-list-item-action>
-              <v-icon>mdi-translate</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title v-text="currentTranslation()" />
-            </v-list-item-content>
-          </v-list-item>
-        </template>
+      <v-list>
+        <v-menu bottom offset-y>
+          <template v-slot:activator="{ on, attrs }">
+            <v-list-item v-bind="attrs" v-on="on" exact>
+              <v-list-item-action>
+                <v-icon>mdi-translate</v-icon>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title v-text="currentTranslation()" />
+              </v-list-item-content>
+            </v-list-item>
+          </template>
 
-        <v-list>
-          <v-list-item
-            v-for="item in $i18n.locales"
-            :key="item.code"
-            :value="item.code"
-            @click="$i18n.setLocale(item.code)"
-          >
-            <v-list-item-title>{{ item.name }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
+          <v-list>
+            <v-list-item
+              v-for="item in $i18n.locales"
+              :key="item.code"
+              :value="item.code"
+              @click="$i18n.setLocale(item.code)"
+            >
+              <v-list-item-title>{{ item.name }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </v-list>
+      <v-divider></v-divider>
+
+      <v-list>
+        <v-menu bottom offset-y v-if="$auth.loggedIn">
+          <template v-slot:activator="{ on, attrs }">
+            <v-list-item v-bind="attrs" v-on="on" exact>
+              <v-list-item-action>
+                <v-icon>mdi-account-circle</v-icon>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title v-text="$auth.user" />
+              </v-list-item-content>
+            </v-list-item>
+          </template>
+
+          <v-list>
+            <v-list-item>
+              <v-list-item-action>
+                <v-icon>mdi-logout</v-icon>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title v-text="$t('generic.logout')" />
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+
+        <v-list-item @click="login" v-else>
+          <v-list-item-action>
+            <v-icon>mdi-login</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="$t('generic.login')" />
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-sm-none" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn href="https://discord.gg/azuYQHYmTP" target="_blank" fab color="transparent" elevation="0">
+      <v-btn
+        href="https://discord.gg/azuYQHYmTP"
+        target="_blank"
+        fab
+        color="transparent"
+        elevation="0"
+      >
         <v-icon> mdi-discord </v-icon>
       </v-btn>
     </v-app-bar>
@@ -121,14 +165,20 @@ export default {
       right: true,
       rightDrawer: false,
       title: "Italian Open Online",
-      currentTranslation: () =>{
-        for(var item of this.$i18n.locales)
-          if(item.code === this.$i18n.locale){
-            return item.name
+      currentTranslation: () => {
+        for (var item of this.$i18n.locales)
+          if (item.code === this.$i18n.locale) {
+            return item.name;
           }
-      }
+      },
     };
-  }
+  },
+  methods: {
+    login() {
+      alert('ciao');
+      //this.$auth.loginWith('social')
+    },
+  },
 };
 </script>
 

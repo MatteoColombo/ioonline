@@ -1,5 +1,9 @@
 {
     "welcome": "Benvenuto",
+    "generic":{ 
+        "login": "Accedi",
+        "logout": "Esci"
+    },
     "navbar": {
         "home": "Home",
         "info": "Informazioni",
