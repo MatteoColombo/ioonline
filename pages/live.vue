@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="10">
+    <v-col cols="12" sm="10" xl="8">
       <iframe
         src="https://player.twitch.tv/?channel=gmhikaru&parent=ioodemo.herokuapp.com&muted=true&autoplay=true"
         height="600"
@@ -10,12 +10,12 @@
       </iframe>
       <template>
         <h1 href="#schedule" id='schedule' class="text-center">{{ $t("live.title") }}</h1>
-        <p class="text-justify">L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su Twitch. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!</p>
+        <p class="text-center">{{$t('live.desc')}}</p>
       </template>
 
       <v-row justify="center" align="start">
         <v-col cols="12" md="6" align="center">
-          <h2 align="center">Sabato 13 marzo</h2>
+          <h2 align="center">{{$t("live.day1")}}</h2>
           <v-timeline dense>
             <v-timeline-item
               v-for="item in saturday"
@@ -35,7 +35,7 @@
           </v-timeline>
         </v-col>
         <v-col cols="12" md="6" align="center">
-          <h2 align="center">Domenica 14 marzo</h2>
+          <h2 align="center">{{$t("live.day2")}}</h2>
           <v-timeline dense>
             <v-timeline-item
               v-for="item in sunday"
@@ -64,14 +64,7 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import VuetifyLogo from "~/components/VuetifyLogo.vue";
-
 export default {
-  components: {
-    Logo,
-    VuetifyLogo,
-  },
   head: {
     title: "Live",
   },

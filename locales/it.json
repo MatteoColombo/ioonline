@@ -11,7 +11,10 @@
         "language": "Traduzione"
     },
     "live": {
-        "title": "Programma della diretta"
+        "title": "Programma della diretta",
+        "day1": "Sabato 13 Marzo",
+        "day2": "Domenica 14 Marzo",
+        "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su Twitch. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!"
     },
     "faq": {
         "title": "Domande Frequenti",
