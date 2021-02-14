@@ -11,10 +11,111 @@
         "language":"Translations"
     },
     "live": {
+        "channel": "gmhikaru",
         "title": "Programma della diretta",
-        "day1": "Sabato 13 Marzo",
-        "day2": "Domenica 14 Marzo",
-        "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su Twitch. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!"
+        "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su Twitch. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
+        "days": [
+            {
+                "day": "Sabato 13 Marzo",
+                "schedule": [
+                    {
+                        "hour": "14:00",
+                        "activity": "Discord",
+                        "icon": "mdi-discord",
+                        "color": "#8A9CFE"
+                    },
+                    {
+                        "hour": "15:00",
+                        "activity": "Attività 1",
+                        "icon": "mdi-microphone",
+                        "color": "red"
+                    },
+                    {
+                        "hour": "16:00",
+                        "activity": "Attività 2",
+                        "icon": "mdi-puzzle",
+                        "color": "orange"
+                    },
+                    {
+                        "hour": "17:00",
+                        "activity": "Discord",
+                        "icon": "mdi-discord",
+                        "color": "#8A9CFE"
+                    },
+                    {
+                        "hour": "18:00",
+                        "activity": "Chi vuol essere milionario?",
+                        "icon": "mdi-chess-king",
+                        "color": "primary"
+                    },
+                    {
+                        "hour": "20:00",
+                        "activity": "Cena",
+                        "icon": "mdi-silverware-fork-knife",
+                        "color": "brown"
+                    },
+                    {
+                        "hour": "21:00",
+                        "activity": "Qualcosa insieme?",
+                        "icon": "mdi-brain",
+                        "color": "blue"
+                    }
+                ]
+            },
+            {
+                "day": "Domenica 14 Marzo",
+                "schedule": [
+                    {
+                        "hour": "15:00",
+                        "activity": "Finale Clock",
+                        "icon": "cubing-icon event-clock",
+                        "color": "primary"
+                    },
+                    {
+                        "hour": "15:30",
+                        "activity": "Finale 4x4x4",
+                        "icon": "cubing-icon event-444",
+                        "color": "secondary"
+                    },
+                    {
+                        "hour": "16:00",
+                        "activity": "Finale 3BLD",
+                        "icon": "cubing-icon event-333bf",
+                        "color": "red"
+                    },
+                    {
+                        "hour": "16:30",
+                        "activity": "Finale Pyraminx",
+                        "icon": "cubing-icon event-pyram",
+                        "color": "purple"
+                    },
+                    {
+                        "hour": "17:00",
+                        "activity": "Finale 2x2x2",
+                        "icon": "cubing-icon event-222",
+                        "color": "red"
+                    },
+                    {
+                        "hour": "17:30",
+                        "activity": "Finale Square-1",
+                        "icon": "cubing-icon event-sq1",
+                        "color": "secondary"
+                    },
+                    {
+                        "hour": "18:00",
+                        "activity": "Finale 3x3x3",
+                        "icon": "cubing-icon event-333",
+                        "color": "primary"
+                    },
+                    {
+                        "hour": "19:00",
+                        "activity": "Premiazioni",
+                        "icon": "mdi-trophy",
+                        "color": "amber"
+                    }
+                ]
+            }
+        ]
     },
     "faq": {
         "title": "Domande Frequenti",
@@ -78,5 +179,25 @@
                 "steps": []
             }
         ]
+    },
+    "info": {
+        "title": "Informazioni",
+        "desc": ""
+    },
+    "register": {
+        "title": "Registrazioni",
+        "desc": ""
+    },
+    "submit": {
+        "title": "Invia risultati",
+        "desc": ""
+    },
+    "results": {
+        "title": "Classifiche",
+        "desc": ""
+    },
+    "home": {
+        "title": "Home",
+        "desc": ""
     }
 }
