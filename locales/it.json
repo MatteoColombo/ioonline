@@ -1,5 +1,5 @@
 {
-    "welcome":"Benvenuto",
+    "welcome": "Benvenuto",
     "navbar": {
         "home": "Home",
         "info": "Informazioni",
@@ -11,38 +11,68 @@
         "language": "Traduzione"
     },
     "live": {
-        "title":"Programma della diretta"
+        "title": "Programma della diretta"
     },
-    "faq":{ 
-        "title":"Domande Frequenti",
-        "entries":[
+    "faq": {
+        "title": "Domande Frequenti",
+        "desc": "Ecco alcune delle domande più frequenti!",
+        "entries": [
             {
                 "question": "Come faccio ad iscrivermi?",
-                "answer":""
+                "answer": [
+                    "È sufficiente seguire i seguenti passaggi: "
+                ],
+                "steps": [
+                    "Vai sul sito <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>WCA</a> e crea un nuovo profilo. Se ne hai già uno puoi saltare questo passaggio.",
+                    "Clicca su <a href='/register'>Iscriviti</a> nel menu sulla sinistra, accedi tramite il tuo profilo WCA e scegli gli eventi a cui intendi partecipare. "
+                ]
             },
             {
                 "question": "Posso modificare la mia registrazione?",
-                "answer":"Si, la scelta degli eventi può essere modificata fino al giorno di chiusura delle registrazioni."
+                "answer": [
+                    "Si, la scelta degli eventi può essere modificata fino al giorno di chiusura delle registrazioni."
+                ],
+                "steps": []
             },
             {
                 "question": "Posso partecipare anche io alle sale Discord?",
-                "answer":"Si, clicca il link in alto a destra e accedi al nostro server."
+                "answer": [
+                    "Si, clicca il link in alto a destra e accedi al nostro server."
+                ],
+                "steps": []
             },
             {
                 "question": "Quando devo inviare le risoluzioni?",
-                "answer":"Puoi inviare le risoluzioni in queste due finestre di tempo:</br>Primo turno, Sabato: 10:00-18:00 (GMT+1)</br>Finali, Domenica: 10:00-20:00 (GMT+1)"
+                "answer": [
+                    "Puoi inviare le risoluzioni in queste due finestre di tempo:"
+                ],
+                "steps": [
+                    "Primo turno, Sabato: 10:00-18:00 (GMT+1)",
+                    "Finali, Domenica: 10:00-20:00 (GMT+1)"
+                ]
             },
             {
                 "question": "Devo seguire le regole WCA?",
-                "answer":"Si, dovresti cercare di seguire il più possibile le regole WCA.</br>Se non possiedi uno stackmat puoi cronometrarti con un’app da telefono o con la tastiera del computer e un sito internet come cstimer[link]. Se non c’è qualcuno che può farti da giudice cerca di mantenere un tempo di ispezione ragionevolmente vicino ai 15s massimi."
+                "answer": [
+                    "Si, dovresti cercare di seguire il più possibile le regole WCA.",
+                    "Se non possiedi uno stackmat puoi cronometrarti con un’app da telefono o con la tastiera del computer e un sito internet come <a href='https://cstimer.net/' target='_blank'>CS Timer</a>. Se non c’è qualcuno che può farti da giudice cerca di mantenere un tempo di ispezione ragionevolmente vicino ai 15s massimi."
+                ],
+                "steps": []
             },
             {
                 "question": "Devo pagare una tassa di iscrizione?",
-                "answer":"No, la competizione è gratuita e aperta a tutti"
+                "answer": [
+                    "No, la competizione è gratuita e aperta a tutti"
+                ],
+                "steps": []
             },
             {
                 "question": "Devo registrare le mie risoluzioni?",
-                "answer":"Chiederemo una prova video solo a chi si piazzerà sul podio, quindi se pensi di avere qualche chance, ricordati di registrarti! (Se ti dimentichi non sarai squalificato ma verrai escluso dal podio finale)"
+                "answer": [
+                    "Chiederemo una prova video solo a chi si piazzerà sul podio, quindi se pensi di avere qualche chance, ricordati di registrarti!",
+                    "Se ti dimentichi non sarai squalificato ma verrai escluso dal podio finale."
+                ],
+                "steps": []
             }
         ]
     }
