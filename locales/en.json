@@ -1,0 +1,16 @@
+{
+    "welcome":"Welcome",
+    "navbar": {
+        "home": "Home",
+        "info": "General info",
+        "register": "Register",
+        "submit": "Compete",
+        "results": "Results",
+        "live": "Live",
+        "faq": "FAQ",
+        "language":"Translations"
+    },
+    "live": {
+        "title":"Streaming schedule"
+    }
+}
