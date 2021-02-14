@@ -68,7 +68,7 @@
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer app>
+    <v-footer>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>

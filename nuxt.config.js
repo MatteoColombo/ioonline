@@ -18,7 +18,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ]
   },
 
@@ -78,7 +78,11 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      name: "Italian Open Online 2021",
+      short_name: "IO Online 21",
+      start_url:"/",
+      lang: 'en',
+      background_color:"#00aa82",
     }
   },
 
