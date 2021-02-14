@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" md="10">
       <iframe
-        src="https://player.twitch.tv/?channel=gmhikaru&parent=localhost&muted=true&autoplay=true"
+        src="https://player.twitch.tv/?channel=gmhikaru&parent=ioodemo.herokuapp.com&muted=true&autoplay=true"
         height="600"
         width="100%"
         allowfullscreen="true"
