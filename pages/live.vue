@@ -10,7 +10,7 @@
       </iframe>
       <template>
         <h1 href="#schedule" id="schedule" class="text-center">
-          {{ $title }}
+          {{ title }}
         </h1>
         <p class="text-center">{{ desc }}</p>
       </template>
@@ -53,10 +53,6 @@
           </v-timeline>
         </v-col>
       </v-row>
-    </v-col>
-  </v-row>
-</template>
-
     </v-col>
   </v-row>
 </template>
