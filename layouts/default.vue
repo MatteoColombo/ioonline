@@ -5,7 +5,7 @@
       :clipped="clipped"
       fixed
       app
-      :permanent="!$vuetify.breakpoint.smAndDown"
+      :permanent="!$vuetify.breakpoint.xsOnly"
     >
       <v-img class="ma-4 mr-8" src="/logo_xl.png"></v-img>
 
@@ -56,7 +56,7 @@
       </v-menu>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-md-none" />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-sm-none" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <v-btn href="https://discord.gg/azuYQHYmTP" target="_blank" fab color="transparent" elevation="0">
