@@ -9,13 +9,15 @@
       >
       </iframe>
       <template>
-        <h1 href="#schedule" id='schedule' class="text-center">{{ $t("live.title") }}</h1>
-        <p class="text-center">{{$t('live.desc')}}</p>
+        <h1 href="#schedule" id="schedule" class="text-center">
+          {{ $title }}
+        </h1>
+        <p class="text-center">{{ desc }}</p>
       </template>
 
       <v-row justify="center" align="start">
         <v-col cols="12" md="6" align="center">
-          <h2 align="center">{{$t("live.day1")}}</h2>
+          <h2 align="center">{{ day1 }}</h2>
           <v-timeline dense>
             <v-timeline-item
               v-for="item in saturday"
@@ -27,15 +29,13 @@
                 <v-card-title align="justify">
                   {{ item.activity }}
                 </v-card-title>
-                <v-card-subtitle align="start">{{
-                  item.hour
-                }}</v-card-subtitle>
+                <v-card-subtitle align="start">{{ item.hour }}</v-card-subtitle>
               </v-card>
             </v-timeline-item>
           </v-timeline>
         </v-col>
         <v-col cols="12" md="6" align="center">
-          <h2 align="center">{{$t("live.day2")}}</h2>
+          <h2 align="center">{{ day1 }}</h2>
           <v-timeline dense>
             <v-timeline-item
               v-for="item in sunday"
@@ -47,9 +47,7 @@
                 <v-card-title align="justify">
                   {{ item.activity }}
                 </v-card-title>
-                <v-card-subtitle align="start">{{
-                  item.hour
-                }}</v-card-subtitle>
+                <v-card-subtitle align="start">{{ item.hour }}</v-card-subtitle>
               </v-card>
             </v-timeline-item>
           </v-timeline>
@@ -65,11 +63,17 @@
 
 <script>
 export default {
-  head: {
-    title: "Live",
+  head() {
+    return {
+      title: this.$t("live.title"),
+    };
   },
   data() {
     return {
+      title: this.$t("live.title"),
+      desc: this.$t("live.desc"),
+      day1: this.$t("live.day1"),
+      day2: this.$t("live.day2"),
       saturday: [
         {
           hour: "14:00",

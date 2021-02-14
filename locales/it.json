@@ -78,5 +78,25 @@
                 "steps": []
             }
         ]
+    },
+    "info": {
+        "title": "Informazioni",
+        "desc": ""
+    },
+    "register": {
+        "title": "Registrazioni",
+        "desc": ""
+    },
+    "submit": {
+        "title": "Invia risultati",
+        "desc": ""
+    },
+    "results": {
+        "title": "Classifiche",
+        "desc": ""
+    },
+    "home": {
+        "title": "Home",
+        "desc": ""
     }
 }

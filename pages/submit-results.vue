@@ -13,14 +13,14 @@
 export default {
   head() {
     return {
-      title: this.$t("home.title"),
+      title: this.$t("submit.title"),
     };
   },
   data() {
     return {
-      title: this.$t("home.title"),
-      desc: this.$t("home.desc"),
+      title: this.$t("submit.title"),
+      desc: this.$t("submit.desc"),
     };
   },
-}
+};
 </script>
