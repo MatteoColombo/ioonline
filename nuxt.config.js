@@ -47,7 +47,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    //'@nuxtjs/pwa',
     'nuxt-i18n',
   ],
 
@@ -76,15 +76,15 @@ export default {
   axios: {},
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      name: "Italian Open Online 2021",
-      short_name: "IO Online 21",
-      start_url:"/",
-      lang: 'en',
-      background_color:"#00aa82",
-    }
-  },
+  // pwa: {
+  //   manifest: {
+  //     name: "Italian Open Online 2021",
+  //     short_name: "IO Online 21",
+  //     start_url:"/",
+  //     lang: 'en',
+  //     background_color:"#00aa82",
+  //   }
+  // },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="10">
+    <v-col cols="12" sm="10" lg="8">
       <v-img
       width="500"
       src="/edo.jpg"></v-img>
@@ -15,7 +15,7 @@
 <script>
 export default {
   head:{
-    title: "Home"
+    title: "Info"
   }
 }
 </script>
