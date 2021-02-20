@@ -2,13 +2,13 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" xl="8">
       <template>
-        <h1 id="schedule" class="text-center">{{ title }}</h1>
+        <h1 id="schedule" class="text-center">{{ $t("register.title") }}</h1>
 
         <v-row justify="center" align="center">
           <v-col cols="12" lg="6">
             <v-timeline dense>
               <v-timeline-item
-                v-for="item in steps"
+                v-for="item in $t('register.steps')"
                 :key="item.hour"
                 fill-dot
                 v-bind="item"
@@ -26,7 +26,7 @@
           </v-col>
         </v-row>
 
-        <h2 class="text-center timer-desc">{{$t('register.openin')}}</h2>
+        <h2 class="text-center timer-desc">{{ $t("register.openin") }}</h2>
         <div align="center" class="timer-container">
           <table>
             <tr class="timer">
@@ -101,28 +101,8 @@ export default {
     return {
       title: this.$t("register.title"),
     };
-  },
-  data() {
-    return {
-      title: this.$t("register.title"),
-      desc: this.$t("register.desc"),
-      steps: [
-        {
-          date: this.$t("register.opendate"),
-          event: this.$t("register.openmessage"),
-          color: "primary",
-          icon: "mdi-account-plus",
-        },
-        {
-          date: this.$t("register.closedate"),
-          event: this.$t("register.closemessage"),
-          color: "secondary",
-          icon: "mdi-lock",
-        },
-      ],
-    };
-  },
-};
+  }
+}
 </script>
 
 <style scoped>

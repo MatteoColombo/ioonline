@@ -4,8 +4,8 @@
       <template>
         <v-img src="/ioo-logo.svg" />
 
-        <h3 class="text-center">{{ desc }}</h3>
-        <p class="text-center">{{ subdesc }}</p>
+        <h3 class="text-center">{{ $t("home.desc") }}</h3>
+        <p class="text-center">{{ $t("home.subdesc") }}</p>
       </template>
       <v-row class="action-buttons">
         <v-col cols="12" md="6"
@@ -114,13 +114,6 @@ export default {
   head() {
     return {
       title: this.$t("home.title"),
-    };
-  },
-  data() {
-    return {
-      title: this.$t("home.title"),
-      desc: this.$t("home.desc"),
-      subdesc: this.$t("home.subdesc"),
     };
   },
 };

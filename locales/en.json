@@ -1,23 +1,23 @@
 {
-    "welcome":"Welcome",   
-     "generic":{
-        "login": "Sign in",
-        "logout": "Sign out"
+    "welcome": "Welcome",
+    "generic": {
+        "login": "Log in",
+        "logout": "Log out"
     },
     "navbar": {
         "home": "Home",
-        "info": "General info",
-        "register": "Register",
-        "submit": "Compete",
-        "results": "Results",
+        "info": "General Info",
+        "register": "Registration",
+        "submit": "Results",
+        "results": "Rankings",
         "live": "Live",
         "faq": "FAQ",
-        "language":"Translations"
+        "language": "Translation"
     },
     "live": {
         "channel": "gmhikaru",
-        "title": "Livestream schedule",
-        "desc": "The Italian Open Online 2021 will be entirely streamed on twitch. Games, solves and interviews are waiting for you!",
+        "title": "Livestream Schedule",
+        "desc": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's twitch channel. Fast solves, games, interviews and much more!",
         "days": [
             {
                 "day": "Saturday, March 13th",
@@ -30,13 +30,13 @@
                     },
                     {
                         "hour": "15:00",
-                        "activity": "Activity 1",
+                        "activity": "Activity #1",
                         "icon": "mdi-microphone",
                         "color": "red"
                     },
                     {
                         "hour": "16:00",
-                        "activity": "Activity 2",
+                        "activity": "Activity #2",
                         "icon": "mdi-puzzle",
                         "color": "orange"
                     },
@@ -60,14 +60,14 @@
                     },
                     {
                         "hour": "21:00",
-                        "activity": "Something all together?",
+                        "activity": "Something together??",
                         "icon": "mdi-brain",
                         "color": "blue"
                     }
                 ]
             },
             {
-                "day": "Sunday, March14th",
+                "day": "Sunday, March 14th",
                 "schedule": [
                     {
                         "hour": "15:00",
@@ -122,86 +122,231 @@
         ]
     },
     "faq": {
-        "title": "Domande Frequenti",
-        "desc": "Ecco alcune delle domande più frequenti!",
+        "title": "FAQ",
+        "desc": "Here are the Frequently Asked Question!",
+        "questions":"Any doubts? Contact us!",
         "entries": [
             {
-                "question": "Come faccio ad iscrivermi?",
+                "question": "How do I register?",
                 "answer": [
-                    "È sufficiente seguire i seguenti passaggi: "
+                    "Follow these steps: "
                 ],
                 "steps": [
-                    "Vai sul sito <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>WCA</a> e crea un nuovo profilo. Se ne hai già uno puoi saltare questo passaggio.",
-                    "Clicca su <a href='/register'>Iscriviti</a> nel menu sulla sinistra, accedi tramite il tuo profilo WCA e scegli gli eventi a cui intendi partecipare. "
+                    "Go to the official page of the WCA <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>WCA</a> and make a new account. If you already have one you can skip this step.",
+                    "Sign in to this website by using your WCA account.",
+                    "Click on <a href='/register'>Register</a> in the menu on the left and choose the events in which you’d like to compete. "
                 ]
             },
             {
-                "question": "Posso modificare la mia registrazione?",
+                "question": "Can I change the events I wish to compete in?",
                 "answer": [
-                    "Si, la scelta degli eventi può essere modificata fino al giorno di chiusura delle registrazioni."
+                    "Yes, you can edit your submission until the end of registration period."
                 ],
                 "steps": []
             },
             {
-                "question": "Posso partecipare anche io alle sale Discord?",
+                "question": "How long is the registration period?",
                 "answer": [
-                    "Si, clicca il link in alto a destra e accedi al nostro server."
+                    "Registration period is from 14:00 (GMT+1) of February 28th 2021 to 23:59 (GMT+1) of March 11th 2021."
                 ],
                 "steps": []
             },
             {
-                "question": "Quando devo inviare le risoluzioni?",
+                "question": "Do I have to pay a registration fee?",
                 "answer": [
-                    "Puoi inviare le risoluzioni in queste due finestre di tempo:"
+                    "No, the competition is free and open to everyone."
+                ],
+                "steps": []
+            },
+            {
+                "question": "How fast do I need to be to take part in this competition?",
+                "answer": [
+                    "There are no requirements. Everybody can take part in the event and have fun."
+                ],
+                "steps": []
+            },
+            {
+                "question": "When do I have to submit my solves?",
+                "answer": [
+                    "You can submit your solves in these two time frames:"
                 ],
                 "steps": [
-                    "Primo turno, Sabato: 10:00-18:00 (GMT+1)",
-                    "Finali, Domenica: 10:00-20:00 (GMT+1)"
+                    "First round, Saturday: 10:00-18:00 (GMT+1)",
+                    "Finals, Sunday: 10:00-20:00 (GMT+1)"
                 ]
             },
             {
-                "question": "Devo seguire le regole WCA?",
+                "question": "Where do I find the scrambles?",
                 "answer": [
-                    "Si, dovresti cercare di seguire il più possibile le regole WCA.",
-                    "Se non possiedi uno stackmat puoi cronometrarti con un’app da telefono o con la tastiera del computer e un sito internet come <a href='https://cstimer.net/' target='_blank'>CS Timer</a>. Se non c’è qualcuno che può farti da giudice cerca di mantenere un tempo di ispezione ragionevolmente vicino ai 15s massimi."
+                    "You will find the scrambles in a dedicated section during the competition days."
                 ],
                 "steps": []
             },
             {
-                "question": "Devo pagare una tassa di iscrizione?",
+                "question": "Do I need to record myself?",
                 "answer": [
-                    "No, la competizione è gratuita e aperta a tutti"
+                    "A video proof will be demanded only for whoever gets on the podium, so if you think you could make it on the podium, make sure to record yourself!",
+                    "If you forget to record yourself and still manage to podium, you won’t be banned from the competition, but just excluded from the official podiums list."
                 ],
                 "steps": []
             },
             {
-                "question": "Devo registrare le mie risoluzioni?",
+                "question": "Where do I find the standings?",
                 "answer": [
-                    "Chiederemo una prova video solo a chi si piazzerà sul podio, quindi se pensi di avere qualche chance, ricordati di registrarti!",
-                    "Se ti dimentichi non sarai squalificato ma verrai escluso dal podio finale."
+                    "You will be able to see the standings in a dedicated section during the competition days."
+                ],
+                "steps": []
+            },
+            {
+                "question": "Are the Discord voice channels free to join?",
+                "answer": [
+                    "Yes, just click the link in the top right corner and join our server."
+                ],
+                "steps": []
+            },
+            {
+                "question": "I can’t compete on that weekend, will there be other events in the future?",
+                "answer": [
+                    "Of course, don’t worry. Follow us on social media too keep in touch with all the news."
                 ],
                 "steps": []
             }
         ]
     },
     "info": {
-        "title": "Informazioni",
-        "desc":""
+        "title": "General Info",
+        "intro": {
+            "title": "Competition Format",
+            "regtitle": "Registration",
+            "regwhen": "From 14:00 of February 28th to 23:59 of March 11th",
+            "regdesc": "You will be allowed to submit results <strong>only</strong> in the events in which you are registered. Be careful when filling the registration form.",
+            "whentitle": "Dates",
+            "when": "Saturday March 13th and Sunday March 14th",
+            "whendesc": "First rounds will be on Saturday while all the finals will be on Sunday. Only the best from the first rounds will qualify.",
+            "whendesc1": "You can submit your times in the <a href='/submit-results'>Results</a> section which will be accessible only during the days of the competition.",
+            "resulttitle": "Results",
+            "result": "Dedicated time frames",
+            "resultdesc": "You can submit your results in any order you like during these two time frames:",
+            "resulthours": [
+                "Saturday: from 10:00 to 18:00 (GMT+1)",
+                "Sunday: from 10:00 to 20:00 (GMT+1)"
+            ],
+            "resultdesc1": "At the end of both days you'll be able to view the rankings in a dedicated section on this site.",
+            "resultdesc2": "We will ask for video proof of the solves only if you secure a spot on the podium. If you think you have your chances of winning, don't forget to record yourself! If you fail to provide said proof, you will be escluded from the final podium but not from the competition.",
+            "desc": []
+        },
+        "events": {
+            "title": "Events",
+            "events": [
+                {
+                    "icon": "cubing-icon event-333",
+                    "name": "3x3x3",
+                    "format": "Average of 5",
+                    "toNext": "60% of the competitors qualify for the final"
+                },
+                {
+                    "icon": "cubing-icon event-222",
+                    "name": "2x2x2",
+                    "format": "Average of 5",
+                    "toNext": "60% of the competitors qualify for the final"
+                },
+                {
+                    "icon": "cubing-icon event-444",
+                    "name": "4x4x4",
+                    "format": "Average of 5",
+                    "toNext": "40% of the competitors qualify for the final"
+                },
+                {
+                    "icon": "cubing-icon event-333bf",
+                    "name": "3BLD",
+                    "format": "best of 3",
+                    "toNext": "40% of the competitors qualify for the final"
+                },
+                {
+                    "icon": "cubing-icon event-333fm",
+                    "name": "FMC",
+                    "format": "Single attempt",
+                    "toNext": "---"
+                },
+                {
+                    "icon": "cubing-icon event-sq1",
+                    "name": "Square-1",
+                    "format": "Average of 5",
+                    "toNext": "60% of the competitors qualify for the final"
+                },
+                {
+                    "icon": "cubing-icon event-clock",
+                    "name": "Clock",
+                    "format": "Average of 5",
+                    "toNext": "40% of the competitors qualify for the final"
+                },
+                {
+                    "icon": "cubing-icon event-pyram",
+                    "name": "Pyraminx",
+                    "format": "Average of 5",
+                    "toNext": "60% of the competitors qualify for the final"
+                },
+                {
+                    "icon": "cubing-icon event-skewb",
+                    "name": "Skewb",
+                    "format": "Average of 5",
+                    "toNext": "60% of the competitors qualify for the final"
+                }
+            ]
+        },
+        "live": {
+            "title": "Livestream",
+            "twitch": "Twitch",
+            "discord": "Discord",
+            "twitchdesc": "We will be live on <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Cubing Italy's Twitch channel</a> during the whole competition streaming live solves, interviews, games and much more. We will submit a detailed program of the event when registrations open.",
+            "discorddesc": "We set up a few voice channels on <a href='https://speedcubing.it' target='_blank'>Speedcubing.it</a>'s <a href='https://discord.gg/PFDFVd4U3m' target='_blank'>Discord server</a>. Join them to do your solves with your friends or meet new members of the community!"
+        },
+        "rules": {
+            "title": "Rules",
+            "desc": [
+                "You should follow the <a href='https://www.worldcubeassociation.org/regulations/' target='_blank'>WCA regulations</a> as strictly as possible.",
+                "Here are the most important ones:"
+            ],
+            "rules": [
+                "Time your solves with a stackmat (the official WCA timer used during competitions) and using up to 15s of inspection.",
+                "If you don't own a stackmat you can time your solves with your phone or computer using <a href='https://cstimer.net/' target='_blank'>CS Timer</a>.",
+                "Penalties should be applied as per the WCA rules.",
+                "You must use the scrambles provided in the Results section to do your solves.",
+                "You are given extra scrambles for each turn. If you get distracted during your solution simply swap the time with the one done on the extra scramble."
+            ]
+        }
     },
     "register": {
-        "title": "Registrations",
-        "desc": ""
+        "title": "Registration",
+        "openin": "Registration opens in",
+        "steps": [
+            {
+                "date": "February 28th",
+                "event": "Registration opening date",
+                "color": "primary",
+                "icon": "mdi-account-plus"
+            },
+            {
+                "date": "March 11th",
+                "event": "Registration closing date",
+                "color": "secondary",
+                "icon": "mdi-lock"
+            }
+        ]
     },
     "submit": {
-        "title": "Results submission",
+        "title": "Submit your results",
         "desc": ""
     },
     "results": {
-        "title": "Standings",
+        "title": "Rankings",
         "desc": ""
     },
     "home": {
         "title": "Home",
-        "desc": ""
+        "desc": "The Italian Open Online 2021 is the first online competition organized entirely by Cubing Italy!",
+        "subdesc": "This competition is open to everybody, the only requirement is knowing how to solve the Rubik's cube!",
+        "register": "Register",
+        "info": "General Info"
     }
 }

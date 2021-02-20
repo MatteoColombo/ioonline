@@ -9,19 +9,19 @@
         >
         </iframe>
       </div>
-      <!-- <template>
+      <template>
         <h1 href="#schedule" id="schedule" class="text-center">
-          {{ title }}
+          {{ $t("live.title") }}
         </h1>
-        <p class="text-center">{{ desc }}</p>
+        <p class="text-center">{{ $t("live.desc") }}</p>
       </template>
 
-      <v-row justify="center" align="start">
+      <!-- <v-row justify="center" align="start">
         <v-col
           cols="12"
           md="6"
           align="center"
-          v-for="day in schedule"
+          v-for="day in $t('live.days')"
           :key="day.day"
         >
           <h2 align="center">{{ day.day }}</h2>
@@ -51,14 +51,6 @@ export default {
   head() {
     return {
       title: this.$t("live.title"),
-    };
-  },
-  data() {
-    return {
-      channel: this.$t("live.channel"),
-      title: this.$t("live.title"),
-      desc: this.$t("live.desc"),
-      schedule: this.$t("live.days"),
     };
   },
 };

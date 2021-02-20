@@ -124,6 +124,7 @@
     "faq": {
         "title": "Domande Frequenti",
         "desc": "Ecco alcune delle domande più frequenti!",
+        "questions":"Altre domande? Non esitare a contattarci!",
         "entries": [
             {
                 "question": "Come faccio ad iscrivermi?",
@@ -132,6 +133,7 @@
                 ],
                 "steps": [
                     "Vai sul sito <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>WCA</a> e crea un nuovo profilo. Se ne hai già uno puoi saltare questo passaggio.",
+                    "Effettua l'accesso su questo sito utilizzando il tuo account WCA.",
                     "Clicca su <a href='/register'>Iscriviti</a> nel menu sulla sinistra, accedi tramite il tuo profilo WCA e scegli gli eventi a cui intendi partecipare. "
                 ]
             },
@@ -143,9 +145,23 @@
                 "steps": []
             },
             {
-                "question": "Posso partecipare anche io alle sale Discord?",
+                "question": "Per quanto tempo rimarranno aperte le iscrizioni?",
                 "answer": [
-                    "Si, clicca il link in alto a destra e accedi al nostro server."
+                    "Le iscrizioni saranno aperte a partire dal 28 febbraio 2021 alle ore 14 fino all'11 marzo 2021 alle ore 23:59"
+                ],
+                "steps": []
+            },
+            {
+                "question": "Devo pagare una tassa di iscrizione?",
+                "answer": [
+                    "No, la competizione è gratuita e aperta a tutti."
+                ],
+                "steps": []
+            },
+            {
+                "question": "Che tempi devo fare per partecipare?",
+                "answer": [
+                    "Non c’è un tempo minimo di accesso. Tutti possono partecipare e divertirsi."
                 ],
                 "steps": []
             },
@@ -160,25 +176,38 @@
                 ]
             },
             {
-                "question": "Devo seguire le regole WCA?",
+                "question": "Dove trovo gli scramble?",
                 "answer": [
-                    "Si, dovresti cercare di seguire il più possibile le regole WCA.",
-                    "Se non possiedi uno stackmat puoi cronometrarti con un’app da telefono o con la tastiera del computer e un sito internet come <a href='https://cstimer.net/' target='_blank'>CS Timer</a>. Se non c’è qualcuno che può farti da giudice cerca di mantenere un tempo di ispezione ragionevolmente vicino ai 15s massimi."
-                ],
-                "steps": []
-            },
-            {
-                "question": "Devo pagare una tassa di iscrizione?",
-                "answer": [
-                    "No, la competizione è gratuita e aperta a tutti"
+                    "Troverai gli scramble in una sezione apposita, questa sarà visibile solo durante i giorni della competizione."
                 ],
                 "steps": []
             },
             {
                 "question": "Devo registrare le mie risoluzioni?",
                 "answer": [
-                    "Chiederemo una prova video solo a chi si posizionerà sul podio, quindi se pensi di avere qualche chance, ricordati di riprenderti!",
+                    "Chiederemo una prova video solo a chi si piazzerà sul podio, quindi se pensi di avere qualche chance, ricordati di registrarti!",
                     "Se ti dimentichi non sarai squalificato ma verrai escluso dal podio finale."
+                ],
+                "steps": []
+            },
+            {
+                "question": "Dove trovo la classifica?",
+                "answer": [
+                    "La classifica è nella sezione apposita che sarà visibile solo il giorno della competizione."
+                ],
+                "steps": []
+            },
+            {
+                "question": "Le sale Discord sono aperte a tutti?",
+                "answer": [
+                    "Si, clicca il link in alto a destra e accedi al nostro server."
+                ],
+                "steps": []
+            },
+            {
+                "question": "Non posso partecipare, ci saranno altri eventi in futuro? ",
+                "answer": [
+                    "Sicuramente, non preoccuparti. Segui i nostri social per restare informato."
                 ],
                 "steps": []
             }
@@ -290,10 +319,20 @@
     "register": {
         "title": "Registrazioni",
         "openin": "Le iscrizioni aprono tra",
-        "opendate": "28 Febbraio",
-        "openmessage": "Apertura iscrizioni",
-        "closedate": "11 Marzo",
-        "closemessage": "Chiusura iscrizioni"
+        "steps": [
+            {
+                "date": "28 Febbraio",
+                "event": "Apertura iscrizioni",
+                "color": "primary",
+                "icon": "mdi-account-plus"
+            },
+            {
+                "date": "11 Marzo",
+                "event": "Chiusura iscrizioni",
+                "color": "secondary",
+                "icon": "mdi-lock"
+            }
+        ]
     },
     "submit": {
         "title": "Invia risultati",
@@ -307,7 +346,7 @@
         "title": "Home",
         "desc": "L'Italian Open Online 2021 è la prima gara online organizzata interamente da Cubing Italy!",
         "subdesc": "La partecipazione è aperta a tutti e l'unico requisito è saper risolvere il cubo di Rubik!",
-        "register":"Iscriviti",
-        "info":"Informazioni"
+        "register": "Iscriviti",
+        "info": "Informazioni"
     }
 }

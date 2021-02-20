@@ -2,8 +2,8 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" xl="8">
       <template>
-        <h1 id="schedule" class="text-center">{{ title }}</h1>
-        <p class="text-center">{{ desc }}</p>
+        <h1 id="schedule" class="text-center">{{ $t("results.title") }}</h1>
+        <p class="text-center">{{ $t("results.desc") }}</p>
       </template>
     </v-col>
   </v-row>
@@ -14,12 +14,6 @@ export default {
   head() {
     return {
       title: this.$t("results.title"),
-    };
-  },
-  data() {
-    return {
-      title: this.$t("results.title"),
-      desc: this.$t("results.desc"),
     };
   },
 };
