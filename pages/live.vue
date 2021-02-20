@@ -3,13 +3,13 @@
     <v-col cols="12" sm="10" xl="8">
       <div class="container">
         <iframe
-          src="https://player.twitch.tv/?channel=gmhikaru&parent=ioodemo.herokuapp.com&muted=true&autoplay=true"
+          src="https://player.twitch.tv/?channel=cubingitalyu&parent=ioonline.cubingitaly.org&muted=true&autoplay=true"
           class="responsive-iframe"
           allowfullscreen="true"
         >
         </iframe>
       </div>
-      <template>
+      <!-- <template>
         <h1 href="#schedule" id="schedule" class="text-center">
           {{ title }}
         </h1>
@@ -41,7 +41,7 @@
             </v-timeline-item>
           </v-timeline>
         </v-col>
-      </v-row>
+      </v-row> -->
     </v-col>
   </v-row>
 </template>
