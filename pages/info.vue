@@ -25,16 +25,19 @@
 
         <h3>{{ $t("info.intro.resulttitle") }}</h3>
         <div>
-          <v-icon large>mdi-trophy</v-icon> <strong>{{ $t("info.intro.result") }}</strong>
+          <v-icon large>mdi-trophy</v-icon>
+          <strong>{{ $t("info.intro.result") }}</strong>
         </div>
         <p v-html="$t('info.intro.resultdesc')" class="text-justify"></p>
         <ul>
-          <li v-for="item in $t('info.intro.resulthours')" :key="item">{{ item }}</li>
+          <li v-for="item in $t('info.intro.resulthours')" :key="item">
+            {{ item }}
+          </li>
         </ul>
         <p v-html="$t('info.intro.resultdesc1')" class="text-justify"></p>
         <p v-html="$t('info.intro.resultdesc2')" class="text-justify"></p>
 
-        <h2>{{ $t('info.events.title') }}</h2>
+        <h2>{{ $t("info.events.title") }}</h2>
         <v-data-table
           :headers="headers"
           :items="$t('info.events.events')"
@@ -45,6 +48,7 @@
           hide-default-footer
           disable-pagination
           disable-filtering
+          mobile-breakpoint="0"
         >
           <template v-slot:item.icon="{ item }">
             <v-icon>
@@ -53,12 +57,12 @@
           </template>
         </v-data-table>
 
-        <h2>{{ $t('info.live.title') }}</h2>
+        <h2>{{ $t("info.live.title") }}</h2>
 
         <div>
           <v-icon large>mdi-twitch</v-icon>
           <span
-            ><strong>{{ $t('info.live.twitch') }}</strong></span
+            ><strong>{{ $t("info.live.twitch") }}</strong></span
           >
         </div>
         <p v-html="$t('info.live.twitchdesc')" class="text-justify"></p>
@@ -66,12 +70,12 @@
         <div>
           <v-icon large>mdi-discord</v-icon>
           <span
-            ><strong>{{ $t('info.live.discord') }}</strong></span
+            ><strong>{{ $t("info.live.discord") }}</strong></span
           >
         </div>
         <p v-html="$t('info.live.discorddesc')" class="text-justify"></p>
 
-        <h2>{{ $t('info.rules.title') }}</h2>
+        <h2>{{ $t("info.rules.title") }}</h2>
         <p
           v-for="item in $t('info.rules.desc')"
           :key="item"
@@ -97,7 +101,29 @@ export default {
     return {
       title: this.$t("info.title"),
     };
-  }
+  },
+  data() {
+    return {
+      headers: [
+        {
+          text: "",
+          value: "icon",
+        },
+        {
+          text: "Evento",
+          value: "name",
+        },
+        {
+          text: "Formato",
+          value: "format",
+        },
+        {
+          text: "",
+          value: "toNext",
+        },
+      ],
+    };
+  },
 };
 </script>
 
