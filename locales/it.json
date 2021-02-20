@@ -301,6 +301,7 @@
     },
     "home": {
         "title": "Home",
-        "desc": "L'Italian Open online 2021 è la prima gara online organizzata interamente da Cubing Italy, si svolgerà il 13 e il 14 marzo 2021. La partecipazione è aperta a tutti e l'unico requisito è saper risolvere il cubo di Rubik!"
+        "desc": "L'Italian Open online 2021 è la prima gara online organizzata interamente da Cubing Italy!",
+        "subdesc":"La partecipazione è aperta a tutti e l'unico requisito è saper risolvere il cubo di Rubik!"
     }
 }
