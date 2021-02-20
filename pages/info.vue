@@ -41,7 +41,6 @@
           :headers="headers"
           :items="events.events"
           class="elevation-1"
-          light
           :dense="$vuetify.breakpoint.xsOnly"
           :hide-default-header="$vuetify.breakpoint.smAndUp"
           disable-sort
