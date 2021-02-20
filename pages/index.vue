@@ -16,7 +16,7 @@
             x-large
             to="/info"
             color="primary"
-            >INFORMAZIONI</v-btn
+            >{{ $t("home.register") }}</v-btn
           ></v-col
         >
         <v-col cols="12" md="6"
@@ -27,7 +27,7 @@
             x-large
             to="/register"
             color="secondary"
-            >ISCRIVITI</v-btn
+            >{{ $t("home.info") }}</v-btn
           ></v-col
         >
       </v-row>
@@ -83,7 +83,7 @@
           >
             <v-icon>mdi-discord</v-icon>
           </v-btn>
-                    <v-btn
+          <v-btn
             href="https://t.me/cubingitaly"
             target="_blank"
             fab
@@ -93,7 +93,7 @@
           >
             <v-icon>mdi-telegram</v-icon>
           </v-btn>
-                    <v-btn
+          <v-btn
             href="https://www.cubingitaly.org"
             target="_blank"
             fab
@@ -135,7 +135,7 @@ h3 {
   margin-top: 50px;
 }
 .contacts {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .social-icon {
   margin-left: 10px;

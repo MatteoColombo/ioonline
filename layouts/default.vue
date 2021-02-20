@@ -56,7 +56,7 @@
           </v-list>
         </v-menu>
       </v-list>
-      <v-divider></v-divider>
+      <!-- <v-divider></v-divider>
 
       <v-list>
         <v-menu bottom offset-y v-if="$auth.loggedIn">
@@ -91,7 +91,7 @@
             <v-list-item-title v-text="$t('generic.login')" />
           </v-list-item-content>
         </v-list-item>
-      </v-list>
+      </v-list> -->
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-sm-none" />
@@ -140,16 +140,16 @@ export default {
           title: "navbar.register",
           to: "/register",
         },
-        {
-          icon: "mdi-cube",
-          title: "navbar.submit",
-          to: "/submit-results",
-        },
-        {
-          icon: "mdi-format-list-bulleted-triangle",
-          title: "navbar.results",
-          to: "/results",
-        },
+        // {
+        //   icon: "mdi-cube",
+        //   title: "navbar.submit",
+        //   to: "/submit-results",
+        // },
+        // {
+        //   icon: "mdi-format-list-bulleted-triangle",
+        //   title: "navbar.results",
+        //   to: "/results",
+        // },
         {
           icon: "mdi-twitch",
           title: "navbar.live",
@@ -175,8 +175,8 @@ export default {
   },
   methods: {
     login() {
-      //alert('ciao');
-      this.$auth.loginWith('social')
+      // //alert('ciao');
+      // this.$auth.loginWith('social')
     },
   },
 };

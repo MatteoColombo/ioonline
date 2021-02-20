@@ -7,7 +7,7 @@
     "navbar": {
         "home": "Home",
         "info": "Informazioni",
-        "register": "Iscriviti",
+        "register": "Registrazioni",
         "submit": "Risultati",
         "results": "Classifiche",
         "live": "Live",
@@ -289,7 +289,11 @@
     },
     "register": {
         "title": "Registrazioni",
-        "desc": "Le iscrizioni apriranno il 28 febbraio alle ore 14!"
+        "openin": "Le iscrizioni aprono tra",
+        "opendate": "28 Febbraio",
+        "openmessage": "Apertura iscrizioni",
+        "closedate": "11 Marzo",
+        "closemessage": "Chiusura iscrizioni"
     },
     "submit": {
         "title": "Invia risultati",
@@ -301,7 +305,9 @@
     },
     "home": {
         "title": "Home",
-        "desc": "L'Italian Open online 2021 è la prima gara online organizzata interamente da Cubing Italy!",
-        "subdesc":"La partecipazione è aperta a tutti e l'unico requisito è saper risolvere il cubo di Rubik!"
+        "desc": "L'Italian Open Online 2021 è la prima gara online organizzata interamente da Cubing Italy!",
+        "subdesc": "La partecipazione è aperta a tutti e l'unico requisito è saper risolvere il cubo di Rubik!",
+        "register":"Iscriviti",
+        "info":"Informazioni"
     }
 }

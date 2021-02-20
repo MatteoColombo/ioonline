@@ -45,7 +45,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next',
+    // '@nuxtjs/auth-next',
     // https://go.nuxtjs.dev/pwa
     //'@nuxtjs/pwa',
     'nuxt-i18n',
@@ -89,40 +89,40 @@ export default {
   //   }
   // },
 
-  auth: {
-    strategies: {
-      social: {
-        scheme: 'oauth2',
-        endpoints: {
-          authorization: 'https://worldcubeassociation.org/oauth/authorize',
-          token: 'http://localhost/api',
-          userInfo: 'https://worldcubeassociation.org/api/v0/me',
-          logout: 'https://example.com/logout'
-        },
-        token: {
-          property: 'access_token',
-          type: 'Bearer',
-          maxAge: 1800
-        },
-        refreshToken: {
-          property: 'refresh_token',
-          maxAge: 60 * 60 * 24 * 30
-        },
-        responseType: 'token',
-        grantType: 'authorization_code',
-        accessType: undefined,
-        redirectUri: undefined,
-        logoutRedirectUri: "/",
-        clientId: 'LCEU6ovCT93rjyn5HZeRyrP7jbn1Zs4sVCKz5_AwRSI',
-        scope: ['public'],
-        state: 'UNIQUE_AND_NON_GUESSABLE',
-        codeChallengeMethod: '',
-        responseMode: '',
-        acrValues: '',
-        // autoLogout: false
-      }
-    }
-  },
+  // auth: {
+  //   strategies: {
+  //     social: {
+  //       scheme: 'oauth2',
+  //       endpoints: {
+  //         authorization: 'https://worldcubeassociation.org/oauth/authorize',
+  //         token: 'http://localhost/api',
+  //         userInfo: 'https://worldcubeassociation.org/api/v0/me',
+  //         logout: 'https://example.com/logout'
+  //       },
+  //       token: {
+  //         property: 'access_token',
+  //         type: 'Bearer',
+  //         maxAge: 1800
+  //       },
+  //       refreshToken: {
+  //         property: 'refresh_token',
+  //         maxAge: 60 * 60 * 24 * 30
+  //       },
+  //       responseType: 'token',
+  //       grantType: 'authorization_code',
+  //       accessType: undefined,
+  //       redirectUri: undefined,
+  //       logoutRedirectUri: "/",
+  //       clientId: 'LCEU6ovCT93rjyn5HZeRyrP7jbn1Zs4sVCKz5_AwRSI',
+  //       scope: ['public'],
+  //       state: 'UNIQUE_AND_NON_GUESSABLE',
+  //       codeChallengeMethod: '',
+  //       responseMode: '',
+  //       acrValues: '',
+  //       // autoLogout: false
+  //     }
+  //   }
+  // },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
