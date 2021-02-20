@@ -1,6 +1,6 @@
 {
     "welcome": "Benvenuto",
-    "generic":{ 
+    "generic": {
         "login": "Accedi",
         "logout": "Esci"
     },
@@ -177,7 +177,7 @@
             {
                 "question": "Devo registrare le mie risoluzioni?",
                 "answer": [
-                    "Chiederemo una prova video solo a chi si piazzerà sul podio, quindi se pensi di avere qualche chance, ricordati di registrarti!",
+                    "Chiederemo una prova video solo a chi si posizionerà sul podio, quindi se pensi di avere qualche chance, ricordati di riprenderti!",
                     "Se ti dimentichi non sarai squalificato ma verrai escluso dal podio finale."
                 ],
                 "steps": []
@@ -186,11 +186,110 @@
     },
     "info": {
         "title": "Informazioni",
-        "desc": ""
+        "intro": {
+            "title": "Format competizione",
+            "regtitle": "Registrazioni",
+            "regwhen": "Dalle 14:00 del 28 Febbraio alle 23:59 dell'11 Marzo",
+            "regdesc": "Potrai inserire <strong>solo</strong> i risultati degli eventi ai quali sei iscritto, ricordati quindi di iscriverti a tutti gli eventi a cui vuoi partecipare.",
+            "whentitle": "Svolgimento",
+            "when": "Sabato 13 Marzo e Domenica 14 Marzo",
+            "whendesc": "Il Sabato è dedicato ai primi turni, mentre la Domenica si svolgeranno le finali. Solamente i migliori classificati per ogni evento potranno parteciparvi.",
+            "whendesc1": "Potrai inviare i tuoi tempi nella sezione <a href='/submit-results'>Risultati</a>, che sarà accessibile durante i giorni di gara.",
+            "resulttitle": "Risultati",
+            "result": "Fasce orarie dedicate",
+            "resultdesc": "Potrai inviare i risultati, nell'ordine che preferisci, in qualsiasi momento, durante le fasce dedicate:",
+            "resulthours": [
+                "Sabato: dalle 10 alle 18",
+                "Domenica: dalle 10 alle 20"
+            ],
+            "resultdesc1": "Alla chiusura di ogni giornata di gara sarà pubblicata la classifica in un'apposita sezione.",
+            "resultdesc2": "Chiederemo una prova video solo a chi si posizionerà sul podio, quindi se pensi di avere qualche chance, ricordati di filmarti!",
+            "desc": []
+        },
+        "events": {
+            "title": "Eventi",
+            "events": [
+                {
+                    "icon": "cubing-icon event-333",
+                    "name": "3x3x3",
+                    "format": "Media di 3 su 5",
+                    "toNext": "Si qualifica alla finale il 60% dei partecipanti"
+                },
+                {
+                    "icon": "cubing-icon event-222",
+                    "name": "2x2x2",
+                    "format": "Media di 3 su 5",
+                    "toNext": "Si qualifica alla finale il 60% dei partecipanti"
+                },
+                {
+                    "icon": "cubing-icon event-444",
+                    "name": "4x4x4",
+                    "format": "Media di 3 su 5",
+                    "toNext": "Si qualifica alla finale il 40% dei partecipanti"
+                },
+                {
+                    "icon": "cubing-icon event-333bf",
+                    "name": "3BLD",
+                    "format": "MIgliore dei 3",
+                    "toNext": "Si qualifica alla finale il 40% dei partecipanti"
+                },
+                {
+                    "icon": "cubing-icon event-333fm",
+                    "name": "FMC",
+                    "format": "Tentativo singolo",
+                    "toNext": "Turno unico"
+                },
+                {
+                    "icon": "cubing-icon event-sq1",
+                    "name": "Square-1",
+                    "format": "Media di 3 su 5",
+                    "toNext": "Si qualifica alla finale il 60% dei partecipanti"
+                },
+                {
+                    "icon": "cubing-icon event-clock",
+                    "name": "Clock",
+                    "format": "Media di 3 su 5",
+                    "toNext": "Si qualifica alla finale il 40% dei partecipanti"
+                },
+                {
+                    "icon": "cubing-icon event-pyram",
+                    "name": "Pyraminx",
+                    "format": "Media di 3 su 5",
+                    "toNext": "Si qualifica alla finale il 60% dei partecipanti"
+                },
+                {
+                    "icon": "cubing-icon event-skewb",
+                    "name": "Skewb",
+                    "format": "Media di 3 su 5",
+                    "toNext": "Si qualifica alla finale il 60% dei partecipanti"
+                }
+            ]
+        },
+        "live": {
+            "title": "Live",
+            "twitch": "Twitch",
+            "discord": "Discord",
+            "twitchdesc": "Saremo in diretta durante l'intero arco della competizione sul <a href='https://www.twitch.tv/cubingitaly' target='_blank'>canale Twitch di Cubing Italy</a> con risoluzioni in live, interviste, giochi interattivi e altro ancora. Il programma dettagliato della live sarà reso pubblico all'apertura delle iscrizioni.",
+            "discorddesc": "Abbiamo aperto delle stanze sul <a href='https://discord.gg/PFDFVd4U3m' target='_blank'>server Discord</a> di <a href='https://speedcubing.it' target='_blank'>Speedcubing.it</a> per permetterti di svolgere le risoluzioni in compagnia. Utilizza questa occasione per conoscere altri membri della community o per chiacchierare con i tuoi amici!"
+        },
+        "rules": {
+            "title": "Regolamento",
+            "desc": [
+                "Questa competizione segue il <a href='https://www.worldcubeassociation.org/regulations/' target='_blank'>regolamento WCA</a> il più fedelmente possibile.",
+                "Ecco le principali regole che dovrai seguire:"
+            ],
+            "rules": [
+                "Cronometra le tue risoluzioni con uno Stackmat (il cronometro ufficiale delle competizioni WCA), e con un tempo di ispezione di massimo 15 secondi.",
+                "Se non possiedi uno Stackmat puoi cronometrarti con il telefono oppure con il pc utilizzando <a href='https://cstimer.net/' target='_blank'>CS Timer</a>.",
+                "Applica le penalità come da regolamento WCA.",
+                "Per ogni risoluzione dovrai seguire gli scramble che verranno forniti nella sezione per inviare i risultati.",
+                "Per ogni turno saranno presenti degli scramble extra che potrai utilizzare nel caso venissi disturbato durante la risoluzione, quest'ultima verrà sostituita dal nuovo scramble."
+            ]
+        }
     },
     "register": {
         "title": "Registrazioni",
-        "desc": ""
+        "desc": "Le iscrizioni apriranno il 28 febbraio alle ore 14!"
     },
     "submit": {
         "title": "Invia risultati",
@@ -202,6 +301,6 @@
     },
     "home": {
         "title": "Home",
-        "desc": ""
+        "desc": "L'Italian Open online 2021 è la prima gara online organizzata interamente da Cubing Italy, si svolgerà il 13 e il 14 marzo 2021. La partecipazione è aperta a tutti e l'unico requisito è saper risolvere il cubo di Rubik!"
     }
 }

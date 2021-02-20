@@ -175,8 +175,8 @@ export default {
   },
   methods: {
     login() {
-      alert('ciao');
-      //this.$auth.loginWith('social')
+      //alert('ciao');
+      this.$auth.loginWith('social')
     },
   },
 };

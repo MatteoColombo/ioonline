@@ -5,7 +5,6 @@ import en from "./locales/en.json"
 export default {
 
   server: {
-    host: '0.0.0.0' // default: localhost
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -75,8 +74,9 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseUrl:"http://localhost:4200/api"
+    
   },
+  
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   // pwa: {
@@ -95,7 +95,7 @@ export default {
         scheme: 'oauth2',
         endpoints: {
           authorization: 'https://worldcubeassociation.org/oauth/authorize',
-          token: 'https://worldcubeassociation.org/oauth/token',
+          token: 'http://localhost/api',
           userInfo: 'https://worldcubeassociation.org/api/v0/me',
           logout: 'https://example.com/logout'
         },
@@ -112,9 +112,9 @@ export default {
         grantType: 'authorization_code',
         accessType: undefined,
         redirectUri: undefined,
-        logoutRedirectUri: undefined,
-        clientId: 'SET_ME',
-        scope: [],
+        logoutRedirectUri: "/",
+        clientId: 'LCEU6ovCT93rjyn5HZeRyrP7jbn1Zs4sVCKz5_AwRSI',
+        scope: ['public'],
         state: 'UNIQUE_AND_NON_GUESSABLE',
         codeChallengeMethod: '',
         responseMode: '',
