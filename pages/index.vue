@@ -134,4 +134,9 @@ h3 {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.cubing-italy{
+  background-color: orange;
+  background-image: url("http://localhost:3000/logo.png");;
+}
 </style>

@@ -36,10 +36,10 @@
               <td>12</td>
             </tr>
             <tr class="timer-desc">
-              <td>giorni</td>
-              <td>ore</td>
-              <td>minuti</td>
-              <td>secondi</td>
+              <td>{{ $t("register.days") }}</td>
+              <td>{{ $t("register.hours") }}</td>
+              <td>{{ $t("register.minutes") }}</td>
+              <td>{{ $t("register.seconds") }}</td>
             </tr>
           </table>
         </div>
@@ -101,8 +101,8 @@ export default {
     return {
       title: this.$t("register.title"),
     };
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
@@ -120,7 +120,7 @@ export default {
 }
 
 .timer-desc {
-  text-align: right;
+  text-align: center;
   font-size: 22px;
 }
 

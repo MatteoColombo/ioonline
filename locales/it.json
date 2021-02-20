@@ -319,6 +319,10 @@
     "register": {
         "title": "Registrazioni",
         "openin": "Le iscrizioni aprono tra",
+        "days":"giorni",
+        "hours":"ore",
+        "minutes":"minuti",
+        "seconds":"secondi",
         "steps": [
             {
                 "date": "28 Febbraio",

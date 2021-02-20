@@ -319,6 +319,10 @@
     "register": {
         "title": "Registration",
         "openin": "Registration opens in",
+        "days":"days",
+        "hours":"hours",
+        "minutes":"minutes",
+        "seconds":"seconds",
         "steps": [
             {
                 "date": "February 28th",
