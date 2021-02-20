@@ -64,6 +64,10 @@ export default {
 </style>
 
 <style scoped>
+#schedule{
+  margin-top: 20px;
+}
+
 .container {
   position: relative;
   overflow: hidden;
