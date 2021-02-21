@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" xl="8">
       <div v-if="isPwa()" align="center">
-        <v-btn to="https://www.twitch.tv/cubingitaly" color="purple" x-large
+        <v-btn href="https://www.twitch.tv/cubingitaly" color="purple" x-large
           ><v-icon>mdi-twitch</v-icon> <span style="margin:20px">Twitch</span></v-btn
         >
       </div>
