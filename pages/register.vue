@@ -29,34 +29,36 @@
         <h2 class="text-center timer-desc">{{ $t("register.openin") }}</h2>
         <div align="center" class="timer-container">
           <table>
-            <tr
-              class="timer"
-              :class="{
-                'timer-lg': $vuetify.breakpoint.mdAndUp,
-                'timer-md': $vuetify.breakpoint.mdOnly,
-                'timer-sm': $vuetify.breakpoint.smOnly,
-                'timer-xs': $vuetify.breakpoint.xsOnly,
-              }"
-            >
-              <td>12</td>
-              <td>26</td>
-              <td>07</td>
-              <td>12</td>
-            </tr>
-            <tr
-              class="timer-desc"
-              :class="{
-                'timer-desc-lg': $vuetify.breakpoint.mdAndUp,
-                'timer-desc-md': $vuetify.breakpoint.mdOnly,
-                'timer-desc-sm': $vuetify.breakpoint.smOnly,
-                'timer-desc-xs': $vuetify.breakpoint.xsOnly,
-              }"
-            >
-              <td>{{ $t("register.days") }}</td>
-              <td>{{ $t("register.hours") }}</td>
-              <td>{{ $t("register.minutes") }}</td>
-              <td>{{ $t("register.seconds") }}</td>
-            </tr>
+            <tbody>
+              <tr
+                class="timer"
+                :class="{
+                  'timer-lg': $vuetify.breakpoint.mdAndUp,
+                  'timer-md': $vuetify.breakpoint.mdOnly,
+                  'timer-sm': $vuetify.breakpoint.smOnly,
+                  'timer-xs': $vuetify.breakpoint.xsOnly,
+                }"
+              >
+                <td>12</td>
+                <td>26</td>
+                <td>07</td>
+                <td>12</td>
+              </tr>
+              <tr
+                class="timer-desc"
+                :class="{
+                  'timer-desc-lg': $vuetify.breakpoint.mdAndUp,
+                  'timer-desc-md': $vuetify.breakpoint.mdOnly,
+                  'timer-desc-sm': $vuetify.breakpoint.smOnly,
+                  'timer-desc-xs': $vuetify.breakpoint.xsOnly,
+                }"
+              >
+                <td>{{ $t("register.days") }}</td>
+                <td>{{ $t("register.hours") }}</td>
+                <td>{{ $t("register.minutes") }}</td>
+                <td>{{ $t("register.seconds") }}</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </template>
