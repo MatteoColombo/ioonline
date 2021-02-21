@@ -133,7 +133,7 @@
                 ],
                 "steps": [
                     "Go to the official page of the WCA <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>WCA</a> and make a new account. If you already have one you can skip this step.",
-                    "Sign in to this website by using your WCA account.",
+                    "Sign into <a href='/login' target='_blank'>this website</a> by using your WCA account.",
                     "Click on <a href='/registrazione'>Register</a> in the menu on the left and choose the events in which you’d like to compete. "
                 ]
             },
@@ -178,7 +178,7 @@
             {
                 "question": "Where do I find the scrambles?",
                 "answer": [
-                    "You will find the scrambles in a dedicated section during the competition days."
+                    "You will find the scrambles in a <a href='/partecipa' target='_blank'>dedicated section</a> during the competition days."
                 ],
                 "steps": []
             },
@@ -193,7 +193,7 @@
             {
                 "question": "Where do I find the standings?",
                 "answer": [
-                    "You will be able to see the standings in a dedicated section during the competition days."
+                    "You will be able to see the standings in a <a href='/classifiche' target='_blank'>dedicated section</a> during the competition days."
                 ],
                 "steps": []
             },

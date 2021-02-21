@@ -124,7 +124,7 @@
     "faq": {
         "title": "Domande Frequenti",
         "desc": "Ecco alcune delle domande più frequenti!",
-        "questions":"Altre domande? Non esitare a contattarci!",
+        "questions": "Altre domande? Non esitare a contattarci!",
         "entries": [
             {
                 "question": "Come faccio ad iscrivermi?",
@@ -133,7 +133,7 @@
                 ],
                 "steps": [
                     "Vai sul sito <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>WCA</a> e crea un nuovo profilo. Se ne hai già uno puoi saltare questo passaggio.",
-                    "Effettua l'accesso su questo sito utilizzando il tuo account WCA.",
+                    "Effettua l'accesso su <a href='/login' target='_blank'>questo sito</a> utilizzando il tuo account WCA.",
                     "Clicca su <a href='/registrazione'>Iscriviti</a> nel menu sulla sinistra, accedi tramite il tuo profilo WCA e scegli gli eventi a cui intendi partecipare. "
                 ]
             },
@@ -147,7 +147,7 @@
             {
                 "question": "Per quanto tempo rimarranno aperte le iscrizioni?",
                 "answer": [
-                    "Le iscrizioni saranno aperte a partire dal 28 febbraio 2021 alle ore 14 fino all'11 marzo 2021 alle ore 23:59"
+                    "Le iscrizioni saranno aperte dalle 14:00 del 28 febbraio fino alle ore 23:59 del 11 Marzo 2021."
                 ],
                 "steps": []
             },
@@ -178,7 +178,7 @@
             {
                 "question": "Dove trovo gli scramble?",
                 "answer": [
-                    "Troverai gli scramble in una sezione apposita, questa sarà visibile solo durante i giorni della competizione."
+                    "Troverai gli scramble in una <a href='/partecipa' target='_blank'>sezione apposita</a>, questa sarà visibile solo durante i giorni della competizione."
                 ],
                 "steps": []
             },
@@ -193,7 +193,7 @@
             {
                 "question": "Dove trovo la classifica?",
                 "answer": [
-                    "La classifica è nella sezione apposita che sarà visibile solo il giorno della competizione."
+                    "La classifica è nella sezione apposita che sarà visibile solo il giorno della competizione nella <a href='/classifiche' target='_blank'>sezione apposita</a>."
                 ],
                 "steps": []
             },
@@ -319,10 +319,10 @@
     "register": {
         "title": "Registrazioni",
         "openin": "Le iscrizioni aprono tra",
-        "days":"giorni",
-        "hours":"ore",
-        "minutes":"minuti",
-        "seconds":"secondi",
+        "days": "giorni",
+        "hours": "ore",
+        "minutes": "minuti",
+        "seconds": "secondi",
         "steps": [
             {
                 "date": "28 Febbraio",
