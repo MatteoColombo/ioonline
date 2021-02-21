@@ -96,7 +96,6 @@ export default {
   pwa: {
     manifest: {
       name: "Italian Open Online 2021",
-      icons: ['/ci48.png', '/ci72.png', '/ci96.png', '/ci128.png', '/ci192.png', '/ci384.png', '/ci512.png','/ci1024.png'],
       short_name: "IO Online 21",
       display: "standalone",
       start_url: "/",
