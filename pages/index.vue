@@ -130,6 +130,23 @@ export default {
   head() {
     return {
       title: this.$t("home.title"),
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t("home.desc"),
+        },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: this.$t("home.title"),
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: this.$t("home.desc"),
+        },
+      ],
     };
   },
 };
