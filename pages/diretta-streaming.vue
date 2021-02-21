@@ -13,7 +13,7 @@
         <h1 href="#schedule" id="schedule" class="text-center">
           {{ $t("live.title") }}
         </h1>
-        <p class="text-center">{{ $t("live.desc") }}</p>
+        <p class="text-center" v-html="$t('live.desc')"></p>
       </template>
 
       <!-- <v-row justify="center" align="start">
@@ -61,6 +61,10 @@ export default {
 .v-card__title {
   word-break: normal !important;
 }
+
+a {
+  text-decoration: none;
+}
 </style>
 
 <style scoped>
@@ -83,4 +87,5 @@ export default {
   width: 100%;
   height: 100%;
 }
+
 </style>

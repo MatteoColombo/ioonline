@@ -7,7 +7,7 @@
       app
       :permanent="!$vuetify.breakpoint.xsOnly"
     >
-      <v-img class="ma-4 mr-8" src="/logo-xl.svg"></v-img>
+      <v-img class="ma-4 mr-8"  aspect-ratio="3.1582" src="/logo-xl.svg"></v-img>
 
       <v-divider></v-divider>
 
@@ -133,32 +133,32 @@ export default {
         {
           icon: "mdi-information",
           title: "navbar.info",
-          to: "/info",
+          to: "/informazioni",
         },
         {
           icon: "mdi-account-plus",
           title: "navbar.register",
-          to: "/register",
+          to: "/registrazione",
         },
         // {
         //   icon: "mdi-cube",
         //   title: "navbar.submit",
-        //   to: "/submit-results",
+        //   to: "/partecipa",
         // },
         // {
         //   icon: "mdi-format-list-bulleted-triangle",
         //   title: "navbar.results",
-        //   to: "/results",
+        //   to: "/classifiche",
         // },
         {
           icon: "mdi-twitch",
           title: "navbar.live",
-          to: "/live",
+          to: "/diretta-streaming",
         },
         {
           icon: "mdi-frequently-asked-questions",
           title: "navbar.faq",
-          to: "/faq",
+          to: "/domande-frequenti",
         },
       ],
       miniVariant: false,

@@ -7,17 +7,17 @@
     "navbar": {
         "home": "Home",
         "info": "Informazioni",
-        "register": "Registrazioni",
-        "submit": "Risultati",
+        "register": "Registrazione",
+        "submit": "Partecipa",
         "results": "Classifiche",
-        "live": "Live",
-        "faq": "FAQ",
+        "live": "Diretta streaming",
+        "faq": "Domande frequenti",
         "language": "Traduzione"
     },
     "live": {
         "channel": "gmhikaru",
         "title": "Programma della diretta",
-        "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su Twitch. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
+        "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su <a href='twitch.tv/cubingitaly' target='_blank'>Twitch</a>. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
         "days": [
             {
                 "day": "Sabato 13 Marzo",
@@ -134,7 +134,7 @@
                 "steps": [
                     "Vai sul sito <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>WCA</a> e crea un nuovo profilo. Se ne hai già uno puoi saltare questo passaggio.",
                     "Effettua l'accesso su questo sito utilizzando il tuo account WCA.",
-                    "Clicca su <a href='/register'>Iscriviti</a> nel menu sulla sinistra, accedi tramite il tuo profilo WCA e scegli gli eventi a cui intendi partecipare. "
+                    "Clicca su <a href='/registrazione'>Iscriviti</a> nel menu sulla sinistra, accedi tramite il tuo profilo WCA e scegli gli eventi a cui intendi partecipare. "
                 ]
             },
             {
@@ -223,7 +223,7 @@
             "whentitle": "Svolgimento",
             "when": "Sabato 13 Marzo e Domenica 14 Marzo",
             "whendesc": "Il Sabato è dedicato ai primi turni, mentre la Domenica si svolgeranno le finali. Solamente i migliori classificati per ogni evento potranno parteciparvi.",
-            "whendesc1": "Potrai inviare i tuoi tempi nella sezione <a href='/submit-results'>Risultati</a>, che sarà accessibile durante i giorni di gara.",
+            "whendesc1": "Potrai inviare i tuoi tempi nella sezione <a href='/partecipa'>Risultati</a>, che sarà accessibile durante i giorni di gara.",
             "resulttitle": "Risultati",
             "result": "Fasce orarie dedicate",
             "resultdesc": "Potrai inviare i risultati, nell'ordine che preferisci, in qualsiasi momento, durante le fasce dedicate:",

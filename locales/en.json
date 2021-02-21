@@ -8,7 +8,7 @@
         "home": "Home",
         "info": "General Info",
         "register": "Registration",
-        "submit": "Results",
+        "submit": "Compete",
         "results": "Rankings",
         "live": "Livestream",
         "faq": "FAQ",
@@ -17,7 +17,7 @@
     "live": {
         "channel": "gmhikaru",
         "title": "Livestream Schedule",
-        "desc": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's twitch channel. Fast solves, games, interviews and much more!",
+        "desc": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's <a href='twitch.tv/cubingitaly' target='_blank'>Twitch</a> channel. Fast solves, games, interviews and much more!",
         "days": [
             {
                 "day": "Saturday, March 13th",
@@ -124,7 +124,7 @@
     "faq": {
         "title": "FAQ",
         "desc": "Here are the Frequently Asked Question!",
-        "questions":"Any doubts? Contact us!",
+        "questions": "Any doubts? Contact us!",
         "entries": [
             {
                 "question": "How do I register?",
@@ -134,7 +134,7 @@
                 "steps": [
                     "Go to the official page of the WCA <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>WCA</a> and make a new account. If you already have one you can skip this step.",
                     "Sign in to this website by using your WCA account.",
-                    "Click on <a href='/register'>Register</a> in the menu on the left and choose the events in which you’d like to compete. "
+                    "Click on <a href='/registrazione'>Register</a> in the menu on the left and choose the events in which you’d like to compete. "
                 ]
             },
             {
@@ -223,7 +223,7 @@
             "whentitle": "Dates",
             "when": "Saturday March 13th and Sunday March 14th",
             "whendesc": "First rounds will be on Saturday while all the finals will be on Sunday. Only the best from the first rounds will qualify.",
-            "whendesc1": "You can submit your times in the <a href='/submit-results'>Results</a> section which will be accessible only during the days of the competition.",
+            "whendesc1": "You can submit your times in the <a href='/partecipa'>Results</a> section which will be accessible only during the days of the competition.",
             "resulttitle": "Results",
             "result": "Dedicated time frames",
             "resultdesc": "You can submit your results in any order you like during these two time frames:",
@@ -319,10 +319,10 @@
     "register": {
         "title": "Registration",
         "openin": "Registration opens in",
-        "days":"days",
-        "hours":"hours",
-        "minutes":"minutes",
-        "seconds":"seconds",
+        "days": "days",
+        "hours": "hours",
+        "minutes": "minutes",
+        "seconds": "seconds",
         "steps": [
             {
                 "date": "February 28th",
