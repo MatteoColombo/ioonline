@@ -133,7 +133,7 @@
                 ],
                 "steps": [
                     "Vai sul sito <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>WCA</a> e crea un nuovo profilo. Se ne hai già uno puoi saltare questo passaggio.",
-                    "Effettua l'accesso su <a href='/login' target='_blank'>questo sito</a> utilizzando il tuo account WCA.",
+                    "Effettua l'accesso su <a href='/login'>questo sito</a> utilizzando il tuo account WCA.",
                     "Clicca su <a href='/registrazione'>Iscriviti</a> nel menu sulla sinistra, accedi tramite il tuo profilo WCA e scegli gli eventi a cui intendi partecipare. "
                 ]
             },
@@ -178,7 +178,7 @@
             {
                 "question": "Dove trovo gli scramble?",
                 "answer": [
-                    "Troverai gli scramble in una <a href='/partecipa' target='_blank'>sezione apposita</a>, questa sarà visibile solo durante i giorni della competizione."
+                    "Troverai gli scramble in una <a href='/partecipa'>sezione apposita</a>, questa sarà visibile solo durante i giorni della competizione."
                 ],
                 "steps": []
             },
@@ -193,7 +193,7 @@
             {
                 "question": "Dove trovo la classifica?",
                 "answer": [
-                    "La classifica è nella sezione apposita che sarà visibile solo il giorno della competizione nella <a href='/classifiche' target='_blank'>sezione apposita</a>."
+                    "La classifica è nella sezione apposita che sarà visibile solo il giorno della competizione nella <a href='/classifiche'>sezione apposita</a>."
                 ],
                 "steps": []
             },
