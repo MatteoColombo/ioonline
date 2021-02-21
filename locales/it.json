@@ -17,7 +17,7 @@
     "live": {
         "channel": "gmhikaru",
         "title": "Programma della diretta",
-        "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su <a href='twitch.tv/cubingitaly' target='_blank'>Twitch</a>. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
+        "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch</a>. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
         "days": [
             {
                 "day": "Sabato 13 Marzo",
@@ -338,11 +338,15 @@
             }
         ]
     },
-    "submit": {
-        "title": "Invia risultati",
+    "compete": {
+        "title": "Partecipa",
         "desc": ""
     },
-    "results": {
+    "login": {
+        "title": "Accedi",
+        "desc": ""
+    },
+    "standings": {
         "title": "Classifiche",
         "desc": ""
     },

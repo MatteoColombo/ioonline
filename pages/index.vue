@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" xl="8">
       <template>
-        <v-img class="intro" aspect-ratio="2.52" src="/ioo-logo.svg" />
+        <v-img class="intro" aspect-ratio="2.5293" src="/ioo-logo.svg" />
 
         <h3 class="text-center">{{ $t("home.desc") }}</h3>
         <p class="text-center">{{ $t("home.subdesc") }}</p>

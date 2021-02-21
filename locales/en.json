@@ -17,7 +17,7 @@
     "live": {
         "channel": "gmhikaru",
         "title": "Livestream Schedule",
-        "desc": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's <a href='twitch.tv/cubingitaly' target='_blank'>Twitch</a> channel. Fast solves, games, interviews and much more!",
+        "desc": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch channel</a>. Fast solves, games, interviews and much more!",
         "days": [
             {
                 "day": "Saturday, March 13th",
@@ -338,11 +338,15 @@
             }
         ]
     },
-    "submit": {
+    "compete": {
         "title": "Submit your results",
         "desc": ""
     },
-    "results": {
+    "login": {
+        "title": "Sign in",
+        "desc": ""
+    },
+    "standings": {
         "title": "Rankings",
         "desc": ""
     },
