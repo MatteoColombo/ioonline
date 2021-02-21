@@ -130,6 +130,7 @@ export default {
   head() {
     return {
       title: this.$t("home.title"),
+      desc
     };
   },
 };
