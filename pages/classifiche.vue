@@ -10,9 +10,36 @@
 
 <script>
 export default {
-  head() {
+   head() {
     return {
       title: this.$t("standings.title"),
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t("standings.desc"),
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.$t("standings.title"),
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.$t("standings.desc"),
+        },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: this.$t("standings.title"),
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: this.$t("standings.desc"),
+        },
+      ],
     };
   },
 };

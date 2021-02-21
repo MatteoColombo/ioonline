@@ -137,6 +137,16 @@ export default {
           content: this.$t("home.desc"),
         },
         {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.$t("home.title"),
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.$t("home.desc"),
+        },
+        {
           hid: "og:title",
           property: "og:title",
           content: this.$t("home.title"),

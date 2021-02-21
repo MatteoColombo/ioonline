@@ -18,6 +18,7 @@
         "channel": "gmhikaru",
         "title": "Programma della diretta",
         "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch</a>. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
+        "descextra": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su Twitch!",
         "days": [
             {
                 "day": "Sabato 13 Marzo",
@@ -215,6 +216,7 @@
     },
     "info": {
         "title": "Informazioni",
+        "desc":"L'Italian Open Online 2021 si svolgerà il 13 e 14 Marzo 2021!",
         "intro": {
             "title": "Format competizione",
             "regtitle": "Registrazioni",
@@ -318,6 +320,7 @@
     },
     "register": {
         "title": "Registrazioni",
+        "desc":"Le registrazioni apriranno il 28 Febbraio e chiuderanno l'11 Marzo 2021",
         "openin": "Le iscrizioni aprono tra",
         "days": "giorni",
         "hours": "ore",

@@ -18,6 +18,7 @@
         "channel": "gmhikaru",
         "title": "Livestream Schedule",
         "desc": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch channel</a>. Fast solves, games, interviews and much more!",
+        "descextra": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's Twitch channel!",
         "days": [
             {
                 "day": "Saturday, March 13th",
@@ -215,6 +216,7 @@
     },
     "info": {
         "title": "General Info",
+        "desc":"The Italian Open Online 2021 will take place on March 13th and 14th!",
         "intro": {
             "title": "Competition Format",
             "regtitle": "Registration",
@@ -318,6 +320,7 @@
     },
     "register": {
         "title": "Registration",
+        "desc":"Registrations will open on the 28th of February",
         "openin": "Registration opens in",
         "days": "days",
         "hours": "hours",

@@ -123,6 +123,33 @@ export default {
   head() {
     return {
       title: this.$t("faq.title"),
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t("faq.desc"),
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.$t("faq.title"),
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.$t("faq.desc"),
+        },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: this.$t("faq.title"),
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: this.$t("faq.desc"),
+        },
+      ],
     };
   },
 };

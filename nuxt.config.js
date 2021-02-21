@@ -12,7 +12,7 @@ export default {
     titleTemplate: '%s - Italian Open Online 2021',
     title: 'Italian Open Online 2021',
     meta: [
-      { charset: 'utf-8' },
+      { charset: 'UTF-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       {
@@ -21,6 +21,7 @@ export default {
         content: '/preview_fb.png'
       },
     ],
+    __dangerouslyDisableSanitizers: ['meta'],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ]
@@ -39,9 +40,9 @@ export default {
   render: {
     etag: false,
     static: {
-       etag: false
+      etag: false
     }
- },
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -78,7 +79,7 @@ export default {
       code: 'it',
       name: 'Italiano'
     }],
-    defaultLocale: 'en',
+    defaultLocale: 'it',
     vueI18n: {
       fallbackLocale: 'en',
       messages: { en, it }
