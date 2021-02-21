@@ -3,7 +3,7 @@
     <v-col cols="12" sm="10" xl="8">
       <div class="container">
         <iframe
-          src="https://player.twitch.tv/?channel=cubingitalyu&parent=online.cubingitaly.org&muted=true&autoplay=true"
+          src="https://player.twitch.tv/?channel=cubingitalyu&parent=www.online.cubingitaly.org&muted=true&autoplay=true"
           class="responsive-iframe"
           allowfullscreen="true"
         >
