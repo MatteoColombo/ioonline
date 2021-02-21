@@ -61,7 +61,7 @@ export default {
     '@nuxtjs/axios',
     // '@nuxtjs/auth-next',
     // https://go.nuxtjs.dev/pwa
-    //'@nuxtjs/pwa',
+    '@nuxtjs/pwa',
     'nuxt-i18n',
   ],
 
@@ -93,15 +93,16 @@ export default {
 
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
-  // pwa: {
-  //   manifest: {
-  //     name: "Italian Open Online 2021",
-  //     short_name: "IO Online 21",
-  //     start_url:"/",
-  //     lang: 'en',
-  //     background_color:"#00aa82",
-  //   }
-  // },
+  pwa: {
+    manifest: {
+      name: "Italian Open Online 2021",
+      icons: ['/ci64.png', '/ci120.png', '/ci144.png', '/ci152.png', '/ci192.png', '/ci384.png', '/ci512.png'],
+      short_name: "IO Online 21",
+      start_url: "/",
+      lang: 'it',
+      background_color: "#00aa82",
+    }
+  },
 
   // auth: {
   //   strategies: {
