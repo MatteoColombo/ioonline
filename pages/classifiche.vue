@@ -2,8 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" xl="8">
       <template>
-        <h1 id="schedule" class="text-center">{{ $t("standings.title") }}</h1>
-        <p class="text-center">{{ $t("standings.desc") }}</p>
+        <v-img src="/wip.svg" aspect-ratio="3,0788"></v-img>
       </template>
     </v-col>
   </v-row>
