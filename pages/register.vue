@@ -132,24 +132,22 @@ export default {
   },
   data() {
     return {
-      now: Math.trunc(new Date().getTime() / 1000),
+      now: Math.floor(new Date().getTime() / 1000),
+      dateInMilliseconds : 1614517200,
     };
   },
   computed: {
-    dateInMilliseconds() {
-      return Math.trunc(new Date(Date.UTC(2021, 1, 28, 13, 0, 0)) / 1000);
-    },
     seconds() {
       return (this.dateInMilliseconds - this.now) % 60;
     },
     minutes() {
-      return Math.trunc((this.dateInMilliseconds - this.now) / 60) % 60;
+      return Math.floor((this.dateInMilliseconds - this.now) / 60) % 60;
     },
     hours() {
-      return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60) % 24;
+      return Math.floor((this.dateInMilliseconds - this.now) / 60 / 60) % 24;
     },
     days() {
-      return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60 / 24);
+      return Math.floor((this.dateInMilliseconds - this.now) / 60 / 60 / 24);
     },
   },
   filters: {
