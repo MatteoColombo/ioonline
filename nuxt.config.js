@@ -154,13 +154,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    // filenames: {
-    //   app: ({ isDev, isModern }) => isDev ? `[name]${isModern ? '.modern' : ''}.js` : `[id].[hash:15]${isModern ? '.modern' : ''}.js`,
-    //   chunk: ({ isDev, isModern }) => isDev ? `[name]${isModern ? '.modern' : ''}.js` : `[id].[hash:15]${isModern ? '.modern' : ''}.js`,
-    //   css: ({ isDev }) => isDev ? '[name].css' : 'css/[id].[hash:15].css',
-    //   img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'img/[name].[id].[hash:15].[ext]',
-    //   font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[name].[id].[hash:15].[ext]',
-    //   video: ({ isDev }) => isDev ? '[path][name].[ext]' : 'videos/[name].[id].[hash:15].[ext]'
-    // }
   }
 }

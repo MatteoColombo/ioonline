@@ -43,7 +43,7 @@
           :items="$t('info.events.events')"
           class="elevation-1"
           :dense="$vuetify.breakpoint.xsOnly"
-          :hide-default-header="$vuetify.breakpoint.smAndUp"
+          hide-default-header
           disable-sort
           hide-default-footer
           disable-pagination

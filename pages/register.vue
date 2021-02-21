@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="10" xl="8">
+    <v-col cols="12" md="10" xl="8">
       <template>
         <h1 id="schedule" class="text-center">{{ $t("register.title") }}</h1>
 
@@ -29,13 +29,29 @@
         <h2 class="text-center timer-desc">{{ $t("register.openin") }}</h2>
         <div align="center" class="timer-container">
           <table>
-            <tr class="timer">
+            <tr
+              class="timer"
+              :class="{
+                'timer-lg': $vuetify.breakpoint.mdAndUp,
+                'timer-md': $vuetify.breakpoint.mdOnly,
+                'timer-sm': $vuetify.breakpoint.smOnly,
+                'timer-xs': $vuetify.breakpoint.xsOnly,
+              }"
+            >
               <td>12</td>
               <td>26</td>
               <td>07</td>
               <td>12</td>
             </tr>
-            <tr class="timer-desc">
+            <tr
+              class="timer-desc"
+              :class="{
+                'timer-desc-lg': $vuetify.breakpoint.mdAndUp,
+                'timer-desc-md': $vuetify.breakpoint.mdOnly,
+                'timer-desc-sm': $vuetify.breakpoint.smOnly,
+                'timer-desc-xs': $vuetify.breakpoint.xsOnly,
+              }"
+            >
               <td>{{ $t("register.days") }}</td>
               <td>{{ $t("register.hours") }}</td>
               <td>{{ $t("register.minutes") }}</td>
@@ -106,22 +122,52 @@ export default {
 </script>
 
 <style scoped>
-.timer {
-  border: 1px solid white;
+.timer-lg td {
   font-size: 96px;
+  border: 8px solid #00aa82;
+  padding: 0 10px;
   font-weight: 700;
 }
 
-.timer td {
+.timer-md td {
+  font-size: 72px;
   border: 8px solid #00aa82;
-  padding-left: 10px;
-  padding-right: 10px;
   padding: 0 10px;
+  font-weight: 700;
 }
 
-.timer-desc {
-  text-align: center;
+.timer-sm td {
+  font-size: 40px;
+  border: 6px solid #00aa82;
+  padding: 0 7px;
+  font-weight: 700;
+}
+
+.timer-xs td {
+  font-size: 32px;
+  border: 8px solid #00aa82;
+  padding: 0 10px;
+  font-weight: 700;
+}
+
+.timer-desc-lg {
+  text-align: right;
   font-size: 22px;
+}
+
+.timer-desc-md {
+  text-align: right;
+  font-size: 20px;
+}
+
+.timer-desc-sm {
+  text-align: right;
+  font-size: 16px;
+}
+
+.timer-desc-xs {
+  text-align: right;
+  font-size: 15px;
 }
 
 .timer-desc {
@@ -130,5 +176,12 @@ export default {
 
 .timer-container {
   margin-top: 20px;
+}
+</style>
+
+<style>
+.v-card__text,
+.v-card__title {
+  word-break: normal !important;
 }
 </style>

@@ -326,13 +326,13 @@
         "steps": [
             {
                 "date": "February 28th",
-                "event": "Registration opening date",
+                "event": "Registration opens",
                 "color": "primary",
                 "icon": "mdi-account-plus"
             },
             {
                 "date": "March 11th",
-                "event": "Registration closing date",
+                "event": "Registration closes",
                 "color": "secondary",
                 "icon": "mdi-lock"
             }
