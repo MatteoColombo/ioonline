@@ -39,10 +39,10 @@
                   'timer-xs': $vuetify.breakpoint.xsOnly,
                 }"
               >
-                <td>12</td>
-                <td>26</td>
-                <td>07</td>
-                <td>12</td>
+                <td>{{ days | two_digits }}</td>
+                <td>{{ hours | two_digits }}</td>
+                <td>{{ minutes | two_digits }}</td>
+                <td>{{ seconds | two_digits }}</td>
               </tr>
               <tr
                 class="timer-desc"
@@ -119,6 +119,49 @@ export default {
     return {
       title: this.$t("register.title"),
     };
+  },
+  mounted() {
+    window.setInterval(() => {
+      this.now = Math.trunc(new Date().getTime() / 1000);
+    }, 1000);
+  },
+  props: {
+    date: {
+      type: String,
+    },
+  },
+  data() {
+    return {
+      now: Math.trunc(new Date().getTime() / 1000),
+    };
+  },
+  computed: {
+    dateInMilliseconds() {
+      return Math.trunc(new Date(Date.UTC(2021, 1, 28, 13, 0, 0)) / 1000);
+    },
+    seconds() {
+      return (this.dateInMilliseconds - this.now) % 60;
+    },
+    minutes() {
+      return Math.trunc((this.dateInMilliseconds - this.now) / 60) % 60;
+    },
+    hours() {
+      return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60) % 24;
+    },
+    days() {
+      return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60 / 24);
+    },
+  },
+  filters: {
+    two_digits(value) {
+      if (value < 0) {
+        return "00";
+      }
+      if (value.toString().length <= 1) {
+        return `0${value}`;
+      }
+      return value;
+    },
   },
 };
 </script>
