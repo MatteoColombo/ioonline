@@ -8,7 +8,7 @@
       </div>
       <div class="container" v-else>
         <iframe
-          src="https://player.twitch.tv/?channel=cubingitalyu&parent=www.online.cubingitaly.org&muted=true&autoplay=true"
+          src="https://player.twitch.tv/?channel=cubingitaly&parent=www.online.cubingitaly.org&muted=true&autoplay=true"
           class="responsive-iframe"
           allowfullscreen="true"
         >
