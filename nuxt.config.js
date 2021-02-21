@@ -94,6 +94,9 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    icon:{
+      source:"@/static/icon.png"
+    },
     manifest: {
       name: "Italian Open Online 2021",
       short_name: "IO Online 21",
