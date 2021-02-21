@@ -95,7 +95,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     icon:{
-      source:"@/static/icon.png"
+      source:"@/static/icon.png",
     },
     manifest: {
       name: "Italian Open Online 2021",
@@ -103,7 +103,8 @@ export default {
       display: "standalone",
       start_url: "/",
       lang: 'it',
-      background_color: "#00aa82",
+      background_color: "#fff",
+      version: "1" 
     }
   },
 
@@ -164,5 +165,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    filenames:{
+      app: ({ isDev, isModern }) => isDev ? `[name]${isModern ? '.modern' : ''}.js` : `[id].[contenthash:10]${isModern ? '.modern' : ''}.js`,
+      chunk: ({ isDev, isModern }) => isDev ? `[name]${isModern ? '.modern' : ''}.js` : `[id].[contenthash:10]${isModern ? '.modern' : ''}.js`,
+      manifest: ({ isDev }) => isDev ? '[name].json' : '[id].[contenthash:10].json',
+      css: ({ isDev }) => isDev ? '[name].css' : 'css/[id].[contenthash:10].css',
+      img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'img/[name].[id].[contenthash:10].[ext]',
+      font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[name].[id].[contenthash:10].[ext]',
+      video: ({ isDev }) => isDev ? '[path][name].[ext]' : 'videos/[name].[id].[contenthash:10].[ext]'
+    }
   }
 }
