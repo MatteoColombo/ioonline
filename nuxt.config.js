@@ -98,6 +98,7 @@ export default {
       name: "Italian Open Online 2021",
       icons: ['/ci64.png', '/ci120.png', '/ci144.png', '/ci152.png', '/ci192.png', '/ci384.png', '/ci512.png'],
       short_name: "IO Online 21",
+      display: "standalone",
       start_url: "/",
       lang: 'it',
       background_color: "#00aa82",

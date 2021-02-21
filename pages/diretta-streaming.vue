@@ -1,7 +1,12 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" xl="8">
-      <div class="container">
+      <div v-if="isPwa()" align="center">
+        <v-btn to="https://www.twitch.tv/cubingitaly" color="purple" x-large
+          ><v-icon>mdi-twitch</v-icon> <span style="margin:20px">Twitch</span></v-btn
+        >
+      </div>
+      <div class="container" v-else>
         <iframe
           src="https://player.twitch.tv/?channel=cubingitalyu&parent=www.online.cubingitaly.org&muted=true&autoplay=true"
           class="responsive-iframe"
@@ -48,7 +53,7 @@
 
 <script>
 export default {
-   head() {
+  head() {
     return {
       title: this.$t("live.title"),
       meta: [
@@ -80,6 +85,17 @@ export default {
       ],
     };
   },
+  methods: {
+    isPwa() {
+      if (process.server) {
+        return false;
+      }
+      return ["fullscreen", "standalone", "minimal-ui"].some(
+        (displayMode) =>
+          window.matchMedia("(display-mode: " + displayMode + ")").matches
+      );
+    },
+  },
 };
 </script>
 
@@ -95,7 +111,7 @@ a {
 </style>
 
 <style scoped>
-#schedule{
+#schedule {
   margin-top: 20px;
 }
 
@@ -114,5 +130,4 @@ a {
   width: 100%;
   height: 100%;
 }
-
 </style>
