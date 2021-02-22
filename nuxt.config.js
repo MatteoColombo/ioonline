@@ -104,7 +104,7 @@ export default {
       start_url: "/",
       lang: 'it',
       background_color: "#fff",
-      version: "1" 
+      version: "3" 
     }
   },
 
