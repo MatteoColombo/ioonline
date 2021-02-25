@@ -56,7 +56,7 @@
           </v-list>
         </v-menu>
       </v-list>
-      <!-- <v-divider></v-divider>
+      <v-divider></v-divider>
 
       <v-list>
         <v-menu bottom offset-y v-if="$auth.loggedIn">
@@ -66,13 +66,13 @@
                 <v-icon>mdi-account-circle</v-icon>
               </v-list-item-action>
               <v-list-item-content>
-                <v-list-item-title v-text="$auth.user" />
+                <v-list-item-title v-text="$auth.user.name" />
               </v-list-item-content>
             </v-list-item>
           </template>
 
           <v-list>
-            <v-list-item>
+            <v-list-item @click="logout">
               <v-list-item-action>
                 <v-icon>mdi-logout</v-icon>
               </v-list-item-action>
@@ -91,7 +91,7 @@
             <v-list-item-title v-text="$t('generic.login')" />
           </v-list-item-content>
         </v-list-item>
-      </v-list> -->
+      </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-sm-none" />
@@ -175,9 +175,11 @@ export default {
   },
   methods: {
     login() {
-      // //alert('ciao');
-      // this.$auth.loginWith('social')
+       this.$auth.loginWith('social')
     },
+    logout(){
+      this.$auth.logout()
+    }
   },
 };
 </script>

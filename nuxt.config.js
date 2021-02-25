@@ -59,7 +59,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // '@nuxtjs/auth-next',
+    '@nuxtjs/proxy',
+    '@nuxtjs/auth-next',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     'nuxt-i18n',
@@ -88,14 +89,15 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-
+    baseURL: 'http://localhost:4200'
   },
+
 
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
-    icon:{
-      source:"@/static/icon.png",
+    icon: {
+      source: "@/static/icon.png",
     },
     manifest: {
       name: "Italian Open Online 2021",
@@ -104,44 +106,37 @@ export default {
       start_url: "/",
       lang: 'it',
       background_color: "#fff",
-      version: "3" 
+      version: "3"
     }
   },
 
-  // auth: {
-  //   strategies: {
-  //     social: {
-  //       scheme: 'oauth2',
-  //       endpoints: {
-  //         authorization: 'https://worldcubeassociation.org/oauth/authorize',
-  //         token: 'http://localhost/api',
-  //         userInfo: 'https://worldcubeassociation.org/api/v0/me',
-  //         logout: 'https://example.com/logout'
-  //       },
-  //       token: {
-  //         property: 'access_token',
-  //         type: 'Bearer',
-  //         maxAge: 1800
-  //       },
-  //       refreshToken: {
-  //         property: 'refresh_token',
-  //         maxAge: 60 * 60 * 24 * 30
-  //       },
-  //       responseType: 'token',
-  //       grantType: 'authorization_code',
-  //       accessType: undefined,
-  //       redirectUri: undefined,
-  //       logoutRedirectUri: "/",
-  //       clientId: 'LCEU6ovCT93rjyn5HZeRyrP7jbn1Zs4sVCKz5_AwRSI',
-  //       scope: ['public'],
-  //       state: 'UNIQUE_AND_NON_GUESSABLE',
-  //       codeChallengeMethod: '',
-  //       responseMode: '',
-  //       acrValues: '',
-  //       // autoLogout: false
-  //     }
-  //   }
-  // },
+  auth: {
+    strategies: {
+      social: {
+        scheme: 'oauth2',
+        endpoints: {
+          authorization: 'https://staging.worldcubeassociation.org/oauth/authorize',
+          token: 'http://localhost:4200/api/auth/login',
+          userInfo: 'http://localhost:4200/api/auth/me',
+        },
+        token: {
+          property: 'accessToken',
+          prefix: '_wca',
+          type: 'Bearer',
+          maxAge: 60 * 60 * 24 * 14
+        },
+
+        responseType: 'code',
+        clientId: 'v71v9h9RJ6SmAIlOpHhCwvh3xQr1gmCQ48oM7Szzvyo',
+        scope: ['public'],
+        state: 'UNIQUE_AND_NON_GUESSABLE',
+        codeChallengeMethod: '',
+        responseMode: '',
+        acrValues: '',
+        autoLogout: true
+      },
+    }
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -165,7 +160,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    filenames:{
+    filenames: {
       app: ({ isDev, isModern }) => isDev ? `[name]${isModern ? '.modern' : ''}.js` : `[id].[contenthash:10]${isModern ? '.modern' : ''}.js`,
       chunk: ({ isDev, isModern }) => isDev ? `[name]${isModern ? '.modern' : ''}.js` : `[id].[contenthash:10]${isModern ? '.modern' : ''}.js`,
       manifest: ({ isDev }) => isDev ? '[name].json' : '[id].[contenthash:10].json',
