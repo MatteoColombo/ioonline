@@ -18,6 +18,9 @@
         "channel": "gmhikaru",
         "title": "Programma della diretta",
         "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch</a>. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
+        "extra": [
+            "Il programma delle interviste e della Serata Community sarà presentato nei prossimi giorni!"
+        ],
         "descextra": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su Twitch!",
         "days": [
             {
@@ -25,32 +28,32 @@
                 "schedule": [
                     {
                         "hour": "14:00",
-                        "activity": "Discord",
+                        "activity": "Stanze Discord",
                         "icon": "mdi-discord",
                         "color": "#8A9CFE"
                     },
                     {
                         "hour": "15:00",
-                        "activity": "Attività 1",
+                        "activity": "Interviste",
                         "icon": "mdi-microphone",
                         "color": "red"
                     },
                     {
                         "hour": "16:00",
-                        "activity": "Attività 2",
-                        "icon": "mdi-puzzle",
+                        "activity": "Interviste",
+                        "icon": "mdi-microphone",
                         "color": "orange"
                     },
                     {
                         "hour": "17:00",
-                        "activity": "Discord",
+                        "activity": "Stanze Discord",
                         "icon": "mdi-discord",
                         "color": "#8A9CFE"
                     },
                     {
                         "hour": "18:00",
-                        "activity": "Chi vuol essere milionario?",
-                        "icon": "mdi-chess-king",
+                        "activity": "Chi vuol essere Milionario?",
+                        "icon": "mdi-brain",
                         "color": "primary"
                     },
                     {
@@ -61,8 +64,8 @@
                     },
                     {
                         "hour": "21:00",
-                        "activity": "Qualcosa insieme?",
-                        "icon": "mdi-brain",
+                        "activity": "Serata Community",
+                        "icon": "mdi-chess-king",
                         "color": "blue"
                     }
                 ]
@@ -71,22 +74,34 @@
                 "day": "Domenica 14 Marzo",
                 "schedule": [
                     {
+                        "hour": "14:00",
+                        "activity": "Stanze Discord",
+                        "icon": "mdi-discord",
+                        "color": "#8A9CFE"
+                    },
+                    {
+                        "hour": "14:30",
+                        "activity": "Finale Skewb",
+                        "icon": "cubing-icon event-skewb",
+                        "color": "red"
+                    },
+                    {
                         "hour": "15:00",
-                        "activity": "Finale Clock",
-                        "icon": "cubing-icon event-clock",
-                        "color": "primary"
+                        "activity": "Finale Square-1",
+                        "icon": "cubing-icon event-sq1",
+                        "color": "secondary"
                     },
                     {
                         "hour": "15:30",
                         "activity": "Finale 4x4x4",
                         "icon": "cubing-icon event-444",
-                        "color": "secondary"
+                        "color": "purple"
                     },
                     {
                         "hour": "16:00",
                         "activity": "Finale 3BLD",
                         "icon": "cubing-icon event-333bf",
-                        "color": "red"
+                        "color": "secondary"
                     },
                     {
                         "hour": "16:30",
@@ -102,21 +117,21 @@
                     },
                     {
                         "hour": "17:30",
-                        "activity": "Finale Square-1",
-                        "icon": "cubing-icon event-sq1",
-                        "color": "secondary"
+                        "activity": "Finale Clock",
+                        "icon": "cubing-icon event-clock",
+                        "color": "#8A9CFE"
                     },
                     {
                         "hour": "18:00",
-                        "activity": "Finale 3x3x3",
-                        "icon": "cubing-icon event-333",
-                        "color": "primary"
+                        "activity": "Premiazioni vincitori Quiz",
+                        "icon": "mdi-trophy",
+                        "color": "amber"
                     },
                     {
                         "hour": "19:00",
-                        "activity": "Premiazioni",
-                        "icon": "mdi-trophy",
-                        "color": "amber"
+                        "activity": "Finale 3x3x3",
+                        "icon": "cubing-icon event-333",
+                        "color": "primary"
                     }
                 ]
             }
@@ -216,7 +231,7 @@
     },
     "info": {
         "title": "Informazioni",
-        "desc":"L'Italian Open Online 2021 si svolgerà il 13 e 14 Marzo 2021!",
+        "desc": "L'Italian Open Online 2021 si svolgerà il 13 e 14 Marzo 2021!",
         "intro": {
             "title": "Format competizione",
             "regtitle": "Registrazioni",
@@ -320,7 +335,7 @@
     },
     "register": {
         "title": "Registrazioni",
-        "desc":"Le registrazioni apriranno il 28 Febbraio e chiuderanno l'11 Marzo 2021",
+        "desc": "Le registrazioni apriranno il 28 Febbraio e chiuderanno l'11 Marzo 2021",
         "openin": "Le iscrizioni aprono tra",
         "days": "giorni",
         "hours": "ore",

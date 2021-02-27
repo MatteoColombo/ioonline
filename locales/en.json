@@ -18,39 +18,43 @@
         "channel": "gmhikaru",
         "title": "Livestream Schedule",
         "desc": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch channel</a>. Fast solves, games, interviews and much more!",
+        "extra": [
+            "The program of the interviews and the Community Evening will be presented in the coming days!",
+            "DISCLAIMER: The live stream will be in Italian"
+        ],
         "descextra": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's Twitch channel!",
         "days": [
             {
-                "day": "Saturday, March 13th",
+                "day": "Sabato 13 Marzo",
                 "schedule": [
                     {
                         "hour": "14:00",
-                        "activity": "Discord",
+                        "activity": "Discord voice channels",
                         "icon": "mdi-discord",
                         "color": "#8A9CFE"
                     },
                     {
                         "hour": "15:00",
-                        "activity": "Activity #1",
+                        "activity": "Interviews",
                         "icon": "mdi-microphone",
                         "color": "red"
                     },
                     {
                         "hour": "16:00",
-                        "activity": "Activity #2",
-                        "icon": "mdi-puzzle",
+                        "activity": "Interviews",
+                        "icon": "mdi-microphone",
                         "color": "orange"
                     },
                     {
                         "hour": "17:00",
-                        "activity": "Discord",
+                        "activity": "Discord voice channels",
                         "icon": "mdi-discord",
                         "color": "#8A9CFE"
                     },
                     {
                         "hour": "18:00",
-                        "activity": "Who wants to be a millionaire?",
-                        "icon": "mdi-chess-king",
+                        "activity": "Who wants to Be a Millionaire?",
+                        "icon": "mdi-brain",
                         "color": "primary"
                     },
                     {
@@ -61,62 +65,74 @@
                     },
                     {
                         "hour": "21:00",
-                        "activity": "Something together??",
-                        "icon": "mdi-brain",
+                        "activity": "Community night",
+                        "icon": "mdi-chess-king",
                         "color": "blue"
                     }
                 ]
             },
             {
-                "day": "Sunday, March 14th",
+                "day": "Domenica 14 Marzo",
                 "schedule": [
                     {
-                        "hour": "15:00",
-                        "activity": "Clock Final",
-                        "icon": "cubing-icon event-clock",
-                        "color": "primary"
+                        "hour": "14:00",
+                        "activity": "Discord voice channels",
+                        "icon": "mdi-discord",
+                        "color": "#8A9CFE"
                     },
                     {
-                        "hour": "15:30",
-                        "activity": "4x4x4 Final",
-                        "icon": "cubing-icon event-444",
-                        "color": "secondary"
-                    },
-                    {
-                        "hour": "16:00",
-                        "activity": "3BLD Final",
-                        "icon": "cubing-icon event-333bf",
+                        "hour": "14:30",
+                        "activity": "Skewb final",
+                        "icon": "cubing-icon event-skewb",
                         "color": "red"
                     },
                     {
+                        "hour": "15:00",
+                        "activity": "Square-1 final",
+                        "icon": "cubing-icon event-sq1",
+                        "color": "secondary"
+                    },
+                    {
+                        "hour": "15:30",
+                        "activity": "4x4x4",
+                        "icon": "cubing-icon event-444",
+                        "color": "purple"
+                    },
+                    {
+                        "hour": "16:00",
+                        "activity": "3BLD final",
+                        "icon": "cubing-icon event-333bf",
+                        "color": "secondary"
+                    },
+                    {
                         "hour": "16:30",
-                        "activity": "Pyraminx Final",
+                        "activity": "Pyraminx final",
                         "icon": "cubing-icon event-pyram",
                         "color": "purple"
                     },
                     {
                         "hour": "17:00",
-                        "activity": "2x2x2 Final",
+                        "activity": "2x2x2 final",
                         "icon": "cubing-icon event-222",
                         "color": "red"
                     },
                     {
                         "hour": "17:30",
-                        "activity": "Square-1 Final",
-                        "icon": "cubing-icon event-sq1",
-                        "color": "secondary"
+                        "activity": "Clock final",
+                        "icon": "cubing-icon event-clock",
+                        "color": "#8A9CFE"
                     },
                     {
                         "hour": "18:00",
-                        "activity": "3x3x3 Final",
-                        "icon": "cubing-icon event-333",
-                        "color": "primary"
+                        "activity": "Awarding of quiz winners",
+                        "icon": "mdi-trophy",
+                        "color": "amber"
                     },
                     {
                         "hour": "19:00",
-                        "activity": "Awards",
-                        "icon": "mdi-trophy",
-                        "color": "amber"
+                        "activity": "3x3x3 final",
+                        "icon": "cubing-icon event-333",
+                        "color": "primary"
                     }
                 ]
             }
@@ -216,7 +232,7 @@
     },
     "info": {
         "title": "General Info",
-        "desc":"The Italian Open Online 2021 will take place on March 13th and 14th!",
+        "desc": "The Italian Open Online 2021 will take place on March 13th and 14th!",
         "intro": {
             "title": "Competition Format",
             "regtitle": "Registration",
@@ -320,7 +336,7 @@
     },
     "register": {
         "title": "Registration",
-        "desc":"Registrations will open on the 28th of February",
+        "desc": "Registrations will open on the 28th of February",
         "openin": "Registration opens in",
         "days": "days",
         "hours": "hours",

@@ -3,7 +3,8 @@
     <v-col cols="12" sm="10" xl="8">
       <div v-if="isPwa()" align="center">
         <v-btn href="https://www.twitch.tv/cubingitaly" color="purple" x-large
-          ><v-icon>mdi-twitch</v-icon> <span style="margin:20px">Twitch</span></v-btn
+          ><v-icon>mdi-twitch</v-icon>
+          <span style="margin: 20px">Twitch</span></v-btn
         >
       </div>
       <div class="container" v-else>
@@ -21,7 +22,7 @@
         <p class="text-center" v-html="$t('live.desc')"></p>
       </template>
 
-      <!-- <v-row justify="center" align="start">
+      <v-row justify="center" align="start" style="margin-top:20px; margin-bottom:20px">
         <v-col
           cols="12"
           md="6"
@@ -46,7 +47,11 @@
             </v-timeline-item>
           </v-timeline>
         </v-col>
-      </v-row> -->
+      </v-row>
+
+      <p class="text-justify" v-for="item in $t('live.extra')" :key="item">
+        * {{ item }}
+      </p>
     </v-col>
   </v-row>
 </template>
@@ -129,5 +134,11 @@ a {
   right: 0;
   width: 100%;
   height: 100%;
+}
+</style>
+
+<style scoped>
+p{
+  margin-bottom: 0;
 }
 </style>
