@@ -8,46 +8,46 @@
     </p>
 
     <v-row align="center" spacing="10px">
-      <v-col xs="12">
-        <v-btn-toggle v-model="toggle_exclusive" multiple color="primary">
-          <v-btn value="333">
-            <v-icon>cubing-icon event-333</v-icon>
-          </v-btn>
-          <v-btn value="222">
-            <v-icon>cubing-icon event-222</v-icon>
-          </v-btn>
-          <v-btn value="444">
-            <v-icon>cubing-icon event-444</v-icon>
-          </v-btn>
-        </v-btn-toggle>
+      <v-col sm="12" align="center">
+        <v-row align="center">
+          <v-btn-toggle v-model="toggle_exclusive" multiple color="primary">
+            <v-btn value="333">
+              <v-icon>cubing-icon event-333</v-icon>
+            </v-btn>
+            <v-btn value="222">
+              <v-icon>cubing-icon event-222</v-icon>
+            </v-btn>
+            <v-btn value="444">
+              <v-icon>cubing-icon event-444</v-icon>
+            </v-btn>
+          </v-btn-toggle>
+
+          <v-btn-toggle v-model="toggle_exclusive" multiple color="primary">
+            <v-btn value="333bf">
+              <v-icon>cubing-icon event-333bf</v-icon>
+            </v-btn>
+            <v-btn value="333fm">
+              <v-icon>cubing-icon event-333fm</v-icon>
+            </v-btn>
+            <v-btn value="sq1">
+              <v-icon>cubing-icon event-sq1</v-icon>
+            </v-btn>
+          </v-btn-toggle>
+
+          <v-btn-toggle v-model="toggle_exclusive" multiple color="primary">
+            <v-btn value="clock">
+              <v-icon>cubing-icon event-clock</v-icon>
+            </v-btn>
+            <v-btn value="pyram">
+              <v-icon>cubing-icon event-pyram</v-icon>
+            </v-btn>
+            <v-btn value="skewb">
+              <v-icon>cubing-icon event-skewb</v-icon>
+            </v-btn>
+          </v-btn-toggle>
+        </v-row>
       </v-col>
 
-      <v-col xs="12">
-        <v-btn-toggle v-model="toggle_exclusive" multiple color="primary">
-          <v-btn value="333">
-            <v-icon>cubing-icon event-333</v-icon>
-          </v-btn>
-          <v-btn value="222">
-            <v-icon>cubing-icon event-222</v-icon>
-          </v-btn>
-          <v-btn value="444">
-            <v-icon>cubing-icon event-444</v-icon>
-          </v-btn>
-        </v-btn-toggle>
-      </v-col>
-      <v-col xs="12">
-        <v-btn-toggle v-model="toggle_exclusive" multiple color="primary">
-          <v-btn value="333">
-            <v-icon>cubing-icon event-333</v-icon>
-          </v-btn>
-          <v-btn value="222">
-            <v-icon>cubing-icon event-222</v-icon>
-          </v-btn>
-          <v-btn value="444">
-            <v-icon>cubing-icon event-444</v-icon>
-          </v-btn>
-        </v-btn-toggle>
-      </v-col>
       <v-col xs="12"> <v-btn color="primary" large>Invia</v-btn></v-col>
     </v-row>
   </div>
