@@ -4,16 +4,17 @@
       <template>
         <h1 class="text-center">{{ $t("register.title") }}</h1>
 
-        <RegForm v-if="$auth.loggedIn && isRegistrationOpened"  :regClosed="isRegistrationClosed"/>
+        <RegForm
+          v-if="$auth.loggedIn && isRegistrationOpened"
+          :regClosed="isRegistrationClosed"
+        />
 
         <HowToRegister />
 
         <div v-if="!isRegistrationOpened && !isRegistrationClosed">
-          
           <RegSchedule :startAt="0" />
           <h2 class="text-center timer-desc">{{ $t("register.openin") }}</h2>
           <RegTimer :dateInMilliseconds="registrationOpens / 1000" />
-
         </div>
         <div v-else>
           <h2 class="text-center timer-desc">{{ $t("register.closein") }}</h2>
@@ -29,7 +30,7 @@ export default {
   mounted() {
     window.setInterval(() => {
       this.isRegistrationOpened = this.checkIsRegistrationOpened();
-       this.isRegistrationClosed = this.checkIsRegistrationClosed();
+      this.isRegistrationClosed = this.checkIsRegistrationClosed();
     }, 1000);
   },
   head() {
@@ -68,21 +69,21 @@ export default {
     return {
       isRegistrationOpened: false,
       isRegistrationClosed: true,
-      registrationOpens: 1614443640188,
-      // registrationCloses: 1614444936327,
+      registrationOpens: 1614460800000,
+      registrationCloses: 1614462600000,
       // registrationOpens: 1614517200000,
-      registrationCloses: 1615503600000,
+      //registrationCloses: 1615503600000,
     };
   },
   methods: {
     checkIsRegistrationOpened() {
       var now = Date.now();
-      return now >= this.registrationOpens
+      return now >= this.registrationOpens;
     },
     checkIsRegistrationClosed() {
       var now = Date.now();
-      return now >= this.registrationCloses
-    }
+      return now >= this.registrationCloses;
+    },
   },
 };
 </script>
