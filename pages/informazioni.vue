@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" xl="8">
       <template>
-        <h1 id="schedule" class="text-center">{{ $t("info.title") }}</h1>
+        <h1 class="text-center">{{ $t("info.title") }}</h1>
 
         <h3>{{ $t("info.intro.regtitle") }}</h3>
         <div>

@@ -25,7 +25,7 @@
         "descextra": "The Italian Open Online 2021 will be entirely streamed on Cubing Italy's Twitch channel!",
         "days": [
             {
-                "day": "Sabato 13 Marzo",
+                "day": "Saturday, March 13th",
                 "schedule": [
                     {
                         "hour": "14:00",
@@ -72,7 +72,7 @@
                 ]
             },
             {
-                "day": "Domenica 14 Marzo",
+                "day": "Sunday, March 14th",
                 "schedule": [
                     {
                         "hour": "14:00",
@@ -82,54 +82,48 @@
                     },
                     {
                         "hour": "14:30",
-                        "activity": "Skewb final",
-                        "icon": "cubing-icon event-skewb",
-                        "color": "red"
-                    },
-                    {
-                        "hour": "15:00",
                         "activity": "Square-1 final",
                         "icon": "cubing-icon event-sq1",
                         "color": "secondary"
                     },
                     {
-                        "hour": "15:30",
+                        "hour": "15:00",
                         "activity": "4x4x4",
                         "icon": "cubing-icon event-444",
                         "color": "purple"
                     },
                     {
-                        "hour": "16:00",
+                        "hour": "15:30",
                         "activity": "3BLD final",
                         "icon": "cubing-icon event-333bf",
                         "color": "secondary"
                     },
                     {
-                        "hour": "16:30",
+                        "hour": "16:00",
                         "activity": "Pyraminx final",
                         "icon": "cubing-icon event-pyram",
                         "color": "purple"
                     },
                     {
-                        "hour": "17:00",
+                        "hour": "16:30",
                         "activity": "2x2x2 final",
                         "icon": "cubing-icon event-222",
                         "color": "red"
                     },
                     {
-                        "hour": "17:30",
+                        "hour": "17:00",
                         "activity": "Clock final",
                         "icon": "cubing-icon event-clock",
                         "color": "#8A9CFE"
                     },
                     {
-                        "hour": "18:00",
+                        "hour": "17:30",
                         "activity": "Awarding of quiz winners",
                         "icon": "mdi-trophy",
                         "color": "amber"
                     },
                     {
-                        "hour": "19:00",
+                        "hour": "18:00",
                         "activity": "3x3x3 final",
                         "icon": "cubing-icon event-333",
                         "color": "primary"
@@ -338,19 +332,20 @@
         "title": "Registration",
         "desc": "Registrations will open on the 28th of February",
         "openin": "Registration opens in",
+        "closein": "Registration closes in",
         "days": "days",
         "hours": "hours",
         "minutes": "minutes",
         "seconds": "seconds",
         "steps": [
             {
-                "date": "February 28th",
+                "date": "February 28th, 14:00 (GMT+1)",
                 "event": "Registration opens",
                 "color": "primary",
                 "icon": "mdi-account-plus"
             },
             {
-                "date": "March 11th",
+                "date": "March 11th , 23:59 (GMT+1)",
                 "event": "Registration closes",
                 "color": "secondary",
                 "icon": "mdi-lock"

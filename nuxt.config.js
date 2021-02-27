@@ -59,8 +59,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/proxy',
-    '@nuxtjs/auth-next',
+    // '@nuxtjs/proxy',
+    // '@nuxtjs/auth-next',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     'nuxt-i18n',
@@ -115,33 +115,33 @@ export default {
     }
   },
 
-  auth: {
-    strategies: {
-      social: {
-        scheme: 'oauth2',
-        endpoints: {
-          authorization: 'https://staging.worldcubeassociation.org/oauth/authorize',
-          token: '/api/auth/login',
-          userInfo: '/api/auth/me',
-        },
-        token: {
-          property: 'accessToken',
-          prefix: '_wca',
-          type: 'Bearer',
-          maxAge: 60 * 60 * 24 * 14
-        },
-        logoutRedirectUri: "/",
-        responseType: 'code',
-        clientId: 'v71v9h9RJ6SmAIlOpHhCwvh3xQr1gmCQ48oM7Szzvyo',
-        scope: ['public'],
-        state: 'UNIQUE_AND_NON_GUESSABLE',
-        codeChallengeMethod: '',
-        responseMode: '',
-        acrValues: '',
-        autoLogout: true
-      },
-    }
-  },
+  // auth: {
+  //   strategies: {
+  //     social: {
+  //       scheme: 'oauth2',
+  //       endpoints: {
+  //         authorization: 'https://staging.worldcubeassociation.org/oauth/authorize',
+  //         token: '/api/auth/login',
+  //         userInfo: '/api/auth/me',
+  //       },
+  //       token: {
+  //         property: 'accessToken',
+  //         prefix: '_wca',
+  //         type: 'Bearer',
+  //         maxAge: 60 * 60 * 24 * 14
+  //       },
+  //       logoutRedirectUri: "/",
+  //       responseType: 'code',
+  //       clientId: 'v71v9h9RJ6SmAIlOpHhCwvh3xQr1gmCQ48oM7Szzvyo',
+  //       scope: ['public'],
+  //       state: 'UNIQUE_AND_NON_GUESSABLE',
+  //       codeChallengeMethod: '',
+  //       responseMode: '',
+  //       acrValues: '',
+  //       autoLogout: true
+  //     },
+  //   }
+  // },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

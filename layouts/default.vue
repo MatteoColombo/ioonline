@@ -7,7 +7,7 @@
       app
       :permanent="!$vuetify.breakpoint.xsOnly"
     >
-      <v-img class="ma-4 mr-8"  aspect-ratio="3.1531" src="/logo-xl.svg"></v-img>
+      <v-img class="ma-4 mr-8" aspect-ratio="3.1531" src="/logo-xl.svg"></v-img>
 
       <v-divider></v-divider>
 
@@ -58,7 +58,7 @@
       </v-list>
       <v-divider></v-divider>
 
-      <v-list>
+      <!-- <v-list>
         <v-menu bottom offset-y v-if="$auth.loggedIn">
           <template v-slot:activator="{ on, attrs }">
             <v-list-item v-bind="attrs" v-on="on" exact>
@@ -91,7 +91,7 @@
             <v-list-item-title v-text="$t('generic.login')" />
           </v-list-item-content>
         </v-list-item>
-      </v-list>
+      </v-list> -->
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-sm-none" />
@@ -175,11 +175,11 @@ export default {
   },
   methods: {
     login() {
-       this.$auth.loginWith('social')
+      this.$auth.loginWith("social");
     },
-    logout(){
-      this.$auth.logout()
-    }
+    logout() {
+      this.$auth.logout();
+    },
   },
 };
 </script>

@@ -1,8 +1,8 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="10" xl="8">
+    <v-col cols="12" sm="10" xl="8" justify="center" align="center">
       <template>
-        <v-img aspect-ratio="3.0788" src="/wip.svg"></v-img>
+        <v-img width="300px" src="/WCAlogo_notext.svg"></v-img>
       </template>
     </v-col>
   </v-row>

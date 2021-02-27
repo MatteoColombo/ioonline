@@ -15,7 +15,7 @@
         "language": "Traduzione"
     },
     "live": {
-        "channel": "gmhikaru",
+        "channel": "cubingitaly",
         "title": "Programma della diretta",
         "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch</a>. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
         "extra": [
@@ -81,54 +81,48 @@
                     },
                     {
                         "hour": "14:30",
-                        "activity": "Finale Skewb",
-                        "icon": "cubing-icon event-skewb",
-                        "color": "red"
-                    },
-                    {
-                        "hour": "15:00",
                         "activity": "Finale Square-1",
                         "icon": "cubing-icon event-sq1",
                         "color": "secondary"
                     },
                     {
-                        "hour": "15:30",
+                        "hour": "15:00",
                         "activity": "Finale 4x4x4",
                         "icon": "cubing-icon event-444",
                         "color": "purple"
                     },
                     {
-                        "hour": "16:00",
+                        "hour": "15:30",
                         "activity": "Finale 3BLD",
                         "icon": "cubing-icon event-333bf",
                         "color": "secondary"
                     },
                     {
-                        "hour": "16:30",
+                        "hour": "16:00",
                         "activity": "Finale Pyraminx",
                         "icon": "cubing-icon event-pyram",
                         "color": "purple"
                     },
                     {
-                        "hour": "17:00",
+                        "hour": "16:30",
                         "activity": "Finale 2x2x2",
                         "icon": "cubing-icon event-222",
                         "color": "red"
                     },
                     {
-                        "hour": "17:30",
+                        "hour": "17:00",
                         "activity": "Finale Clock",
                         "icon": "cubing-icon event-clock",
                         "color": "#8A9CFE"
                     },
                     {
-                        "hour": "18:00",
+                        "hour": "17:30",
                         "activity": "Premiazioni vincitori Quiz",
                         "icon": "mdi-trophy",
                         "color": "amber"
                     },
                     {
-                        "hour": "19:00",
+                        "hour": "18:00",
                         "activity": "Finale 3x3x3",
                         "icon": "cubing-icon event-333",
                         "color": "primary"
@@ -336,24 +330,30 @@
     "register": {
         "title": "Registrazioni",
         "desc": "Le registrazioni apriranno il 28 Febbraio e chiuderanno l'11 Marzo 2021",
-        "openin": "Le iscrizioni aprono tra",
+        "openin": "Le registrazioni aprono tra",
+        "closein": "Le registrazioni chiudono tra",
         "days": "giorni",
         "hours": "ore",
         "minutes": "minuti",
         "seconds": "secondi",
         "steps": [
             {
-                "date": "28 Febbraio",
+                "date": "28 Febbraio, 14:00 (GMT+1)",
                 "event": "Apertura iscrizioni",
                 "color": "primary",
                 "icon": "mdi-account-plus"
             },
             {
-                "date": "11 Marzo",
+                "date": "11 Marzo, 23:59 (GMT+1)",
                 "event": "Chiusura iscrizioni",
                 "color": "secondary",
                 "icon": "mdi-lock"
             }
+        ],
+        "instructions": [
+            "Vai sul sito WCA e crea un nuovo profilo (<a href='https://www.cubingitaly.org/tutorial/creare-un-account-wca2/1' target='_blank'></a>), Se ne hai già uno puoi saltare questo passaggio.",
+            "Effettua l'accesso su questo sito utilizzando il tuo account WCA (eventualmente appena creato)",
+            ""
         ]
     },
     "compete": {
