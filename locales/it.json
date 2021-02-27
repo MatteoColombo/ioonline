@@ -12,7 +12,8 @@
         "results": "Classifiche",
         "live": "Diretta streaming",
         "faq": "Domande frequenti",
-        "language": "Traduzione"
+        "language": "Traduzione",
+        "competitors":"Iscritti"
     },
     "live": {
         "channel": "cubingitaly",
@@ -134,7 +135,7 @@
     "faq": {
         "title": "Domande Frequenti",
         "desc": "Ecco alcune delle domande più frequenti!",
-        "questions": "Altre domande? Non esitare a contattarci!",
+        "questions": "Domande? Non esitare a contattarci!",
         "entries": [
             {
                 "question": "Come faccio ad iscrivermi?",
@@ -328,7 +329,7 @@
         }
     },
     "register": {
-        "title": "Registrazioni",
+        "title": "Registrazione",
         "desc": "Le registrazioni apriranno il 28 Febbraio e chiuderanno l'11 Marzo 2021",
         "openin": "Le registrazioni aprono tra",
         "closein": "Le registrazioni chiudono tra",
@@ -350,10 +351,26 @@
                 "icon": "mdi-lock"
             }
         ],
-        "instructions": [
-            "Vai sul sito WCA e crea un nuovo profilo (<a href='https://www.cubingitaly.org/tutorial/creare-un-account-wca2/1' target='_blank'></a>), Se ne hai già uno puoi saltare questo passaggio.",
-            "Effettua l'accesso su questo sito utilizzando il tuo account WCA (eventualmente appena creato)",
-            ""
+        "regformopen": {
+            "title": "Seleziona gli eventi a cui vuoi registrarti",
+            "desc": " Puoi modificare la tua registrazione fino alle 23:59 (GMT+1) dell'11 Marzo"
+        },
+        "regformclosed": {
+            "title": "Ti sei registrato per i seguenti eventi",
+            "desc": "Troverai gli scramble nella pagina per inviare i risultati"
+        },
+        "register": "Registrami",
+        "update": "Aggiorna",
+        "delete": "Cancella",
+        "close": "Chiudi",
+        "regupdated": "Registrazione aggiornata",
+        "regdone": "Registrazione effettuata",
+        "regdel": "Registrazione cancellata",
+        "howtoregister": "Come mi registro?",
+        "regsteps": [
+            "Vai sul sito WCA e crea un nuovo profilo (<a href='https://www.cubingitaly.org/tutorial/creare-un-account-wca2/1' target=_blank>tutorial di Cubing Italy</a>). Se ne hai già uno puoi saltare questo passaggio.",
+            "Effettua l'accesso su questo sito utilizzando il tuo account WCA (eventualmente appena creato).",
+            "Su questa pagina scegli gli eventi a cui intendi partecipare."
         ]
     },
     "compete": {
@@ -367,6 +384,10 @@
     "standings": {
         "title": "Classifiche",
         "desc": ""
+    },
+    "competitors": {
+        "title": "Iscritti",
+        "desc": "L'elenco degli iscritti all'Italian Open Online 2021!"
     },
     "home": {
         "title": "Home",

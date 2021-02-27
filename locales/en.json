@@ -12,7 +12,8 @@
         "results": "Rankings",
         "live": "Livestream",
         "faq": "FAQ",
-        "language": "Translation"
+        "language": "Translation",
+        "competitors": "Competitors"
     },
     "live": {
         "channel": "gmhikaru",
@@ -350,6 +351,27 @@
                 "color": "secondary",
                 "icon": "mdi-lock"
             }
+        ],
+        "regformopen": {
+            "title": "Choose the events you would like to register for.",
+            "desc": "You can edit your registration until March 11th, 23:59 (GMT+1)."
+        },
+        "regformclosed": {
+            "title": "These are the events you registered for",
+            "desc": "You will find the scrambles in the Results page"
+        },
+        "register": "Register",
+        "update": "Update",
+        "delete": "Unregister",
+        "close": "Close",
+        "regupdated": "Registration updated",
+        "regdone": "Registration confirmed",
+        "regdel": "Registrazion canceled",
+        "howtoregister": "How do I register?",
+        "regsteps": [
+            "Visit the WCA website and create e new account. If you already have one you can skip this step.",
+            "Log in this site through your WCA account.",
+            "Choose the events you wish to compete in on this page."
         ]
     },
     "compete": {
@@ -363,6 +385,10 @@
     "standings": {
         "title": "Rankings",
         "desc": ""
+    },
+    "competitors": {
+        "title": "Competitors",
+        "desc": "The list of competitors registered for the Italian Open Online 2021!"
     },
     "home": {
         "title": "Home",

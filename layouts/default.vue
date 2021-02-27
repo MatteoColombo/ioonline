@@ -58,7 +58,7 @@
       </v-list>
       <v-divider></v-divider>
 
-      <!-- <v-list>
+      <v-list>
         <v-menu bottom offset-y v-if="$auth.loggedIn">
           <template v-slot:activator="{ on, attrs }">
             <v-list-item v-bind="attrs" v-on="on" exact>
@@ -91,7 +91,7 @@
             <v-list-item-title v-text="$t('generic.login')" />
           </v-list-item-content>
         </v-list-item>
-      </v-list> -->
+      </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-sm-none" />
@@ -110,6 +110,7 @@
     <v-main>
       <v-container>
         <nuxt />
+        <Contact />
       </v-container>
     </v-main>
     <!-- <v-footer>
@@ -139,6 +140,11 @@ export default {
           icon: "mdi-account-plus",
           title: "navbar.register",
           to: "/registrazione",
+        },
+        {
+          icon: "mdi-clipboard-list",
+          title: "navbar.competitors",
+          to: "/iscritti",
         },
         // {
         //   icon: "mdi-cube",
@@ -180,6 +186,16 @@ export default {
     logout() {
       this.$auth.logout();
     },
+  },
+  async mounted() {
+    const workbox = await window.$workbox;
+    if (workbox) {
+      workbox.addEventListener("installed", (event) => {
+        if (event.isUpdate) {
+          window.location.reload();
+        }
+      });
+    }
   },
 };
 </script>

@@ -50,7 +50,7 @@ export default {
   },
   computed: {
     seconds() {
-      return (this.dateInMilliseconds - this.now) % 60;
+      return Math.floor((this.dateInMilliseconds - this.now) % 60);
     },
     minutes() {
       return Math.floor((this.dateInMilliseconds - this.now) / 60) % 60;
