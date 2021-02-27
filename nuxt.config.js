@@ -89,10 +89,15 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:4200'
+    proxy:true, 
+  },
+
+  proxy:{
+    '/api/':'http://localhost:4200'
   },
 
 
+ 
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -116,8 +121,8 @@ export default {
         scheme: 'oauth2',
         endpoints: {
           authorization: 'https://staging.worldcubeassociation.org/oauth/authorize',
-          token: 'http://localhost:4200/api/auth/login',
-          userInfo: 'http://localhost:4200/api/auth/me',
+          token: '/api/auth/login',
+          userInfo: '/api/auth/me',
         },
         token: {
           property: 'accessToken',
@@ -125,7 +130,7 @@ export default {
           type: 'Bearer',
           maxAge: 60 * 60 * 24 * 14
         },
-
+        logoutRedirectUri: "/",
         responseType: 'code',
         clientId: 'v71v9h9RJ6SmAIlOpHhCwvh3xQr1gmCQ48oM7Szzvyo',
         scope: ['public'],
