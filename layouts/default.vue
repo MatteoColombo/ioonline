@@ -68,30 +68,22 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item v-else>
-          <v-menu bottom offset-y>
-            <template v-slot:activator="{ on, attrs }">
-              <v-list-item v-bind="attrs" v-on="on" exact>
-                <v-list-item-action>
-                  <v-icon>mdi-account-circle</v-icon>
-                </v-list-item-action>
-                <v-list-item-content>
-                  <v-list-item-title v-text="$auth.user.name" />
-                </v-list-item-content>
-              </v-list-item>
-            </template>
+        <v-list-item  v-if="$auth.loggedIn">
+          <v-list-item-action>
+            <v-icon>mdi-account-circle</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="$auth.user.name" />
+          </v-list-item-content>
+        </v-list-item>
 
-            <v-list>
-              <v-list-item @click="logout">
-                <v-list-item-action>
-                  <v-icon>mdi-logout</v-icon>
-                </v-list-item-action>
-                <v-list-item-content>
-                  <v-list-item-title v-text="$t('generic.logout')" />
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
-          </v-menu>
+        <v-list-item @click="logout"  v-if="$auth.loggedIn">
+          <v-list-item-action>
+            <v-icon>mdi-logout</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title v-text="$t('generic.logout')" />
+          </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
