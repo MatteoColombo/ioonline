@@ -93,7 +93,7 @@ export default {
   },
 
   proxy: {
-    '/api/': 'https://iooapi.cubingitaly.org/'
+    '/api/': 'https://briosheje.xyz/ioonline/'
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -117,7 +117,7 @@ export default {
       social: {
         scheme: 'oauth2',
         endpoints: {
-          authorization: 'https://worldcubeassociation.org/oauth/authorize',
+          authorization: 'https://staging.worldcubeassociation.org/oauth/authorize',
           token: '/api/auth/login',
           userInfo: '/api/auth/me'
         },
@@ -132,7 +132,7 @@ export default {
         },
         logoutRedirectUri: "/",
         responseType: 'code',
-        clientId: 'LCEU6ovCT93rjyn5HZeRyrP7jbn1Zs4sVCKz5_AwRSI',
+        clientId: 'v71v9h9RJ6SmAIlOpHhCwvh3xQr1gmCQ48oM7Szzvyo',
         scope: ['public'],
         state: 'UNIQUE_AND_NON_GUESSABLE',
         codeChallengeMethod: '',
