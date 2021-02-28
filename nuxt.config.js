@@ -93,7 +93,7 @@ export default {
   },
 
   proxy: {
-    '/api/': 'https://iooapi.cubingitaly.org'
+    '/api/': 'http://localhost:3500/'
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -119,8 +119,7 @@ export default {
         endpoints: {
           authorization: 'https://worldcubeassociation.org/oauth/authorize',
           token: '/api/auth/login',
-          userInfo: { url: '/api/auth/me', method: 'get', propertyName: false },
-          user: { url: '/api/auth/me', method: 'get', propertyName: false }
+          userInfo: '/api/auth/me'
         },
         token: {
           property: 'accessToken',
