@@ -69,8 +69,8 @@ export default {
     return {
       isRegistrationOpened: false,
       isRegistrationClosed: true,
-      registrationOpens: 1614460800000,
-      registrationCloses: 1614462600000,
+      registrationOpens: 1614507600000,
+      registrationCloses: 1614508200000,
       // registrationOpens: 1614517200000,
       //registrationCloses: 1615503600000,
     };
