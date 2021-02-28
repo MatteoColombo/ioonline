@@ -87,13 +87,18 @@ export default {
     }
   },
 
+  env: {
+    registrationOpens: process.env.REG_OPEN,
+    registrationCloses: process.env.REG_CLOSE,
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     proxy: true,
   },
 
   proxy: {
-    '/api/': 'https://iooapi.cubingitaly.org/'
+    '/api/': process.env.PROXY_URL
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -111,13 +116,14 @@ export default {
       version: "10"
     }
   },
+  
 
   auth: {
     strategies: {
       social: {
         scheme: 'oauth2',
         endpoints: {
-          authorization: 'https://www.worldcubeassociation.org/oauth/authorize',
+          authorization: process.env.AUTH_URL,
           token: '/api/auth/login',
           userInfo: '/api/auth/me'
         },
@@ -132,7 +138,7 @@ export default {
         },
         logoutRedirectUri: "/",
         responseType: 'code',
-        clientId: 'LCEU6ovCT93rjyn5HZeRyrP7jbn1Zs4sVCKz5_AwRSI',
+        clientId: process.env.CLIENT_ID,
         scope: ['public'],
         state: 'UNIQUE_AND_NON_GUESSABLE',
         codeChallengeMethod: '',

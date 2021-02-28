@@ -79,8 +79,8 @@ export default {
     return {
       isRegistrationOpened: true,
       isRegistrationClosed: false,
-      registrationOpens: 1614517200000,
-      registrationCloses: 1615503600000,
+      registrationOpens: process.env.registrationOpens,
+      registrationCloses: process.env.registrationCloses,
     };
   },
   methods: {
