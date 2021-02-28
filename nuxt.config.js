@@ -92,7 +92,6 @@ export default {
     registrationCloses: process.env.REG_CLOSE,
   },
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     proxy: true,
   },
