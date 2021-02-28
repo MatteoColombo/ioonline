@@ -106,6 +106,7 @@ export default {
 
 <style>
 .v-card__text,
+.v-card__subtitle,
 .v-card__title {
   text-align: left;
   word-break: normal !important;

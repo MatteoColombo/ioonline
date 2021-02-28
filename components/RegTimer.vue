@@ -136,6 +136,7 @@ export default {
 
 <style>
 .v-card__text,
+.v-card__subtitle,
 .v-card__title {
   word-break: normal !important;
 }
