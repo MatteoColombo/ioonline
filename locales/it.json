@@ -369,7 +369,7 @@
         "howtoregister": "Come mi registro?",
         "regsteps": [
             "Vai sul sito WCA e crea un nuovo profilo (<a href='https://www.cubingitaly.org/tutorial/creare-un-account-wca2/1' target=_blank>tutorial di Cubing Italy</a>). Se ne hai già uno puoi saltare questo passaggio.",
-            "Effettua l'accesso su questo sito utilizzando il tuo account WCA (eventualmente appena creato).",
+            "Effettua l'accesso su questo sito utilizzando il tuo account WCA (clicca su accedi nel menu laterale).",
             "Su questa pagina scegli gli eventi a cui intendi partecipare."
         ]
     },
@@ -387,7 +387,11 @@
     },
     "competitors": {
         "title": "Iscritti",
-        "desc": "L'elenco degli iscritti all'Italian Open Online 2021!"
+        "desc": "L'elenco degli iscritti all'Italian Open Online 2021!",
+        "count":"Ci sono già ",
+        "count2":" persone registrate, cosa aspetti ad iscriverti anche tu?",
+        "name":"Nome",
+        "events":"Eventi"
     },
     "home": {
         "title": "Home",

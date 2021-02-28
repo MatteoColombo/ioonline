@@ -9,6 +9,16 @@
           :regClosed="isRegistrationClosed"
         />
 
+        <v-btn
+          v-else-if="!$auth.loggedIn"
+          @click="login"
+          color="secondary"
+          x-large
+          elevation="1"
+          ><v-img width="30px" src="/WCAlogo_notext.svg"></v-img>
+          <span style="margin: 20px">{{ $t("generic.login") }}</span></v-btn
+        >
+
         <HowToRegister />
 
         <div v-if="!isRegistrationOpened && !isRegistrationClosed">
@@ -67,8 +77,8 @@ export default {
   },
   data() {
     return {
-      isRegistrationOpened: false,
-      isRegistrationClosed: true,
+      isRegistrationOpened: true,
+      isRegistrationClosed: false,
       registrationOpens: 1614517200000,
       registrationCloses: 1615503600000,
     };
@@ -81,6 +91,9 @@ export default {
     checkIsRegistrationClosed() {
       var now = Date.now();
       return now >= this.registrationCloses;
+    },
+    login() {
+      this.$auth.loginWith("social");
     },
   },
 };

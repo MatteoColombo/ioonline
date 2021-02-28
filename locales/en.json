@@ -388,7 +388,11 @@
     },
     "competitors": {
         "title": "Competitors",
-        "desc": "The list of competitors registered for the Italian Open Online 2021!"
+        "desc": "The list of competitors registered for the Italian Open Online 2021!",
+        "count":"There are already ",
+        "count2":" people registered, what are you waiting for?",
+        "name":"Name",
+        "events":"Events"
     },
     "home": {
         "title": "Home",
