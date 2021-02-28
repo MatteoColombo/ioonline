@@ -58,8 +58,8 @@
       </v-list>
       <v-divider></v-divider>
 
-      <v-list>
-        <v-list-item @click="login" v-if="!$auth.loggedIn">
+      <v-list v-if="!$auth.loggedIn">
+        <v-list-item @click="login">
           <v-list-item-action>
             <v-icon>mdi-login</v-icon>
           </v-list-item-action>
@@ -67,8 +67,10 @@
             <v-list-item-title v-text="$t('generic.login')" />
           </v-list-item-content>
         </v-list-item>
+      </v-list>
 
-        <v-list-item  v-if="$auth.loggedIn">
+      <v-list v-if="$auth.loggedIn">
+        <v-list-item>
           <v-list-item-action>
             <v-icon>mdi-account-circle</v-icon>
           </v-list-item-action>
@@ -77,7 +79,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item @click="logout"  v-if="$auth.loggedIn">
+        <v-list-item @click="logout">
           <v-list-item-action>
             <v-icon>mdi-logout</v-icon>
           </v-list-item-action>
