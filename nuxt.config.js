@@ -108,7 +108,7 @@ export default {
       start_url: "/",
       lang: 'it',
       background_color: "#fff",
-      version: "4"
+      version: "8"
     }
   },
 
@@ -119,13 +119,17 @@ export default {
         endpoints: {
           authorization: 'https://worldcubeassociation.org/oauth/authorize',
           token: '/api/auth/login',
-          userInfo: '/api/auth/me',
+          userInfo: { url: '/api/auth/me', method: 'get', propertyName: false },
+          user: { url: '/api/auth/me', method: 'get', propertyName: false }
         },
         token: {
           property: 'accessToken',
           prefix: '_wca',
           type: 'Bearer',
           maxAge: 60 * 60 * 24 * 14
+        },
+        user: {
+          property: false
         },
         logoutRedirectUri: "/",
         responseType: 'code',
