@@ -143,16 +143,16 @@ export default {
           title: "navbar.competitors",
           to: "/iscritti",
         },
-        // {
-        //   icon: "mdi-cube",
-        //   title: "navbar.submit",
-        //   to: "/partecipa",
-        // },
-        // {
-        //   icon: "mdi-format-list-bulleted-triangle",
-        //   title: "navbar.results",
-        //   to: "/classifiche",
-        // },
+        {
+          icon: "mdi-clock-outline",
+          title: "navbar.submit",
+          to: "/partecipa",
+        },
+        {
+          icon: "mdi-format-list-bulleted-triangle",
+          title: "navbar.results",
+          to: "/classifiche",
+        },
         {
           icon: "mdi-twitch",
           title: "navbar.live",

@@ -375,7 +375,8 @@
     },
     "compete": {
         "title": "Partecipa",
-        "desc": ""
+        "desc": "",
+        "select":"Seleziona l'evento"
     },
     "login": {
         "title": "Accedi",

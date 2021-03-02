@@ -44,7 +44,7 @@
             <v-icon
               v-for="icon in events"
               :key="icon"
-              :dense="$vuetify.breakpoint.xsOnly"
+              :dense="$vuetify.breakpoint.smAndDown"
               :color="item.events.includes(icon) ? '#fff' : '#303030'"
               >cubing-icon event-{{ icon }}</v-icon
             >
