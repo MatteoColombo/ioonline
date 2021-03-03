@@ -150,12 +150,17 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: ScrambleFont;
+  src: url('/fonts/cnr.woff');
+}
+
 .v-list-item__title {
   white-space: normal;
   font-size: 20px;
   line-height: 28px;
-  word-spacing: 8px;
-  font-family: 'Code new Roman';
+  font-family: ScrambleFont;
   text-align: justify;
 }
+
 </style>
