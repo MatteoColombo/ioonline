@@ -376,7 +376,26 @@
     },
     "compete": {
         "title": "Submit your results",
-        "desc": ""
+        "desc": "",
+        "select": "Choose the event",
+        "instr":"Instructions",
+        "instructions": [
+            "Enter the times of the event in the XX:YY.ZZ format. Any error in the process will be reported.",
+            "Remember to check the DNF box (Did not finish) in the cases listed in the <a href='https://www.worldcubeassociation.org/regulations/translations/italian/' target='_blank'>WCA Regulations</a>.",
+            "If necessary, add any WCA penalties you have committed to your time before entering it. Eg.: 18.89 + 2 = 20.89.",
+            "Once you have entered all your times, the calculation of the average (if the event foresees it) will be automatic.",
+            "You can send the results in the order you prefer at any time during these dedicated slots: <ul><li>First round. Saturday: 10 am to 6 pm (GMT+1)</li><li>Finals. Sunday: from 10 am to 8 pm (GMT+1)</li></ul>",
+            "Once the results of an event have been sent, it will no longer be possible to change them. Double check before submitting!",
+            "At the end of each day of competition, we will publish the rankings in <a href='/classifiche'>this section</a>."
+        ],
+        "fmc":[],
+        "standby":"Please, stand by",
+        "scrambles":"Scrambles",
+        "extras":"Extras",
+        "submit":"Submit",
+        "cancel":"Cancel",
+        "submitMessage":"Once the results have been submitted, you will no longer be able to edit them. Double-check the values entered before proceeding.",
+        "confirmSubmit":"Do you want to submit the results?"
     },
     "login": {
         "title": "Sign in",

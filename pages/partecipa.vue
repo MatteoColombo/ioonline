@@ -1,86 +1,172 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="10" xl="8">
+  <v-row justify="center" align="start">
+    <v-col cols="12" align="center">
+      <h1>{{ $t("compete.title") }}</h1>
+    </v-col>
+    <v-col cols="12" lg="6" align="center" order="1" order-lg="3">
+      <div class="instr-wrapper">
+        <h2>{{ $t("compete.instr") }}</h2>
+        <ul>
+          <li
+            class="text-justify instructions"
+            v-for="(item, index) of $t('compete.instructions')"
+            :key="'instr' + index"
+            v-html="item"
+          ></li>
+        </ul>
+      </div>
+    </v-col>
+
+    <v-col cols="12" lg="10" align="center" order="2" order-lg="1">
       <template>
         <v-select
-          :items="items"
-          :values="values"
+          v-if="rounds.length > 0"
+          :items="rounds"
           :menu-props="{ bottom: true, offsetY: true }"
-          :label="$t('compete.select')"
+          :label="roundName"
+          @change="roundChanged"
         ></v-select>
-        <h3>Scramble:</h3>
-        <v-list>
-          <v-list-item>
-            <v-list-item-icon><v-icon>mdi-numeric-1-box</v-icon></v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>
-                D' B R D2 R F2 L F2 D2 L2 U2 R U2 B R' D2 F D' U' R' Fw2 U2 Fw2
-                D Rw2 Fw2 F U D R2 F' Rw Uw2 U F' R B Rw B2 R' Fw' Rw' Uw' D' Rw
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-icon><v-icon>mdi-numeric-2-box</v-icon></v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>
-                R2 U2 D2 B U' R' B' R2 D B2 L D2 L F2 L2 U2 F2 R' U2 L Rw2 Uw2 F' Rw2 U Rw2 R2 D' B U2 B Uw2 R2 Rw' F2 Rw' L2 B' Fw Uw2 Rw Fw Uw D F2 Uw
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-icon><v-icon>mdi-numeric-3-box</v-icon></v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>
-                D2 L2 D L2 F2 D' B2 U2 F2 U B2 D' F' D U B F2 L D2 F' L Uw2 F R2 B L Fw2 D2 B' Rw2 L F D2 L Uw U R F2 L' Uw Fw Rw L Uw D2 Fw Uw
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-icon><v-icon>mdi-numeric-4-box</v-icon></v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>
-                F' R F D2 U2 F2 L2 B D2 F' U2 F2 R2 U' R' F2 R2 F' L2 R Rw2 U' D Rw2 B' D Fw2 B' Rw2 B' Rw2 U' B Rw Uw2 Rw F' R B2 Fw' Rw' Uw D' Rw2 U B2
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-icon><v-icon>mdi-numeric-5-box</v-icon></v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>
-               B' L2 R2 F R2 B' L2 F' D2 L2 R2 F L D B2 L2 R' F' D U2 F' Fw2 Uw2 L' F Uw2 U2 L R Uw2 R' B R2 Fw2 Uw' L Fw2 R Rw' F2 B Rw' D' R' F'
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
+        <v-expansion-panels v-model="panel">
+          <v-expansion-panel v-if="scrambles.length > 0">
+            <v-expansion-panel-header
+              >{{ $t("compete.scrambles") }}:</v-expansion-panel-header
+            >
+            <v-expansion-panel-content>
+              <v-list>
+                <v-list-item
+                  v-for="(item, index) in scrambles"
+                  :key="'scramble' + index"
+                >
+                  <v-list-item-icon
+                    ><v-icon
+                      >mdi-numeric-{{ index + 1 }}-box</v-icon
+                    ></v-list-item-icon
+                  >
+                  <v-list-item-content>
+                    <v-list-item-title>
+                      {{ item }}
+                    </v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel v-if="extras.length > 0">
+            <v-expansion-panel-header
+              >{{ $t("compete.extras") }}:</v-expansion-panel-header
+            >
+            <v-expansion-panel-content>
+              <v-list>
+                <v-list-item
+                  v-for="(item, index) in extras"
+                  :key="'extra' + index"
+                >
+                  <v-list-item-icon
+                    ><v-icon>mdi-alpha-e-box</v-icon></v-list-item-icon
+                  >
+                  <v-list-item-content>
+                    <v-list-item-title>
+                      {{ item }}
+                    </v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </template></v-col
+    >
+    <v-col cols="12" lg="4" align="center" order="3" order-lg="2">
+      <template>
+        <div style="margin-top: 20px">
+          <v-row
+            v-for="(item, index) in results"
+            :key="'m' + index"
+            style="width: fit-content"
+          >
+            <v-col cols="8" align="center" justify="center"
+              ><v-text-field
+                reverse
+                :label="'Attempt #' + (index + 1)"
+                outlined
+                hide-details
+                :disabled="item.dnf"
+                clearable
+                v-model="item.value"
+                v-facade="mask"
+                placeholder="--:--.--"
+                class="result"
+              ></v-text-field
+            ></v-col>
+            <v-col>
+              <v-switch inset label="DNF" v-model="item.dnf"></v-switch>
+            </v-col>
+          </v-row>
+        </div>
 
-        <h3>Extra:</h3>
-        <v-list>
-          <v-list-item>
-            <v-list-item-icon><v-icon>mdi-alpha-e-box</v-icon></v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>
-                D' B R D2 R F2 L F2 D2 L2 U2 R U2 B R' D2 F D' U' R' Fw2 U2 Fw2
-                D Rw2 Fw2 F U D R2 F' Rw Uw2 U F' R B Rw B2 R' Fw' Rw' Uw' D' Rw
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-icon><v-icon>mdi-alpha-e-box</v-icon></v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>
-                D' B R D2 R F2 L F2 D2 L2 U2 R U2 B R' D2 F D' U' R' Fw2 U2 Fw2
-                D Rw2 Fw2 F U D R2 F' Rw Uw2 U F' R B Rw B2 R' Fw' Rw' Uw' D' Rw
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
+        <v-dialog
+          v-if="roundId"
+          transition="dialog-bottom-transition"
+          v-model="dialog"
+          max-width="300px"
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              v-bind="attrs"
+              v-on="on"
+              x-large
+              color="primary"
+              style="margin-top: 20px"
+              :width="$vuetify.breakpoint.xsOnly ? '100%' : '200px'"
+              >{{$t('compete.submit')}}</v-btn
+            >
+          </template>
+          <template>
+            <v-card>
+              <v-card-title class="headline">
+                {{ $t("compete.confirmSubmit") }}
+              </v-card-title>
+              <v-card-text>
+                {{ $t("compete.submitMessage") }}
+              </v-card-text>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="green darken-1" text @click="hideDialog">
+                  {{ $t("compete.cancel") }}
+                </v-btn>
+                <v-btn color="green darken-1" text @click="submit">
+                  {{ $t("compete.submit") }}
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </template>
+        </v-dialog>
+
+        <v-dialog v-model="loader" hide-overlay persistent width="300">
+          <v-card color="primary" dark>
+            <v-card-text>
+                  {{ $t("compete.standby") }}
+              <v-progress-linear
+                indeterminate
+                color="white"
+                class="mb-0"
+              ></v-progress-linear>
+            </v-card-text>
+          </v-card>
+        </v-dialog>
       </template>
     </v-col>
+
+    <v-col cols="12" order="4"></v-col>
   </v-row>
 </template>
 
 <script>
+import { facade, filter } from "vue-input-facade";
+
 export default {
+  directives: { facade },
+  filters: { facade: filter },
   head() {
     return {
       title: this.$t("compete.title"),
@@ -115,36 +201,119 @@ export default {
   },
   data() {
     return {
-      icons: [
-        "mdi-numeric-1",
-        "mdi-numeric-2",
-        "mdi-numeric-3",
-        "mdi-numeric-4",
-        "mdi-numeric-5",
+      panel: 0,
+      roundId: false,
+      roundName: "",
+      dialog: false,
+      loader: false,
+      mask: [
+        "--:--.-#",
+        "--:--.##",
+        "--:-#.##",
+        "--:##.##",
+        "-#:##.##",
+        "##:##.##",
       ],
-      values: [
-        "333",
-        "222",
-        "444",
-        "333bf",
-        "333fm",
-        "sq1",
-        "clock",
-        "pyram",
-        "skewb",
-      ],
-      items: [
-        "3x3x3",
-        "2x2x2",
-        "4x4x4",
-        "3x3 BLD",
-        "3x3 FMC",
-        "Square-1",
-        "Clock",
-        "Pyraminx",
-        "Skewb",
-      ],
+      rounds: [],
+      scrambles: [],
+      extras: [],
+      results: [],
     };
+  },
+  async fetch() {
+    await this.fetchEvents();
+  },
+  methods: {
+    async submit() {
+      this.dialog = false;
+      this.loader = true;
+      const subres = this.results.map((m) =>
+        m.dnf
+          ? -1
+          : m.value == "" || m.value == null
+          ? -2
+          : this.getValueInSeconds(m.value)
+      );
+      console.log(subres);
+      try {
+        await this.$axios.$post(`/api/results/${this.roundId}`, {
+          times: subres,
+        });
+        try {
+          await this.fetchEvents();
+          this.loader = false;
+        } catch (e) {
+          this.resetAll();
+        }
+      } catch (e) {
+        console.log("error while submitting results");
+      }
+    },
+    hideDialog() {
+      this.dialog = false;
+    },
+    async fetchEvents() {
+      try {
+        this.rounds = await this.$axios.$get("/api/results");
+        if (this.rounds.length > 0) {
+          this.roundId = this.rounds[0].value;
+          this.roundName = this.rounds[0].text;
+          let scrambles = await this.$axios.$get(
+            `/api/results/${this.roundId}/scrambles`
+          );
+          this.scrambles = scrambles.scrambles;
+          this.extras = scrambles.extras;
+          this.results = [];
+          for (let i = 0; i < this.scrambles.length; i++) {
+            this.results.push({ value: null, dnf: false });
+          }
+        } else {
+          this.resetAll();
+        }
+      } catch (e) {
+        console.log(e);
+        this.resetAll();
+      }
+    },
+    async roundChanged(event) {
+      try {
+        this.rounds = await this.$axios.$get("/api/results");
+        if (this.rounds.map((r) => r.value).includes(event)) {
+          this.roundId = event;
+          this.roundName = this.rounds.find((r) => r.value === event).text;
+          let scrambles = await this.$axios.$get(
+            `/api/results/${this.roundId}/scrambles`
+          );
+          this.scrambles = scrambles.scrambles;
+          this.panel = 0;
+          this.extras = scrambles.extras;
+          this.results = [];
+          for (let i = 0; i < this.scrambles.length; i++) {
+            this.results.push({ value: null, dnf: false });
+          }
+        } else {
+          await this.fetchEvents();
+        }
+      } catch (e) {
+        this.resetAll();
+      }
+    },
+    resetAll() {
+      this.roundId = false;
+      this.roundName = "";
+      this.rounds = [];
+      this.scrambles = [];
+      this.extras = [];
+      this.results = [];
+    },
+    getValueInSeconds(value) {
+      const temp = value.split(":");
+      const minutes = Number("0" + temp[0].replaceAll("-", ""));
+      const seconds = Number("0" + temp[1].split(".")[0].replaceAll("-", ""));
+      const cents = Number("0" + temp[1].split(".")[1].replaceAll("-", ""));
+      const time = (minutes * 60 + seconds) * 100 + cents;
+      return time > 0 || isNaN(time) ? time : -2;
+    },
   },
 };
 </script>
@@ -152,7 +321,7 @@ export default {
 <style scoped>
 @font-face {
   font-family: ScrambleFont;
-  src: url('/fonts/cnr.woff');
+  src: url("/fonts/cnr.woff");
 }
 
 .v-list-item__title {
@@ -162,5 +331,38 @@ export default {
   font-family: ScrambleFont;
   text-align: justify;
 }
+h3 {
+  margin-top: 20px;
+}
 
+.result {
+  font-size: 28px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.instructions {
+  max-width: 800px;
+}
+.instr-wrapper {
+  text-align: le;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+</style>
+
+<style>
+p {
+  margin-top: 0px;
+}
+a {
+  text-decoration: none;
+}
 </style>

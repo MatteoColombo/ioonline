@@ -113,6 +113,15 @@
     <!-- <v-footer>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer> -->
+
+    <v-snackbar v-model="snackbar" multi-line>
+      Refresh to update
+      <template v-slot:action="{ attrs }">
+        <v-btn color="red" text v-bind="attrs" @click="snackbar = false">
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
   </v-app>
 </template>
 
@@ -122,6 +131,7 @@ export default {
     return {
       clipped: false,
       drawer: false,
+      snackbar: false,
       items: [
         {
           icon: "mdi-home",
@@ -189,6 +199,7 @@ export default {
     if (workbox) {
       workbox.addEventListener("installed", (event) => {
         if (event.isUpdate) {
+          this.snackbar = true;
           window.location.reload();
         }
       });

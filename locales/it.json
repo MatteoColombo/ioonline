@@ -13,7 +13,7 @@
         "live": "Diretta streaming",
         "faq": "Domande frequenti",
         "language": "Traduzione",
-        "competitors":"Iscritti"
+        "competitors": "Iscritti"
     },
     "live": {
         "channel": "cubingitaly",
@@ -376,7 +376,25 @@
     "compete": {
         "title": "Partecipa",
         "desc": "",
-        "select":"Seleziona l'evento"
+        "select": "Seleziona l'evento",
+        "instr": "Istruzioni",
+        "instructions": [
+            "Inserisci i tempi dell'evento nel formato XX:YY.ZZ (minuti:secondi.centesimi). Eventuali errori nell'inserimento verranno segnalati.",
+            "Ricordati di spuntare la casella del DNF (Did not finish - Puzzle non completato) nel caso in cui il <a href='https://www.worldcubeassociation.org/regulations/translations/italian/' target='_blank'>Regolamento WCA</a> lo preveda.",
+            "Se necessario, aggiungi tutte le penalità previste dal regolamento WCA che hai commesso al tuo tempo prima di inserirlo. Es: 18.89+2=20.89.",
+            "Una volta inseriti tutti i tuoi tempi, il calcolo della media (se l'evento la prevede) sarà automatico.",
+            "Potrai inviare i risultati nell'ordine che preferisci e in qualsiasi momento durante queste fasce dedicate: <ul><li>Per il primo turno: Sabato: dalle 10 alle 18</li><li>Per le finali: Domenica: dalle 10 alle 20</li></ul>",
+            "Una volta inviati i risultati di un evento, non sarà più possibile modificarli. Controlla due volte prima di inviarli!",
+            "Alla chiusura di ogni giornata di gara pubblicheremo la classifica nella sezione apposita presente <a href='/classifiche'>sul sito</a>."
+        ],
+        "fmc": [],
+        "standby": "Perfavore, attendi",
+        "scrambles": "Scramble",
+        "extras": "Extra",
+        "submit": "Invia",
+        "cancel": "Annulla",
+        "submitMessage": "Una volta inviati i risultati non potrai più modificarli. Controlla bene i valori inseriti prima di procedere.",
+        "confirmSubmit": "Vuoi inviare i risultati?"
     },
     "login": {
         "title": "Accedi",
@@ -389,10 +407,10 @@
     "competitors": {
         "title": "Iscritti",
         "desc": "L'elenco degli iscritti all'Italian Open Online 2021!",
-        "count":"Ci sono già ",
-        "count2":" persone registrate, cosa aspetti ad iscriverti anche tu?",
-        "name":"Nome",
-        "events":"Eventi"
+        "count": "Ci sono già ",
+        "count2": " persone registrate, cosa aspetti ad iscriverti anche tu?",
+        "name": "Nome",
+        "events": "Eventi"
     },
     "home": {
         "title": "Home",

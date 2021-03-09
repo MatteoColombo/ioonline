@@ -36,7 +36,6 @@ export default {
   plugins: [
   ],
 
-
   render: {
     etag: false,
     static: {
@@ -52,7 +51,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
