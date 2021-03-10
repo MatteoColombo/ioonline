@@ -378,7 +378,7 @@
         "title": "Submit your results",
         "desc": "",
         "select": "Choose the event",
-        "instr":"Instructions",
+        "instr": "Instructions",
         "instructions": [
             "Enter the times of the event in the XX:YY.ZZ format. Any error in the process will be reported.",
             "Remember to check the DNF box (Did not finish) in the cases listed in the <a href='https://www.worldcubeassociation.org/regulations/translations/italian/' target='_blank'>WCA Regulations</a>.",
@@ -388,14 +388,25 @@
             "Once the results of an event have been sent, it will no longer be possible to change them. Double check before submitting!",
             "At the end of each day of competition, we will publish the rankings in <a href='/classifiche'>this section</a>."
         ],
-        "fmc":[],
-        "standby":"Please, stand by",
-        "scrambles":"Scrambles",
-        "extras":"Extras",
-        "submit":"Submit",
-        "cancel":"Cancel",
-        "submitMessage":"Once the results have been submitted, you will no longer be able to edit them. Double-check the values entered before proceeding.",
-        "confirmSubmit":"Do you want to submit the results?"
+        "fmc": [
+            "In FMC you have to find the shortest solution to a given scramble in 1 hour of time.",
+            "You must not use any electronic device or algorithm sheet.",
+            "You can use pen and paper, stickers and up to three 3x3 cubes.",
+            "Once you finish your attempt write the solution in the box below. You can do this after the 1 hour time limit since it can take some time.",
+            "The ONLY allowed moves are: <ul><li>R, R', R2, Rw, Rw', Rw2</li><li>L, L', L2, Lw, Lw', Lw2</li><li>U, U', U2, Uw, Uw', Uw2</li><li>D, D', D2, Dw, Dw', Dw2</li><li>F, F', F2, Fw, Fw', Fw2</li><li>B, B', B2, Bw, Bw', Bw2</li></ul>",
+            "The ONLY allowed rotations are: <ul><li>x, x', x2, X, X', X2</li><li>y, y', y2, Y, Y', Y2</li><li>z, z', z2, Z, Z', Z2</li></ul>",
+            "The maximum number of moves is 80. Anly longer solution will be converted to a DNF.",
+            "We will also consider DNF any solution with typing mistakes or forbidden notation. Examples are: L UD F, U3, M (slice moves are NOT allowed), parentheses, etc…",
+            "If your solution makes use of advanced FMC techniques, you must provide an explanation in the second box below. Any solution that we can’t understand just by reading it (like a linear cfop solution) will be considered a DNF if not explained.",
+            "Here you can find the complete <a href='https://www.worldcubeassociation.org/regulations/#article-E-fewest-moves' target='_blank'>WCA Regulations</a> for any other doubts."
+        ],
+        "standby": "Please, stand by",
+        "scrambles": "Scrambles",
+        "extras": "Extras",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "submitMessage": "Once the results have been submitted, you will no longer be able to edit them. Double-check the values entered before proceeding.",
+        "confirmSubmit": "Do you want to submit the results?"
     },
     "login": {
         "title": "Sign in",
@@ -408,10 +419,10 @@
     "competitors": {
         "title": "Competitors",
         "desc": "The list of competitors registered for the Italian Open Online 2021!",
-        "count":"There are already ",
-        "count2":" people registered, what are you waiting for?",
-        "name":"Name",
-        "events":"Events"
+        "count": "There are already ",
+        "count2": " people registered, what are you waiting for?",
+        "name": "Name",
+        "events": "Events"
     },
     "home": {
         "title": "Home",
@@ -419,5 +430,26 @@
         "subdesc": "This competition is open to everybody, the only requirement is knowing how to solve the Rubik's cube!",
         "register": "Register",
         "info": "General Info"
+    },
+    "millionaire":{
+        "title":"Who wants to be millionaire?",
+        "desc": "",
+        "what": "What’s this?",
+        "whatdesc":[
+            "It’s our take on the famous tv show “Who wants to be a Millionaire?”: If you answer correctly to 15 increasingly difficult questions you’ll win the prize.",
+            "The questions are going to be about Cubing Italy, the WCA, the Rubik’s cube and it’s history.",
+            "You will have 4 Lifelines that you can use only once:",
+            "<ul><li>Switch: swap the question with another one about a different topic.</li><li>50-50: we will tell you two of the three different topics.</li><li>Phone Lorenzo Mauro: you will be able to cooperate to answer the question or he can give you the answer directly.</li><li>Ask the audience: Twitch chat will help you through a poll.</li></ul>",
+            "You can only play once. If you are not interested in taking part in the event, you are welcome to join the audience on Twitch. The competitor might need your help!"
+        ],
+        "when":"When is it?",
+        "whendesc":"Saturday, March 13th from 6 p.m. on our <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch Channel</a>. If a lot of people want to play and we ran out of time, we can consider continuing from 9 p.m.",
+        "how":"How do I play?",
+        "howdesc":[ 
+            "In order to play you must agree to come live on Twitch with your WEBCAM ON. If you don’t we can’t let you in.",
+            "We will set up a Discord voice chat for the queue. Join between 5:45 p.m and 8 p.m. and wait for your turn chatting with the other soon-to-be competitors."
+        ],
+        "prizes":"What do I win?",
+        "prizedesc":"Glory, Knowledge, your name in the Hall of Cubing Fame and a voucher for a free competition."
     }
 }

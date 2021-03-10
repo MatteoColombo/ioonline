@@ -172,7 +172,7 @@
             {
                 "question": "Che tempi devo fare per partecipare?",
                 "answer": [
-                    "Non c’è un tempo minimo di accesso. Tutti possono partecipare e divertirsi."
+                    "Non c'è un tempo minimo di accesso. Tutti possono partecipare e divertirsi."
                 ],
                 "steps": []
             },
@@ -387,7 +387,18 @@
             "Una volta inviati i risultati di un evento, non sarà più possibile modificarli. Controlla due volte prima di inviarli!",
             "Alla chiusura di ogni giornata di gara pubblicheremo la classifica nella sezione apposita presente <a href='/classifiche'>sul sito</a>."
         ],
-        "fmc": [],
+        "fmc": [
+            "Nell'evento FMC hai 1 ora di tempo per trovare la soluzione allo scramble fornito con il minor numero di mosse.",
+            "Non puoi utilizzare strumenti elettronici e non puoi consultare elenchi di algoritmi.",
+            "Potrai invece usare carta, penna, fino a tre cubi 3x3 ed etichette adesive.",
+            "Una volta completata la risoluzione, scrivila all'interno del riquadro, anche fuori dal tempo limite di 1 ora.",
+            "Le UNICHE mosse permesse sono: <ul><li>R, R', R2, Rw, Rw', Rw2</li><li>L, L', L2, Lw, Lw', Lw2</li><li>U, U', U2, Uw, Uw', Uw2</li><li>D, D', D2, Dw, Dw', Dw2</li><li>F, F', F2, Fw, Fw', Fw2</li><li>B, B', B2, Bw, Bw', Bw2</li></ul>",
+            "Le UNICHE rotazioni permesse sono: <ul><li>x, x', x2, X, X', X2</li><li>y, y', y2, Y, Y', Y2</li><li>z, z', z2, Z, Z', Z2</li></ul>",
+            "Il numero massimo di mosse della soluzione è 80. Soluzioni più lunghe saranno convertite in DNF.",
+            "Qualsiasi altra notazione o errore nella soluzione sarà considerato DNF. Alcuni esempi sono: manca uno spazio, c’è un U3, c’è una slice M (NON permessa dalla notazione), c’è una rotazione scritta con le parentesi, ecc…",
+            "Se la tua risoluzione fa uso di tecniche particolari, devi fornire una spiegazione all’interno del secondo box. Una risoluzione non commentata e che non possiamo comprendere semplicemente leggendo la soluzione (es una solve cfop lineare) sarà considerata DNF.",
+            "Per qualsiasi dubbio legato all’evento, consulta la sezione dedicata del <a href='https://www.worldcubeassociation.org/regulations/#article-E-fewest-moves' target='_blank'>Regolamento WCA</a>."
+        ],
         "standby": "Perfavore, attendi",
         "scrambles": "Scramble",
         "extras": "Extra",
@@ -418,5 +429,27 @@
         "subdesc": "La partecipazione è aperta a tutti e l'unico requisito è saper risolvere il cubo di Rubik!",
         "register": "Iscriviti",
         "info": "Informazioni"
+    },
+    "millionaire": {
+        "title": "Chi vuol essere milionario?",
+        "desc": "",
+        "what": "Che cos'è?",
+        "whatdesc":[
+            "È la nostra versione del famoso gioco televisivo: rispondi correttamente a 15 domande di difficoltà crescente per vincere il premio.",
+            "Le domande spazieranno da Cubing Italy alla WCA, dalla storia del cubo a diversi suoi aspetti.",
+            "Avrai a disposizione 4 aiuti che potrai usare solo una volta:",
+            "<ul><li>Switch: Cambia la domanda con una di uguale difficoltà ma argomento diverso.</li><li>50-50: ti diremo due delle tre risposte sbagliate.</li><li>Telefona a Lorenzo Mauro: così potrete ragionare in due sulla domanda, o potrai farti dare direttamente la risposta.</li><li>Sondaggio in chat: ascolta la voce del popolo e prendi la tua decisione.</li></ul>",
+            "Si può partecipare una volta sola. Se non ti interessa partecipare, prendi parte al pubblico su twitch. Il partecipante potrebbe aver bisogno del tuo aiuto!"
+        ],
+        "when":"Quand'è?",
+        "whendesc":"Sabato 13 Marzo dalle 18:00 sul nostro <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Canale Twitch</a>. Se dovesse esserci una grossa adesione, continueremo dalle 21:00 in poi.",
+        "how":"Come faccio a partecipare?",
+        "howdesc":[ 
+            "Per partecipare devi essere disponibile ad andare in live su Twitch con la WEBCAM ACCESA. Se non sei disposto purtroppo non possiamo farti partecipare.",
+            "Prepareremo una sala dedicata su <a href='https://discord.gg/azuYQHYmTP' target='_blank'>Discord</a> a cui dovrai accedere tra le 17:45 e le 20:00.",
+            "Una volta entrato sarai messo in coda e potrai aspettare il tuo turno chiacchierando con gli altri futuri partecipanti."
+        ],
+        "prizes":"Cosa si vince?",
+        "prizedesc":"La gloria, la conoscenza, il tuo nome nella Hall of Cubing Fame del sito e un voucher per partecipare gratuitamente a una competizione ufficiale."
     }
 }
