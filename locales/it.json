@@ -1,4 +1,10 @@
 {
+    "core": {
+        "validation": {
+            "invalidSolutionMove": "Non è una mossa valida.",
+            "solutionTooLong": "La soluzione indicata è troppo lunga (dev'essere meno di 80 mosse)"
+        }
+    },
     "welcome": "Benvenuto",
     "generic": {
         "login": "Accedi",

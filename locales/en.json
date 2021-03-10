@@ -1,4 +1,10 @@
 {
+    "core": {
+        "validation": {
+            "invalidSolutionMove": "Is not a valid move.",
+            "solutionTooLong": "The provided solution is too long (must be less than 80 moves)"
+        }
+    },
     "welcome": "Welcome",
     "generic": {
         "login": "Log in",
