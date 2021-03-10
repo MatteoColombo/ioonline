@@ -13,7 +13,8 @@
         "live": "Livestream",
         "faq": "FAQ",
         "language": "Translation",
-        "competitors": "Competitors"
+        "competitors": "Competitors",
+        "millionaire":"Millionaire"
     },
     "live": {
         "channel": "gmhikaru",

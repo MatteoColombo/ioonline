@@ -110,9 +110,6 @@
         <Contact />
       </v-container>
     </v-main>
-    <!-- <v-footer>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer> -->
 
     <v-snackbar v-model="snackbar" multi-line>
       Refresh to update
@@ -172,6 +169,11 @@ export default {
           icon: "mdi-frequently-asked-questions",
           title: "navbar.faq",
           to: "/domande-frequenti",
+        },
+        {
+          icon: "mdi-brain",
+          title: "navbar.millionaire",
+          to: "/milionario",
         },
       ],
       miniVariant: false,

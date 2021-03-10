@@ -13,7 +13,8 @@
         "live": "Diretta streaming",
         "faq": "Domande frequenti",
         "language": "Traduzione",
-        "competitors": "Iscritti"
+        "competitors": "Iscritti",
+        "millionaire":"Milionario"
     },
     "live": {
         "channel": "cubingitaly",
