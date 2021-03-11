@@ -383,6 +383,8 @@
     "compete": {
         "title": "Partecipa",
         "desc": "",
+        "solution":"Soluzione",
+        "comment":"Commenti",
         "select": "Seleziona l'evento",
         "instr": "Istruzioni",
         "instructions": [

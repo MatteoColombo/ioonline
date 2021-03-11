@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row class="solutioninput">
     <v-col
       cols="12"
       md="12"
@@ -9,6 +9,7 @@
         v-model="textareaValue"
         :label="label"
         @keyup="validateAndSubmit()"
+        hide-details
         :append-icon="isInvalid ? 'mdi-alert-circle' : null"
       ></v-textarea>
     </v-col>
@@ -71,5 +72,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.solutioninput{
+  margin-bottom: 20px;
+}
 </style>

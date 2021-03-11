@@ -384,6 +384,8 @@
     "compete": {
         "title": "Submit your results",
         "desc": "",
+        "solution":"Solution",
+        "comment":"Comments",
         "select": "Choose the event",
         "instr": "Instructions",
         "instructions": [
