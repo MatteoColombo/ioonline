@@ -8,7 +8,9 @@
     "welcome": "Welcome",
     "generic": {
         "login": "Log in",
-        "logout": "Log out"
+        "logout": "Log out",
+        "support":"Support Cubing Italy",
+        "supportdesc":"Your donation will be crucial in covering our administrative expenses. This will help us through this tough times where we can’t organise any competitions."
     },
     "navbar": {
         "home": "Home",
@@ -422,7 +424,11 @@
     },
     "standings": {
         "title": "Rankings",
-        "desc": ""
+        "desc": "",
+        "position": "Position",
+        "times": "Solves",
+        "best": "Best",
+        "avg": "Average"
     },
     "competitors": {
         "title": "Competitors",

@@ -329,7 +329,8 @@ export default {
     };
   },
   async fetch() {
-    await this.fetchEvents();
+    if(this.$auth.loggedIn)
+      await this.fetchEvents();
   },
   methods: {
     async submit() {
@@ -361,6 +362,7 @@ export default {
         );
         try {
           await this.$axios.$post(`/api/results/${this.roundId}`, {
+            raw: this.results,
             times: subres,
           });
           try {

@@ -8,7 +8,9 @@
     "welcome": "Benvenuto",
     "generic": {
         "login": "Accedi",
-        "logout": "Esci"
+        "logout": "Esci",
+        "support":"Supporta Cubing Italy",
+        "supportdesc":"La tua donazione aiuterà a coprire i costi amministrativi dell’associazione, permettendoci di superare questo periodo difficile in cui non è possibile svolgere alcuna attività."
     },
     "navbar": {
         "home": "Home",
@@ -20,14 +22,13 @@
         "faq": "Domande frequenti",
         "language": "Traduzione",
         "competitors": "Iscritti",
-        "millionaire":"Milionario"
+        "millionaire": "Milionario"
     },
     "live": {
         "channel": "cubingitaly",
         "title": "Programma della diretta",
         "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch</a>. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
-        "extra": [
-        ],
+        "extra": [],
         "descextra": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su Twitch!",
         "days": [
             {
@@ -382,8 +383,8 @@
     "compete": {
         "title": "Partecipa",
         "desc": "",
-        "solution":"Soluzione",
-        "comment":"Commenti",
+        "solution": "Soluzione",
+        "comment": "Commenti",
         "select": "Seleziona l'evento",
         "instr": "Istruzioni",
         "instructions": [
@@ -421,7 +422,11 @@
     },
     "standings": {
         "title": "Classifiche",
-        "desc": ""
+        "desc": "",
+        "position": "Posizione",
+        "times": "Tempi",
+        "best": "Migliore",
+        "avg": "Media"
     },
     "competitors": {
         "title": "Iscritti",
@@ -442,22 +447,22 @@
         "title": "Chi vuol essere milionario?",
         "desc": "",
         "what": "Che cos'è?",
-        "whatdesc":[
+        "whatdesc": [
             "È la nostra versione del famoso gioco televisivo: rispondi correttamente a 15 domande di difficoltà crescente per vincere il premio.",
             "Le domande spazieranno da Cubing Italy alla WCA, dalla storia del cubo a diversi suoi aspetti.",
             "Avrai a disposizione 4 aiuti che potrai usare solo una volta:",
             "<ul><li>Switch: Cambia la domanda con una di uguale difficoltà ma argomento diverso.</li><li>50-50: ti diremo due delle tre risposte sbagliate.</li><li>Telefona a Lorenzo Mauro: così potrete ragionare in due sulla domanda, o potrai farti dare direttamente la risposta.</li><li>Sondaggio in chat: ascolta la voce del popolo e prendi la tua decisione.</li></ul>",
             "Si può partecipare una volta sola. Se non ti interessa partecipare, prendi parte al pubblico su twitch. Il partecipante potrebbe aver bisogno del tuo aiuto!"
         ],
-        "when":"Quand'è?",
-        "whendesc":"Sabato 13 Marzo dalle 18:00 sul nostro <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Canale Twitch</a>. Se dovesse esserci una grossa adesione, continueremo dalle 21:00 in poi.",
-        "how":"Come faccio a partecipare?",
-        "howdesc":[ 
+        "when": "Quand'è?",
+        "whendesc": "Sabato 13 Marzo dalle 18:00 sul nostro <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Canale Twitch</a>. Se dovesse esserci una grossa adesione, continueremo dalle 21:00 in poi.",
+        "how": "Come faccio a partecipare?",
+        "howdesc": [
             "Per partecipare devi essere disponibile ad andare in live su Twitch con la WEBCAM ACCESA. Se non sei disposto purtroppo non possiamo farti partecipare.",
             "Prepareremo una sala dedicata su <a href='https://discord.gg/azuYQHYmTP' target='_blank'>Discord</a> a cui dovrai accedere tra le 17:45 e le 20:00.",
             "Una volta entrato sarai messo in coda e potrai aspettare il tuo turno chiacchierando con gli altri futuri partecipanti."
         ],
-        "prizes":"Cosa si vince?",
-        "prizedesc":"La gloria, la conoscenza, il tuo nome nella Hall of Cubing Fame del sito e un voucher per partecipare gratuitamente a una competizione ufficiale."
+        "prizes": "Cosa si vince?",
+        "prizedesc": "La gloria, la conoscenza, il tuo nome nella Hall of Cubing Fame del sito e un voucher per partecipare gratuitamente a una competizione ufficiale."
     }
 }

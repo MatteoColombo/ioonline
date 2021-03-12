@@ -108,6 +108,7 @@
       <v-container>
         <nuxt />
         <Contact />
+        <Donate />
       </v-container>
     </v-main>
 
