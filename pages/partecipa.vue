@@ -21,7 +21,8 @@
         width="100%"
         v-if="rounds.length == null || rounds.length === 0"
       >
-        <v-img src="/nothing.png"></v-img>
+        <v-img v-if="this.$i18n.locale === 'it'" src="/nothing.png"></v-img>
+        <v-img v-else src="/eng-nothing.png"></v-img>
       </v-col>
       <v-col
         v-if="$auth.loggedIn && roundId !== '333fm_r1'"
