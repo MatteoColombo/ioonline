@@ -38,6 +38,8 @@
 <script>
 export default {
   mounted() {
+    this.isRegistrationOpened = this.checkIsRegistrationOpened();
+    this.isRegistrationClosed = this.checkIsRegistrationClosed();
     window.setInterval(() => {
       this.isRegistrationOpened = this.checkIsRegistrationOpened();
       this.isRegistrationClosed = this.checkIsRegistrationClosed();
@@ -78,7 +80,7 @@ export default {
   data() {
     return {
       isRegistrationOpened: true,
-      isRegistrationClosed: false,
+      isRegistrationClosed: true,
       registrationOpens: process.env.registrationOpens,
       registrationCloses: process.env.registrationCloses,
     };
