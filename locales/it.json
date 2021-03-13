@@ -423,7 +423,7 @@
     "standings": {
         "title": "Classifiche",
         "desc": "",
-        "position": "Posizione",
+        "position": "#",
         "times": "Tempi",
         "best": "Migliore",
         "avg": "Media"

@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row justify="center" align="center" v-if="$auth.loggedIn && $auth.user.isOrganizer">
     <v-col cols="12" sm="10" xl="8">
       <template>
         <v-col cols="12" align="center">
@@ -30,14 +30,12 @@
                   text: $t('standings.avg'),
                   value: 'avg',
                 },
-                { text: 'Solve', value: 'times' },
+                { text: 'solve', value: 'times' },
               ]"
               disable-sort
               :items="results"
               disable-pagination
-              :item-class="itemRowBackground"
               hide-default-footer
-              :mobile-breakpoint="0"
               class="elevation-1"
             >
               <template v-slot:item.user="{ item }">
@@ -69,8 +67,7 @@
                   target="_blank"
                   :href="formatSolution(item.solution)"
                   class="unbreakablelabel"
-                  >Alg.cubing.net</a
-                >
+                  >Alg.cubing.net</a>
 
                 <label v-else class="unbreakablelabel"
                   >{{ formatTime(item.value1) }} {{ formatTime(item.value2) }}
@@ -145,7 +142,6 @@ export default {
       ],
       roundName: "",
       roundId: false,
-      toNext: 0,
       rounds: [],
       mappedRounds: [],
       results: [],
@@ -153,7 +149,7 @@ export default {
   },
   async fetch() {
     try {
-      this.rounds = await this.$axios.$get("/api/results/done");
+      this.rounds = await this.$axios.$get("/api/admin/results");
       this.mappedRounds = this.rounds.map((r) => ({
         value: r.id,
         text: r.event.name + " Round " + r.roundNumber,
@@ -161,12 +157,9 @@ export default {
       if (this.rounds && this.rounds.length > 0) {
         const round = this.rounds[0];
         this.roundId = round.id;
-        this.toNext = round.peopleToNext;
-        if(this.toNext === 0)
-          this.toNext =3;
         this.roundName = round.event.name + " Round " + round.roundNumber;
         this.results = await this.$axios.$get(
-          `/api/results/done/${this.roundId}`
+          `/api/admin/results/${this.roundId}`
         );
       }
     } catch (e) {
@@ -189,7 +182,8 @@ export default {
       if (minutes > 0) {
         return `${minutes}:${strseconds}.${strcents}`;
       } else {
-        if (strseconds.startsWith("0")) strseconds = strseconds.substring(1);
+        if(strseconds.startsWith("0"))
+          strseconds=strseconds.substring(1)
         return `${strseconds}.${strcents}`;
       }
     },
@@ -198,33 +192,26 @@ export default {
       return value;
     },
     formatSolution(solution) {
-      if (solution == null) return "";
-      let sol =
-        "https://alg.cubing.net/?setup=R-_U-_F_D-_B-_D2_U2_L_U2_R_D2_B_L_F_U_B_L2_U2_R2_B_R-_U-_F&alg=";
-      let filSol= solution.replace(/\s/g, '_');
-      filSol = filSol.replace(/\'/g, '-');
+      if(solution == null)return ""
+      let sol ="https://alg.cubing.net/?setup=R-_U-_F_D-_B-_D2_U2_L_U2_R_D2_B_L_F_U_B_L2_U2_R2_B_R-_U-_F&alg=";
+      let filSol = solution.replaceAll(" ", "_");
+      filSol = filSol.replaceAll("'", "-");
       return sol + filSol;
     },
     async roundChanged(event) {
       try {
         let round = this.rounds.find((r) => r.id === event);
-        this.rounds = await this.$axios.$get("/api/results/done");
+        this.rounds = await this.$axios.$get("/api/admin/results");
         this.roundId = round.id;
-        this.toNext = round.peopleToNext;
-        if(this.toNext === 0)
-          this.toNext =3;
         this.roundName = round.event.name + " Round " + round.roundNumber;
         this.results = await this.$axios.$get(
-          `/api/results/done/${this.roundId}`
+          `/api/admin/results/${this.roundId}`
         );
       } catch (e) {
         console.log(e);
         this.rounds = [];
         this.results = [];
       }
-    },
-    itemRowBackground: function (item) {
-      return item.position <= this.toNext ? "style-1" : "";
     },
   },
 };
@@ -244,8 +231,5 @@ a {
 <style>
 a {
   text-decoration: none;
-}
-.style-1 {
-  background-color: #303030;
 }
 </style>

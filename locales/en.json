@@ -425,7 +425,7 @@
     "standings": {
         "title": "Rankings",
         "desc": "",
-        "position": "Position",
+        "position": "#",
         "times": "Solves",
         "best": "Best",
         "avg": "Average"

@@ -336,7 +336,6 @@ export default {
     async submit() {
       this.dialog = false;
       this.loader = true;
-      console.log(this.roundId)
       if (this.roundId === "333fm_r1") {
         try {
           await this.$axios.$post(`/api/results/${this.roundId}`, {
