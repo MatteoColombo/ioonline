@@ -10,7 +10,9 @@
         "login": "Log in",
         "logout": "Log out",
         "support":"Support Cubing Italy",
-        "supportdesc":"Your donation will be crucial in covering our administrative expenses. This will help us through this tough times where we can’t organise any competitions."
+        "supportdesc":"Your donation will be crucial in covering our administrative expenses. This will help us through this tough times where we can’t organise any competitions.",
+        "error":"ERROR",
+        "errordesc":"There was an error while submitting results! Please, try again and if the error persists contact the organizers."
     },
     "navbar": {
         "home": "Home",
@@ -135,6 +137,12 @@
                         "hour": "18:00",
                         "activity": "3x3x3 final",
                         "icon": "cubing-icon event-333",
+                        "color": "primary"
+                    },
+                    {
+                        "hour": "19:00",
+                        "activity": "Chi vuol essere Milionario?",
+                        "icon": "mdi-brain",
                         "color": "primary"
                     }
                 ]

@@ -10,7 +10,9 @@
         "login": "Accedi",
         "logout": "Esci",
         "support":"Supporta Cubing Italy",
-        "supportdesc":"La tua donazione aiuterà a coprire i costi amministrativi dell’associazione, permettendoci di superare questo periodo difficile in cui non è possibile svolgere alcuna attività."
+        "supportdesc":"La tua donazione aiuterà a coprire i costi amministrativi dell’associazione, permettendoci di superare questo periodo difficile in cui non è possibile svolgere alcuna attività.",
+        "error":"ERRORE",
+        "errordesc":"Errore durante l'invio dei risultati, riprova! Se l'errore persiste chiedi supporto agli organizzatori."
     },
     "navbar": {
         "home": "Home",
@@ -133,6 +135,12 @@
                         "hour": "18:00",
                         "activity": "Finale 3x3x3",
                         "icon": "cubing-icon event-333",
+                        "color": "primary"
+                    },
+                    {
+                        "hour": "19:00",
+                        "activity": "Chi vuol essere Milionario?",
+                        "icon": "mdi-brain",
                         "color": "primary"
                     }
                 ]

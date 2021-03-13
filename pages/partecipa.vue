@@ -219,8 +219,7 @@
           v-model="dialog"
           max-width="300px"
         >
-
-          <template v-slot:activator="{ on, attrs }" >
+          <template v-slot:activator="{ on, attrs }">
             <v-btn
               v-bind="attrs"
               v-on="on"
@@ -264,6 +263,25 @@
         </ul>
       </v-col>
     </v-row>
+    <v-dialog v-model="errordialog" max-width="290">
+      <v-card>
+        <v-card-title class="headline">
+          {{$t('generic.error')}}
+        </v-card-title>
+
+        <v-card-text>
+          {{$t('generic.errordesc')}}
+        </v-card-text>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+
+          <v-btn color="red darken-1" text @click="errordialog = false">
+            OK
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 
@@ -307,6 +325,7 @@ export default {
   },
   data() {
     return {
+      errordialog:false,
       panel: 0,
       roundId: false,
       roundName: "",
@@ -329,8 +348,7 @@ export default {
     };
   },
   async fetch() {
-    if(this.$auth.loggedIn)
-      await this.fetchEvents();
+    if (this.$auth.loggedIn) await this.fetchEvents();
   },
   methods: {
     async submit() {
@@ -346,9 +364,12 @@ export default {
             await this.fetchEvents();
             this.loader = false;
           } catch (e) {
+            this.loader = false;
             this.resetAll();
           }
         } catch (e) {
+          this.errordialog=true;
+          this.loader=false
           console.log("error while submitting results");
         }
       } else {
@@ -368,9 +389,12 @@ export default {
             await this.fetchEvents();
             this.loader = false;
           } catch (e) {
+            this.loader = false;
             this.resetAll();
           }
         } catch (e) {
+          this.errordialog=true;
+          this.loader=false
           console.log("error while submitting results");
         }
       }
