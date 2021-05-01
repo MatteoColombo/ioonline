@@ -175,7 +175,7 @@
             {
                 "question": "How long is the registration period?",
                 "answer": [
-                    "Registration period is from 14:00 (GMT+1) of February 28th 2021 to 23:59 (GMT+1) of March 11th 2021."
+                    "Registration period is from 14:00 (GMT+2) of February 28th 2021 to 23:59 (GMT+2) of March 11th 2021."
                 ],
                 "steps": []
             },
@@ -199,8 +199,8 @@
                     "You can submit your solves in these two time frames:"
                 ],
                 "steps": [
-                    "First round, Saturday: 10:00-18:00 (GMT+1)",
-                    "Finals, Sunday: 10:00-20:00 (GMT+1)"
+                    "First round, Saturday: 10:00-18:00 (GMT+2)",
+                    "Finals, Sunday: 10:00-20:00 (GMT+2)"
                 ]
             },
             {
@@ -275,8 +275,8 @@
                         "You can submit your results in any order you like during these two time frames:"
                     ],
                     "list": [
-                        "Saturday: from 10:00 to 20:00 (GMT+1)",
-                        "Sunday: from 10:00 to 20:00 (GMT+1)"
+                        "Saturday: from 10:00 to 20:00 (GMT+2)",
+                        "Sunday: from 10:00 to 20:00 (GMT+2)"
                     ],
                     "postmessages": [
                         "At the end of both days you'll be able to view the rankings in a dedicated section on this site."
@@ -390,13 +390,13 @@
         "seconds": "seconds",
         "steps": [
             {
-                "date": "February 28th, 14:00 (GMT+1)",
+                "date": "February 28th, 14:00 (GMT+2)",
                 "event": "Registration opens",
                 "color": "primary",
                 "icon": "mdi-account-plus"
             },
             {
-                "date": "March 11th , 23:59 (GMT+1)",
+                "date": "March 11th , 23:59 (GMT+2)",
                 "event": "Registration closes",
                 "color": "secondary",
                 "icon": "mdi-lock"
@@ -404,7 +404,7 @@
         ],
         "regformopen": {
             "title": "Choose the events you would like to register for.",
-            "desc": "You can edit your registration until March 11th, 23:59 (GMT+1)."
+            "desc": "You can edit your registration until March 11th, 23:59 (GMT+2)."
         },
         "regformclosed": {
             "title": "These are the events you registered for",
@@ -436,7 +436,7 @@
             "Remember to check the DNF box (Did not finish) in the cases listed in the <a href='https://www.worldcubeassociation.org/regulations/translations/italian/' target='_blank'>WCA Regulations</a>.",
             "If necessary, add any WCA penalties you have committed to your time before entering it. Eg.: 18.89 + 2 = 20.89.",
             "Once you have entered all your times, the calculation of the average (if the event foresees it) will be automatic.",
-            "You can send the results in the order you prefer at any time during these dedicated slots: <ul><li>First round. Saturday: 10 am to 6 pm (GMT+1)</li><li>Finals. Sunday: from 10 am to 8 pm (GMT+1)</li></ul>",
+            "You can send the results in the order you prefer at any time during these dedicated slots: <ul><li>First round. Saturday: 10 am to 6 pm (GMT+2)</li><li>Finals. Sunday: from 10 am to 8 pm (GMT+2)</li></ul>",
             "Once the results of an event have been sent, it will no longer be possible to change them. Double check before submitting!",
             "At the end of each day of competition, we will publish the rankings in <a href='/classifiche'>this section</a>."
         ],

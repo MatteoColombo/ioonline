@@ -197,8 +197,8 @@
                     "Puoi inviare le risoluzioni in queste due finestre di tempo:"
                 ],
                 "steps": [
-                    "Primo turno, Sabato: 10:00-18:00 (GMT+1)",
-                    "Finali, Domenica: 10:00-20:00 (GMT+1)"
+                    "Primo turno, Sabato: 10:00-18:00 (GMT+2)",
+                    "Finali, Domenica: 10:00-20:00 (GMT+2)"
                 ]
             },
             {
@@ -387,13 +387,13 @@
         "seconds": "secondi",
         "steps": [
             {
-                "date": "28 Febbraio, 14:00 (GMT+1)",
+                "date": "28 Febbraio, 14:00 (GMT+2)",
                 "event": "Apertura iscrizioni",
                 "color": "primary",
                 "icon": "mdi-account-plus"
             },
             {
-                "date": "11 Marzo, 23:59 (GMT+1)",
+                "date": "11 Marzo, 23:59 (GMT+2)",
                 "event": "Chiusura iscrizioni",
                 "color": "secondary",
                 "icon": "mdi-lock"
@@ -401,7 +401,7 @@
         ],
         "regformopen": {
             "title": "Seleziona gli eventi a cui vuoi registrarti",
-            "desc": " Puoi modificare la tua registrazione fino alle 23:59 (GMT+1) dell'11 Marzo"
+            "desc": " Puoi modificare la tua registrazione fino alle 23:59 (GMT+2) dell'11 Marzo"
         },
         "regformclosed": {
             "title": "Ti sei registrato per i seguenti eventi",
