@@ -8,7 +8,7 @@
         <p class="text-center">{{ $t("home.subdesc") }}</p>
       </template>
       <v-row class="action-buttons">
-        <v-col cols="12" md="6"
+        <v-col v-if="!isRegistrationClosed" cols="12" md="6"
           ><v-btn
             width="100%"
             height="70px"
@@ -17,6 +17,16 @@
             to="/registrazione"
             color="secondary"
             >{{ $t("home.register") }}</v-btn
+          ></v-col>
+          <v-col  v-if="isRegistrationClosed" cols="12" md="6"
+          ><v-btn
+            width="100%"
+            height="70px"
+            elevation="2"
+            x-large
+            to="/partecipa"
+            color="secondary"
+            >{{ $t("home.compete") }}</v-btn
           ></v-col>
           <v-col cols="12" md="6"
           ><v-btn
@@ -68,6 +78,27 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    this.isRegistrationClosed = this.checkIsRegistrationClosed();
+    window.setInterval(() => {
+      this.isRegistrationClosed = this.checkIsRegistrationClosed();
+      if(this.isRegistrationClosed)
+        window.clearInterval();
+    }, 1000);
+  },
+  data() {
+    return {
+      isRegistrationClosed: true,
+      registrationOpens: process.env.registrationOpens,
+      registrationCloses: process.env.registrationCloses,
+    };
+  },
+  methods: {
+    checkIsRegistrationClosed() {
+      var now = Date.now();
+      return now >= this.registrationCloses;
+    },
   },
 };
 </script>

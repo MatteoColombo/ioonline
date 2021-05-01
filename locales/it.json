@@ -334,7 +334,7 @@
                     "icon": "cubing-icon event-333fm",
                     "name": "3x3 FMC",
                     "format": "Tentativo singolo",
-                    "toNext": "Turno unico"
+                    "toNext": "---"
                 },
                 {
                     "icon": "cubing-icon event-333oh",
