@@ -104,7 +104,7 @@ export default {
 </script>
 
 <style>
-.v-btn__content{
+.action-buttons .v-btn__content{
   color: black;
 }
 </style>
