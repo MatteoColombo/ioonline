@@ -17,8 +17,9 @@
             to="/registrazione"
             color="secondary"
             >{{ $t("home.register") }}</v-btn
-          ></v-col>
-          <v-col  v-if="isRegistrationClosed" cols="12" md="6"
+          ></v-col
+        >
+        <v-col v-if="isRegistrationClosed" cols="12" md="6"
           ><v-btn
             width="100%"
             height="70px"
@@ -27,8 +28,9 @@
             to="/partecipa"
             color="secondary"
             >{{ $t("home.compete") }}</v-btn
-          ></v-col>
-          <v-col cols="12" md="6"
+          ></v-col
+        >
+        <v-col cols="12" md="6"
           ><v-btn
             width="100%"
             height="70px"
@@ -40,7 +42,6 @@
           ></v-col
         >
       </v-row>
-     
     </v-col>
   </v-row>
 </template>
@@ -81,16 +82,15 @@ export default {
   },
   mounted() {
     this.isRegistrationClosed = this.checkIsRegistrationClosed();
-    window.setInterval(() => {
-      this.isRegistrationClosed = this.checkIsRegistrationClosed();
-      if(this.isRegistrationClosed)
-        window.clearInterval();
-    }, 1000);
+    if (!this.isRegistrationClosed)
+      window.setInterval(() => {
+        this.isRegistrationClosed = this.checkIsRegistrationClosed();
+        if (this.isRegistrationClosed) window.clearInterval();
+      }, 1000);
   },
   data() {
     return {
       isRegistrationClosed: true,
-      registrationOpens: process.env.registrationOpens,
       registrationCloses: process.env.registrationCloses,
     };
   },
@@ -103,15 +103,19 @@ export default {
 };
 </script>
 
+<style>
+.v-btn__content{
+  color: black;
+}
+</style>
+
 <style scoped>
-.intro{
+.intro {
   margin: 0 auto;
 }
 
 h3,
-.intro
-.action-buttons {
+.intro .action-buttons {
   margin-top: 30px;
 }
-
 </style>

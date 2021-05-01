@@ -215,4 +215,8 @@ export default {
 .drawer-active {
   background: #ec95b9;
 }
+.drawer-active .v-list-item__title,
+.v-list .v-list-item--active .v-icon{
+  color: black;
+}
 </style>
