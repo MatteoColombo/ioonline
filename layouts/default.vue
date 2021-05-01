@@ -62,7 +62,8 @@
       <v-divider></v-divider>
 
       <v-list v-if="!$auth.loggedIn">
-        <v-list-item @click="login">
+        <v-list-item to="/login" active-class="drawer-active" 
+              class="font-weight-bold">
           <v-list-item-action>
             <v-icon>mdi-login</v-icon>
           </v-list-item-action>
@@ -87,7 +88,8 @@
             <v-icon>mdi-logout</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="$t('generic.logout')" />
+            <v-list-item-title v-text="$t('generic.logout')"
+              class="font-weight-bold" />
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -188,9 +190,6 @@ export default {
     };
   },
   methods: {
-    login() {
-      this.$auth.loginWith("social");
-    },
     logout() {
       this.$auth.logout();
     },
@@ -210,6 +209,7 @@ export default {
   },
 };
 </script>
+
 
 <style>
 .drawer-active {

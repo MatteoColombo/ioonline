@@ -8,39 +8,21 @@
         <p class="text-center">{{ $t("home.subdesc") }}</p>
       </template>
       <v-row class="action-buttons">
-        <v-col v-if="!isRegistrationClosed" cols="12" md="6"
-          ><v-btn
-            width="100%"
-            height="70px"
-            elevation="2"
-            x-large
-            to="/registrazione"
-            color="secondary"
-            >{{ $t("home.register") }}</v-btn
-          ></v-col
-        >
-        <v-col v-if="isRegistrationClosed" cols="12" md="6"
-          ><v-btn
-            width="100%"
-            height="70px"
-            elevation="2"
-            x-large
-            to="/partecipa"
-            color="secondary"
-            >{{ $t("home.compete") }}</v-btn
-          ></v-col
-        >
-        <v-col cols="12" md="6"
-          ><v-btn
-            width="100%"
-            height="70px"
-            elevation="2"
-            x-large
-            to="/informazioni"
-            color="primary"
-            >{{ $t("home.info") }}</v-btn
-          ></v-col
-        >
+        <v-col v-if="!isRegistrationClosed" cols="12" md="6">
+           <SecondaryButton 
+          :text="$t('home.register')"
+          sendTo="/registrazione"/>
+          </v-col>
+        <v-col v-if="isRegistrationClosed" cols="12" md="6">
+          <SecondaryButton 
+          :text="$t('home.compete')"
+          sendTo="/partecipa"/>
+        </v-col>
+        <v-col cols="12" md="6">
+          <PrimaryButton 
+          :text="$t('home.info')"
+          sendTo="/informazioni"/>
+        </v-col>
       </v-row>
     </v-col>
   </v-row>
@@ -103,11 +85,6 @@ export default {
 };
 </script>
 
-<style>
-.action-buttons .v-btn__content{
-  color: black;
-}
-</style>
 
 <style scoped>
 .intro {
