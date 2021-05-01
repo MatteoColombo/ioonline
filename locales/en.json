@@ -11,6 +11,8 @@
         "logout": "Log out",
         "support": "Support Cubing Italy",
         "supportdesc": "Your donation will be crucial in covering our administrative expenses. This will help us through this tough times where we can’t organise any competitions.",
+        "refresh":"Refresh",
+        "refreshmessage":"Refresh the page to update the content",
         "error": "ERROR",
         "errordesc": "There was an error while submitting results! Please, try again and if the error persists contact the organizers."
     },

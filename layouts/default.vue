@@ -24,7 +24,10 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="$t(item.title)" class="font-weight-bold" />
+            <v-list-item-title
+              v-text="$t(item.title)"
+              class="font-weight-bold"
+            />
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -112,11 +115,11 @@
       </v-container>
     </v-main>
 
-    <v-snackbar v-model="snackbar" multi-line>
-      Refresh to update
+    <v-snackbar v-model="snackbar" timeout="-1" top multi-line>
+      {{ $t("generic.refreshmessage") }}
       <template v-slot:action="{ attrs }">
-        <v-btn color="red" text v-bind="attrs" @click="snackbar = false">
-          Close
+        <v-btn color="secondary" text v-bind="attrs" @click="refresh">
+          {{ $t("generic.refresh") }}
         </v-btn>
       </template>
     </v-snackbar>
@@ -191,6 +194,9 @@ export default {
     logout() {
       this.$auth.logout();
     },
+    refresh() {
+      window.location.reload();
+    },
   },
   async mounted() {
     const workbox = await window.$workbox;
@@ -198,7 +204,6 @@ export default {
       workbox.addEventListener("installed", (event) => {
         if (event.isUpdate) {
           this.snackbar = true;
-          window.location.reload();
         }
       });
     }
