@@ -171,11 +171,6 @@ export default {
           title: "navbar.faq",
           to: "/domande-frequenti",
         },
-        {
-          icon: "mdi-brain",
-          title: "navbar.millionaire",
-          to: "/milionario",
-        },
       ],
       miniVariant: false,
       right: true,
@@ -213,6 +208,6 @@ export default {
 
 <style>
 .drawer-active {
-  background: #00aa82;
+  background: #ec95b9;
 }
 </style>

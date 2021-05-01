@@ -79,28 +79,28 @@ export default {
 <style scoped>
 .timer-lg td {
   font-size: 96px;
-  border: 8px solid #00aa82;
+  border: 8px solid #ec95b9;
   padding: 0 10px;
   font-weight: 700;
 }
 
 .timer-md td {
   font-size: 72px;
-  border: 8px solid #00aa82;
+  border: 8px solid #ec95b9;
   padding: 0 10px;
   font-weight: 700;
 }
 
 .timer-sm td {
   font-size: 40px;
-  border: 6px solid #00aa82;
+  border: 6px solid #ec95b9;
   padding: 0 7px;
   font-weight: 700;
 }
 
 .timer-xs td {
   font-size: 32px;
-  border: 8px solid #00aa82;
+  border: 8px solid #ec95b9;
   padding: 0 10px;
   font-weight: 700;
 }

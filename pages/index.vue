@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" xl="8">
       <template>
-        <v-img class="intro" aspect-ratio="2.5293" src="/ioo-logo.svg" />
+        <v-img width="70%" class="intro" aspect-ratio="1.428" src="/logo.svg" />
 
         <h3 class="text-center">{{ $t("home.desc") }}</h3>
         <p class="text-center">{{ $t("home.subdesc") }}</p>
@@ -74,8 +74,12 @@ export default {
 </script>
 
 <style scoped>
+.intro{
+  margin: 0 auto;
+}
+
 h3,
-.intro,
+.intro
 .action-buttons {
   margin-top: 30px;
 }

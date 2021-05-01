@@ -126,7 +126,7 @@ a {
 }
 
 .count {
-  color: #00aa82;
+  color: #ec95b9;
   font-weight: 600;
   font-size: 24;
 }
