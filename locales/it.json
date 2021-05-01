@@ -446,9 +446,10 @@
     },
     "home": {
         "title": "Home",
-        "desc": "L'Italian Open Online 2021 è la prima gara online organizzata interamente da Cubing Italy!",
+        "desc": "Il Cubing in Spring 2021 è la seconda gara online organizzata interamente da Cubing Italy!",
         "subdesc": "La partecipazione è aperta a tutti e l'unico requisito è saper risolvere il cubo di Rubik!",
         "register": "Iscriviti",
+        "compete":"Partecipa",
         "info": "Informazioni"
     },
     "millionaire": {

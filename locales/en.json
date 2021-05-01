@@ -448,9 +448,10 @@
     },
     "home": {
         "title": "Home",
-        "desc": "The Italian Open Online 2021 is the first online competition organized entirely by Cubing Italy!",
+        "desc": "The Cubing in Spring 2021 is the second online competition organized entirely by Cubing Italy!",
         "subdesc": "This competition is open to everybody, the only requirement is knowing how to solve the Rubik's cube!",
         "register": "Register",
+        "compete":"Compete",
         "info": "General Info"
     },
     "millionaire":{

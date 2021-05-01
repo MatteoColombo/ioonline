@@ -14,20 +14,19 @@
             height="70px"
             elevation="2"
             x-large
-            to="/informazioni"
-            color="primary"
-            >{{ $t("home.info") }}</v-btn
-          ></v-col
-        >
-        <v-col cols="12" md="6"
+            to="/registrazione"
+            color="secondary"
+            >{{ $t("home.register") }}</v-btn
+          ></v-col>
+          <v-col cols="12" md="6"
           ><v-btn
             width="100%"
             height="70px"
             elevation="2"
             x-large
-            to="/registrazione"
-            color="secondary"
-            >{{ $t("home.register") }}</v-btn
+            to="/informazioni"
+            color="primary"
+            >{{ $t("home.info") }}</v-btn
           ></v-col
         >
       </v-row>

@@ -175,7 +175,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Italian Open Online",
+      title: "Cubing in Spring",
       currentTranslation: () => {
         for (var item of this.$i18n.locales)
           if (item.code === this.$i18n.locale) {
