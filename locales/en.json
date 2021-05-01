@@ -38,7 +38,7 @@
         "descextra": "The Cubing in Spring 2021 will be entirely streamed on Cubing Italy's Twitch channel!",
         "days": [
             {
-                "day": "Saturday, March 13th",
+                "day": "Saturday, May 22nd",
                 "schedule": [
                     {
                         "hour": "14:00",
@@ -85,7 +85,7 @@
                 ]
             },
             {
-                "day": "Sunday, March 14th",
+                "day": "Sunday, May 23rd",
                 "schedule": [
                     {
                         "hour": "14:00",
@@ -383,7 +383,7 @@
     },
     "register": {
         "title": "Registration",
-        "desc": "Registrations will open on the 28th of February",
+        "desc": "Registrations will open on the 10th of May",
         "openin": "Registration opens in",
         "closein": "Registration closes in",
         "days": "days",
@@ -392,13 +392,13 @@
         "seconds": "seconds",
         "steps": [
             {
-                "date": "February 28th, 14:00 (GMT+2)",
+                "date": "May 10th, 14:00 (GMT+2)",
                 "event": "Registration opens",
                 "color": "primary",
                 "icon": "mdi-account-plus"
             },
             {
-                "date": "March 11th , 23:59 (GMT+2)",
+                "date": "May 20th , 23:59 (GMT+2)",
                 "event": "Registration closes",
                 "color": "secondary",
                 "icon": "mdi-lock"
@@ -406,7 +406,7 @@
         ],
         "regformopen": {
             "title": "Choose the events you would like to register for.",
-            "desc": "You can edit your registration until March 11th, 23:59 (GMT+2)."
+            "desc": "You can edit your registration until May 20th, 23:59 (GMT+2)."
         },
         "regformclosed": {
             "title": "These are the events you registered for",

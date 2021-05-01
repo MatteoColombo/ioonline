@@ -36,7 +36,7 @@
         "descextra": "L'intero svolgimento del Cubing in Spring 2021 sarà accompagnato da una diretta streaming su Twitch!",
         "days": [
             {
-                "day": "Sabato 13 Marzo",
+                "day": "Sabato 22 Maggio",
                 "schedule": [
                     {
                         "hour": "14:00",
@@ -83,7 +83,7 @@
                 ]
             },
             {
-                "day": "Domenica 14 Marzo",
+                "day": "Domenica 23 Maggio",
                 "schedule": [
                     {
                         "hour": "14:00",
@@ -243,13 +243,13 @@
     },
     "info": {
         "title": "Informazioni",
-        "desc": "Il Cubing in Spring 2021 si svolgerà il 13 e 14 Marzo 2021!",
+        "desc": "Il Cubing in Spring 2021 si svolgerà il 22 e 23 Maggio 2021!",
         "intro": {
             "sections": [
                 {
                     "title": "Registrazioni",
                     "icon": "mdi-account-plus",
-                    "desc": "Dalle 14:00 del 10 Maggio alle 23:59 dell'20 Maggio 2021",
+                    "desc": "Dalle 14:00 del 10 Maggio alle 23:59 del 20 Maggio 2021",
                     "messages": [
                         "Potrai inserire <strong>solo</strong> i risultati degli eventi ai quali sei iscritto, ricordati quindi di iscriverti a tutti gli eventi a cui vuoi partecipare."
                     ],
@@ -380,7 +380,7 @@
     },
     "register": {
         "title": "Registrazione",
-        "desc": "Le registrazioni apriranno il 28 Febbraio e chiuderanno l'11 Marzo 2021",
+        "desc": "Le registrazioni apriranno il 10 Maggio e chiuderanno l'20 Maggio 2021",
         "openin": "Le registrazioni aprono tra",
         "closein": "Le registrazioni chiudono tra",
         "days": "giorni",
@@ -389,13 +389,13 @@
         "seconds": "secondi",
         "steps": [
             {
-                "date": "28 Febbraio, 14:00 (GMT+2)",
+                "date": "10 Maggio, 14:00 (GMT+2)",
                 "event": "Apertura iscrizioni",
                 "color": "primary",
                 "icon": "mdi-account-plus"
             },
             {
-                "date": "11 Marzo, 23:59 (GMT+2)",
+                "date": "20 Maggio, 23:59 (GMT+2)",
                 "event": "Chiusura iscrizioni",
                 "color": "secondary",
                 "icon": "mdi-lock"
@@ -403,7 +403,7 @@
         ],
         "regformopen": {
             "title": "Seleziona gli eventi a cui vuoi registrarti",
-            "desc": " Puoi modificare la tua registrazione fino alle 23:59 (GMT+2) dell'11 Marzo"
+            "desc": " Puoi modificare la tua registrazione fino alle 23:59 (GMT+2) del 20 Maggio"
         },
         "regformclosed": {
             "title": "Ti sei registrato per i seguenti eventi",

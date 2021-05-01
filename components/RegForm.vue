@@ -19,7 +19,7 @@
 
     <v-row align="center" class="wrap">
       <v-col class="d-none d-md-block">
-        <v-btn-toggle v-model="events" multiple color="primary">
+        <v-btn-toggle v-model="events" multiple color="primary" >
           <v-btn value="333" :class="{ 'disable-events': regClosed }">
             <v-icon>cubing-icon event-333</v-icon>
           </v-btn>
@@ -29,20 +29,20 @@
           <v-btn value="444" :class="{ 'disable-events': regClosed }">
             <v-icon>cubing-icon event-444</v-icon>
           </v-btn>
-          <v-btn value="333bf" :class="{ 'disable-events': regClosed }">
-            <v-icon>cubing-icon event-333bf</v-icon>
+          <v-btn value="555" :class="{ 'disable-events': regClosed }">
+            <v-icon>cubing-icon event-555</v-icon>
+          </v-btn>
+          <v-btn value="666" :class="{ 'disable-events': regClosed }">
+            <v-icon>cubing-icon event-666</v-icon>
           </v-btn>
           <v-btn value="333fm" :class="{ 'disable-events': regClosed }">
             <v-icon>cubing-icon event-333fm</v-icon>
           </v-btn>
-          <v-btn value="sq1" :class="{ 'disable-events': regClosed }">
-            <v-icon>cubing-icon event-sq1</v-icon>
+          <v-btn value="333oh" :class="{ 'disable-events': regClosed }">
+            <v-icon>cubing-icon event-333oh</v-icon>
           </v-btn>
-          <v-btn value="clock" :class="{ 'disable-events': regClosed }">
-            <v-icon>cubing-icon event-clock</v-icon>
-          </v-btn>
-          <v-btn value="pyram" :class="{ 'disable-events': regClosed }">
-            <v-icon>cubing-icon event-pyram</v-icon>
+          <v-btn value="minx" :class="{ 'disable-events': regClosed }">
+            <v-icon>cubing-icon event-minx</v-icon>
           </v-btn>
           <v-btn value="skewb" :class="{ 'disable-events': regClosed }">
             <v-icon>cubing-icon event-skewb</v-icon>
@@ -66,24 +66,24 @@
         </div>
         <div>
           <v-btn-toggle v-model="events" multiple color="primary">
-            <v-btn value="333bf" :class="{ 'disable-events': regClosed }">
-              <v-icon>cubing-icon event-333bf</v-icon>
+            <v-btn value="555" :class="{ 'disable-events': regClosed }">
+              <v-icon>cubing-icon event-555</v-icon>
+            </v-btn>
+            <v-btn value="666" :class="{ 'disable-events': regClosed }">
+              <v-icon>cubing-icon event-666</v-icon>
             </v-btn>
             <v-btn value="333fm" :class="{ 'disable-events': regClosed }">
               <v-icon>cubing-icon event-333fm</v-icon>
-            </v-btn>
-            <v-btn value="sq1" :class="{ 'disable-events': regClosed }">
-              <v-icon>cubing-icon event-sq1</v-icon>
             </v-btn>
           </v-btn-toggle>
         </div>
         <div>
           <v-btn-toggle v-model="events" multiple color="primary">
-            <v-btn value="clock" :class="{ 'disable-events': regClosed }">
-              <v-icon>cubing-icon event-clock</v-icon>
+            <v-btn value="333oh" :class="{ 'disable-events': regClosed }">
+              <v-icon>cubing-icon event-333oh</v-icon>
             </v-btn>
-            <v-btn value="pyram" :class="{ 'disable-events': regClosed }">
-              <v-icon>cubing-icon event-pyram</v-icon>
+            <v-btn value="minx" :class="{ 'disable-events': regClosed }">
+              <v-icon>cubing-icon event-minx</v-icon>
             </v-btn>
             <v-btn value="skewb" :class="{ 'disable-events': regClosed }">
               <v-icon>cubing-icon event-skewb</v-icon>
@@ -132,6 +132,7 @@
               large
               @click="saveEvents()"
               width="200px"
+              class="black--text"
               :block="$vuetify.breakpoint.xsOnly"
             >
               {{ $t("register.register") }}
@@ -141,7 +142,7 @@
       </v-col>
     </v-row>
 
-    <v-snackbar v-model="snackbar" app>
+    <v-snackbar v-model="snackbar" timeout="10000" top app>
       {{ message }}
       <template v-slot:action="{ attrs }">
         <v-btn color="primary" text v-bind="attrs" @click="snackbar = false">
@@ -199,6 +200,12 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.pink-active, .v-btn--active{
+  background-color: #ec95b9 !important;
+}
+</style>
 
 <style>
 .formcontainer {
