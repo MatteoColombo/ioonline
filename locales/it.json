@@ -314,35 +314,35 @@
                     "icon": "cubing-icon event-444",
                     "name": "4x4x4",
                     "format": "Media di 3 su 5",
-                    "toNext": "Si qualifica alla finale il 40% dei partecipanti"
+                    "toNext": "Si qualifica alla finale il 60% dei partecipanti"
                 },
                 {
-                    "icon": "cubing-icon event-333bf",
-                    "name": "3BLD",
-                    "format": "Migliore dei 3",
-                    "toNext": "Si qualifica alla finale il 40% dei partecipanti"
-                },
-                {
-                    "icon": "cubing-icon event-333fm",
-                    "name": "FMC",
-                    "format": "Tentativo singolo",
-                    "toNext": "Turno unico"
-                },
-                {
-                    "icon": "cubing-icon event-sq1",
-                    "name": "Square-1",
+                    "icon": "cubing-icon event-555",
+                    "name": "5x5x5",
                     "format": "Media di 3 su 5",
                     "toNext": "Si qualifica alla finale il 60% dei partecipanti"
                 },
                 {
-                    "icon": "cubing-icon event-clock",
-                    "name": "Clock",
-                    "format": "Media di 3 su 5",
-                    "toNext": "Si qualifica alla finale il 40% dei partecipanti"
+                    "icon": "cubing-icon event-666",
+                    "name": "6x6x6",
+                    "format": "Media di 3",
+                    "toNext": "Si qualifica alla finale il 60% dei partecipanti"
                 },
                 {
-                    "icon": "cubing-icon event-pyram",
-                    "name": "Pyraminx",
+                    "icon": "cubing-icon event-333fm",
+                    "name": "3x3 FMC",
+                    "format": "Tentativo singolo",
+                    "toNext": "Turno unico"
+                },
+                {
+                    "icon": "cubing-icon event-333oh",
+                    "name": "3x3 OH",
+                    "format": "Media di 3 su 5",
+                    "toNext": "Si qualifica alla finale il 60% dei partecipanti"
+                },
+                {
+                    "icon": "cubing-icon event-minx",
+                    "name": "Megaminx",
                     "format": "Media di 3 su 5",
                     "toNext": "Si qualifica alla finale il 60% dei partecipanti"
                 },

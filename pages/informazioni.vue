@@ -8,7 +8,7 @@
           v-for="(item, index) in $t('info.intro.sections')"
           :key="'section' + index"
         >
-          <h3>{{ item.title }}</h3>
+          <h2>{{ item.title }}</h2>
           <div>
             <v-icon large>{{ item.icon }}</v-icon>
             <span>
@@ -166,11 +166,6 @@ p {
 
 h2 {
   margin-top: 20px;
-  color: #ec95b9;
-}
-
-h3 {
-  margin-top: 10px;
   color: #ec95b9;
 }
 
