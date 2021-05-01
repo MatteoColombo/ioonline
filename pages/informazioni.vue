@@ -4,38 +4,41 @@
       <template>
         <h1 class="text-center">{{ $t("info.title") }}</h1>
 
-        <h3>{{ $t("info.intro.regtitle") }}</h3>
-        <div>
-          <v-icon large>mdi-account-plus</v-icon>
-          <span
-            ><strong>{{ $t("info.intro.regwhen") }}</strong></span
-          >
-        </div>
-        <p v-html="$t('info.intro.regdesc')" class="text-justify"></p>
+        <div
+          v-for="(item, index) in $t('info.intro.sections')"
+          :key="'section' + index"
+        >
+          <h3>{{ item.title }}</h3>
+          <div>
+            <v-icon large>{{ item.icon }}</v-icon>
+            <span>
+              <strong>{{ item.desc }}</strong>
+            </span>
+          </div>
+          <p
+            v-for="(message, mindex) in item.messages"
+            :key="index + 'message' + mindex"
+            v-html="message"
+            class="text-justify"
+          ></p>
 
-        <h3>{{ $t("info.intro.whentitle") }}</h3>
-        <div>
-          <v-icon large>mdi-calendar</v-icon>
-          <span
-            ><strong>{{ $t("info.intro.when") }}</strong></span
-          >
-        </div>
-        <p v-html="$t('info.intro.whendesc')" class="text-justify"></p>
-        <p v-html="$t('info.intro.whendesc1')" class="text-justify"></p>
+          <ul>
+            <li
+              v-for="(litem, lindex) in item.list"
+              :key="index + 'list' + lindex"
+            >
+              {{ litem }}
+            </li>
+          </ul>
 
-        <h3>{{ $t("info.intro.resulttitle") }}</h3>
-        <div>
-          <v-icon large>mdi-trophy</v-icon>
-          <strong>{{ $t("info.intro.result") }}</strong>
+          <p
+            v-for="(message, mindex) in item.postmessages"
+            :key="index + 'postmessage' + mindex"
+            v-html="message"
+            class="text-justify"
+          ></p>
         </div>
-        <p v-html="$t('info.intro.resultdesc')" class="text-justify"></p>
-        <ul>
-          <li v-for="item in $t('info.intro.resulthours')" :key="item">
-            {{ item }}
-          </li>
-        </ul>
-        <p v-html="$t('info.intro.resultdesc1')" class="text-justify"></p>
-        <p v-html="$t('info.intro.resultdesc2')" class="text-justify"></p>
+
 
         <h2>{{ $t("info.events.title") }}</h2>
         <v-data-table
@@ -97,7 +100,7 @@
 
 <script>
 export default {
-   head() {
+  head() {
     return {
       title: this.$t("info.title"),
       meta: [
@@ -163,10 +166,12 @@ p {
 
 h2 {
   margin-top: 20px;
+  color: #ec95b9;
 }
 
 h3 {
   margin-top: 10px;
+  color: #ec95b9;
 }
 
 a {

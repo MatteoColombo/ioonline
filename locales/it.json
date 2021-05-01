@@ -9,10 +9,10 @@
     "generic": {
         "login": "Accedi",
         "logout": "Esci",
-        "support":"Supporta Cubing Italy",
-        "supportdesc":"La tua donazione aiuterà a coprire i costi amministrativi dell’associazione, permettendoci di superare questo periodo difficile in cui non è possibile svolgere alcuna attività.",
-        "error":"ERRORE",
-        "errordesc":"Errore durante l'invio dei risultati, riprova! Se l'errore persiste chiedi supporto agli organizzatori."
+        "support": "Supporta Cubing Italy",
+        "supportdesc": "La tua donazione aiuterà a coprire i costi amministrativi dell’associazione, permettendoci di superare questo periodo difficile in cui non è possibile svolgere alcuna attività.",
+        "error": "ERRORE",
+        "errordesc": "Errore durante l'invio dei risultati, riprova! Se l'errore persiste chiedi supporto agli organizzatori."
     },
     "navbar": {
         "home": "Home",
@@ -29,9 +29,9 @@
     "live": {
         "channel": "cubingitaly",
         "title": "Programma della diretta",
-        "desc": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch</a>. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
+        "desc": "L'intero svolgimento del Cubing in Spring 2021 sarà accompagnato da una diretta streaming su <a href='https://www.twitch.tv/cubingitaly' target='_blank'>Twitch</a>. Giochi a tema e non, interviste e due pomeriggi in compagnia vi attendono!",
         "extra": [],
-        "descextra": "L'intero svolgimento dell'Italian Open Online 2021 sarà accompagnato da una diretta streaming su Twitch!",
+        "descextra": "L'intero svolgimento del Cubing in Spring 2021 sarà accompagnato da una diretta streaming su Twitch!",
         "days": [
             {
                 "day": "Sabato 13 Marzo",
@@ -241,25 +241,58 @@
     },
     "info": {
         "title": "Informazioni",
-        "desc": "L'Italian Open Online 2021 si svolgerà il 13 e 14 Marzo 2021!",
+        "desc": "Il Cubing in Spring 2021 si svolgerà il 13 e 14 Marzo 2021!",
         "intro": {
-            "title": "Format competizione",
-            "regtitle": "Registrazioni",
-            "regwhen": "Dalle 14:00 del 28 Febbraio alle 23:59 dell'11 Marzo",
-            "regdesc": "Potrai inserire <strong>solo</strong> i risultati degli eventi ai quali sei iscritto, ricordati quindi di iscriverti a tutti gli eventi a cui vuoi partecipare.",
-            "whentitle": "Svolgimento",
-            "when": "Sabato 13 Marzo e Domenica 14 Marzo",
-            "whendesc": "Il Sabato è dedicato ai primi turni, mentre la Domenica si svolgeranno le finali. Solamente i migliori classificati per ogni evento potranno parteciparvi.",
-            "whendesc1": "Potrai inviare i tuoi tempi nella sezione <a href='/partecipa'>Risultati</a>, che sarà accessibile durante i giorni di gara.",
-            "resulttitle": "Risultati",
-            "result": "Fasce orarie dedicate",
-            "resultdesc": "Potrai inviare i risultati, nell'ordine che preferisci, in qualsiasi momento, durante le fasce dedicate:",
-            "resulthours": [
-                "Sabato: dalle 10 alle 18",
-                "Domenica: dalle 10 alle 20"
+            "sections": [
+                {
+                    "title": "Registrazioni",
+                    "icon": "mdi-account-plus",
+                    "desc": "Dalle 14:00 del 10 Maggio alle 23:59 dell'20 Maggio 2021",
+                    "messages": [
+                        "Potrai inserire <strong>solo</strong> i risultati degli eventi ai quali sei iscritto, ricordati quindi di iscriverti a tutti gli eventi a cui vuoi partecipare."
+                    ],
+                    "list": [],
+                    "postmessages": []
+                },
+                {
+                    "title": "Svolgimento",
+                    "icon": "mdi-calendar",
+                    "desc": "Sabato 22 Maggio e Domenica 23 Maggio",
+                    "messages": [
+                        "Il Sabato è dedicato ai primi turni, mentre la Domenica si svolgeranno le finali. Solamente i migliori classificati per ogni evento potranno parteciparvi.",
+                        "Potrai inviare i tuoi tempi nella sezione <a href='/partecipa'>Risultati</a>, che sarà accessibile durante i giorni di gara."
+                    ],
+                    "list": [],
+                    "postmessages": []
+                },
+                {
+                    "title": "Risultati",
+                    "icon": "mdi-trophy",
+                    "desc": "Fasce oprarie dedicate",
+                    "messages": [
+                        "Potrai inviare i risultati, nell'ordine che preferisci, in qualsiasi momento, durante le fasce dedicate:"
+                    ],
+                    "list": [
+                        "Sabato: dalle 10 alle 20",
+                        "Domenica: dalle 10 alle 20"
+                    ],
+                    "postmessages": [
+                        "Alla chiusura di ogni giornata di gara sarà pubblicata la classifica in un'apposita sezione."
+                    ]
+                },
+                {
+                    "title": "Prova video",
+                    "icon": "mdi-camera",
+                    "desc": "Verifica dei risultati",
+                    "messages": [
+                        "Chiederemo una prova video solo a chi si posizionerà sul podio, quindi se pensi di avere qualche chance, ricordati di filmarti!",
+                        "Accetteremo soltanto video che <strong>non presentino tagli</strong> o altre forme di editing: riprenditi dal momento in cui mischi il cubo per la prima risoluzione fino al momento in cui termini l’ultimo tentativo della media. Puoi inviarci il video su uno dei nostri social, via mail, in privato a uno degli organizzatori o in qualsiasi altro modo che ci permetta di vederlo. Se il file fosse troppo pesante, suggeriamo di caricare il video su youtube come “non elencato” e condividere con noi il link.",
+                        "Se non fornirai una prova video adeguata, il tuo risultato non sarà considerato per il podio ma non verrai squalificato dalla competizione."
+                    ],
+                    "list": [],
+                    "postmessages": []
+                }
             ],
-            "resultdesc1": "Alla chiusura di ogni giornata di gara sarà pubblicata la classifica in un'apposita sezione.",
-            "resultdesc2": "Chiederemo una prova video solo a chi si posizionerà sul podio, quindi se pensi di avere qualche chance, ricordati di filmarti!",
             "desc": []
         },
         "events": {
@@ -438,7 +471,7 @@
     },
     "competitors": {
         "title": "Iscritti",
-        "desc": "L'elenco degli iscritti all'Italian Open Online 2021!",
+        "desc": "L'elenco degli iscritti al Cubing in Spring 2021!",
         "count": "Ci sono già ",
         "count2": " persone registrate, cosa aspetti ad iscriverti anche tu?",
         "name": "Nome",
@@ -449,7 +482,7 @@
         "desc": "Il Cubing in Spring 2021 è la seconda gara online organizzata interamente da Cubing Italy!",
         "subdesc": "La partecipazione è aperta a tutti e l'unico requisito è saper risolvere il cubo di Rubik!",
         "register": "Iscriviti",
-        "compete":"Partecipa",
+        "compete": "Partecipa",
         "info": "Informazioni"
     },
     "millionaire": {

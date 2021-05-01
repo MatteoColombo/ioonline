@@ -81,7 +81,7 @@ export default {
     }],
     defaultLocale: 'it',
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: 'it',
       messages: { en, it }
     }
   },
