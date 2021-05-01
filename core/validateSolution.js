@@ -56,11 +56,13 @@ export default function validateSolution(solution) {
   const result = {
     isValid: true,
     isTooLong: false,
-    invalidElements: []
+    invalidElements: [],
+    invalidMoves: []
   };
   const moves = solution
     .replaceAll('\r\n', ' ')
     .replaceAll('\n', ' ')
+    .replaceAll(String.fromCharCode(160), ' ')
     .trim()
     .split(" ") ?? [];
   if (moves.length > 80) {
@@ -73,6 +75,8 @@ export default function validateSolution(solution) {
       index
     });
     result.isValid = false;
+    result.invalidMoves.push(move);
   }
+  result.invalidMoves = [...new Set(result.invalidMoves)];
   return result;
 }
