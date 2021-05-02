@@ -92,8 +92,8 @@
             </v-data-table>
           </div>
           <div v-else>
-            <v-img v-if="this.$i18n.locale === 'it'" src="/nothing.png"></v-img>
-            <v-img v-else src="/eng-nothing.png"></v-img>
+            <h2>{{$t('standings.nothing')}}</h2>
+            <v-img aspect-ratio="1" class="nothing-img" src="/nothing.gif"></v-img>
           </div>
         </v-col>
       </template>
@@ -239,6 +239,11 @@ a {
 .unbreakablelabel {
   white-space: nowrap;
 }
+
+.nothing-img{
+  max-width: 512px;
+}
+
 </style>
 
 <style>
