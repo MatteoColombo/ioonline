@@ -414,9 +414,10 @@
         "update": "Aggiorna",
         "delete": "Cancella",
         "close": "Chiudi",
-        "regupdated": "Registrazione aggiornata",
-        "regdone": "Registrazione effettuata",
-        "regdel": "Registrazione cancellata",
+        "regupdated": "Modifiche effettuate.",
+        "regdone": "Iscrizione effettuata.",
+        "regdel": "Registrazione cancellata.",
+        "regerror": "Si è verificato un errore.",
         "howtoregister": "Come mi registro?",
         "regsteps": [
             "Vai sul sito WCA e crea un nuovo profilo (<a href='https://www.cubingitaly.org/tutorial/creare-un-account-wca2/1' target=_blank>tutorial di Cubing Italy</a>). Se ne hai già uno puoi saltare questo passaggio.",
@@ -465,7 +466,7 @@
         "desc": [
             "Per iscriversi e partecipare al Cubing in Spring 2021 è necessario possedere un account WCA.",
             "Se non ne possiedi ancora, puoi crearlo visitando <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>questa pagina</a>. Potrai utilizzarlo sia per l'iscrizione alle competizioni ufficiali che accedere a questo sito e al sito di Cubing Italy!",
-            "Una volta creato l'account WCA, torna in questa pagina per effettuare l'accesso e iscriverti o partecipare al Cubing in Spring 2021!"
+            "Una volta creato l'account WCA, torna qui questa pagina per effettuare l'accesso e iscriverti o partecipare al Cubing in Spring 2021!"
         ]
     },
     "standings": {

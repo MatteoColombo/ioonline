@@ -98,12 +98,12 @@ export default {
         "333",
         "222",
         "444",
-        "333bf",
+        "555",
+        "666",
         "333fm",
-        "clock",
-        "pyram",
-        "skewb",
-        "sq1",
+        "333oh",
+        "minx",
+        "skewb"
       ],
     };
   },

@@ -19,7 +19,7 @@
 
     <v-row align="center" class="wrap">
       <v-col class="d-none d-md-block">
-        <v-btn-toggle v-model="events" multiple color="primary" >
+        <v-btn-toggle v-model="events" multiple color="primary">
           <v-btn value="333" :class="{ 'disable-events': regClosed }">
             <v-icon>cubing-icon event-333</v-icon>
           </v-btn>
@@ -91,7 +91,26 @@
           </v-btn-toggle>
         </div>
       </v-col>
-
+      <v-col cols="12" md="8" offset-md="2">
+        <v-alert
+          :value="success"
+          color="green"
+          type="success"
+          text
+          border="left"
+          dismissible
+          >{{ message }}</v-alert
+        >
+        <v-alert
+          :value="error"
+          color="red"
+          type="error"
+          text
+          border="left"
+          dismissible
+          >{{ $t("register.regerror") }}</v-alert
+        >
+      </v-col>
       <v-col cols="12">
         <v-row v-if="isRegistered && !regClosed">
           <v-col
@@ -100,8 +119,9 @@
             md="6"
           >
             <v-btn
-              color="secondary"
+              color="primary"
               width="200px"
+              class="black--text"
               :block="$vuetify.breakpoint.xsOnly"
               large
               @click="saveEvents()"
@@ -115,8 +135,9 @@
             md="6"
           >
             <v-btn
-              color="red"
+              color="secondary"
               width="200px"
+              class="black--text"
               :block="$vuetify.breakpoint.xsOnly"
               large
               @click="deleteRegistration()"
@@ -141,15 +162,6 @@
         </v-row>
       </v-col>
     </v-row>
-
-    <v-snackbar v-model="snackbar" timeout="10000" top app>
-      {{ message }}
-      <template v-slot:action="{ attrs }">
-        <v-btn color="primary" text v-bind="attrs" @click="snackbar = false">
-          {{ $t("register.close") }}
-        </v-btn>
-      </template>
-    </v-snackbar>
   </div>
 </template>
 
@@ -159,7 +171,8 @@ export default {
     return {
       events: [],
       isRegistered: false,
-      snackbar: false,
+      success: false,
+      error: false,
       message: "",
     };
   },
@@ -174,35 +187,47 @@ export default {
   },
   methods: {
     async saveEvents() {
-      if (this.isRegistered) {
-        this.events = await this.$axios.$put("/api/register", {
-          events: this.events,
-        });
-        this.message = this.$t("register.regupdated");
-        this.snackbar = true;
-      } else {
-        if (this.events.length > 0) {
-          this.events = await this.$axios.$post("/api/register", {
+      this.success = false;
+      this.error = false;
+      try {
+        if (this.isRegistered) {
+          this.events = await this.$axios.$put("/api/register", {
             events: this.events,
           });
-          this.message = this.$t("register.regdone");
-          this.snackbar = true;
+          this.message = this.$t("register.regupdated");
+          this.success = true;
+        } else {
+          if (this.events.length > 0) {
+            this.events = await this.$axios.$post("/api/register", {
+              events: this.events,
+            });
+            this.message = this.$t("register.regdone");
+            this.success = true;
+          }
         }
-      }
-      this.isRegistered = this.events.length > 0;
+        this.isRegistered = this.events.length > 0;
+      } catch (e) {}
     },
     async deleteRegistration() {
-      this.events = await this.$axios.$delete("/api/register");
-      this.message = this.$t("register.regdel");
-      this.snackbar = true;
-      this.isRegistered = this.events.length > 0;
+      try {
+        this.success = false;
+        this.error = false;
+        this.events = await this.$axios.$delete("/api/register");
+        this.message = this.$t("register.regdel");
+        this.success = true;
+        this.isRegistered = this.events.length > 0;
+      } catch (e) {
+        this.success = false;
+        this.error = true;
+      }
     },
   },
 };
 </script>
 
 <style scoped>
-.pink-active, .v-btn--active{
+.pink-active,
+.v-btn--active {
   background-color: #ec95b9 !important;
 }
 </style>

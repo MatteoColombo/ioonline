@@ -7,7 +7,7 @@
       app
       :permanent="!$vuetify.breakpoint.xsOnly"
     >
-      <v-img class="ma-4 mr-8" aspect-ratio="3.1531" src="/logo-xl.svg"></v-img>
+      <img class="ma-4 mr-8" aspect-ratio="3.1531" src="/logo-xl.svg"></v-img>
 
       <v-divider></v-divider>
 

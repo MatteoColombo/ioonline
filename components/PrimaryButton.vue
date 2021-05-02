@@ -7,7 +7,6 @@
     :to="sendTo"
     color="primary"
     class="black--text"
-    @click="clickMethod"
   >
     {{ text }}
   </v-btn>

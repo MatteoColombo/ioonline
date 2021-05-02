@@ -3,7 +3,7 @@
     <v-col cols="12" sm="10" xl="8" justify="center" align="center">
       <template>
         <h2>{{ $t("login.title") }}</h2>
-        <div style="margin-top:20px" v-if="!isLoading">
+        <div style="margin-top: 20px" v-if="!isLoading">
           <div class="instructions">
             <p
               v-for="(item, index) in $t('login.desc')"
@@ -23,7 +23,7 @@
           >
         </div>
         <div v-else>
-          <v-img src="/loading.gif" width="250" aspect-ratio="1" />
+        <img src="/loading.gif" width="250" aspect-ratio="1"/>
         </div>
       </template>
     </v-col>
@@ -34,16 +34,20 @@
 export default {
   methods: {
     login() {
+      this.isLoading = true;
       this.$auth.loginWith("social");
     },
   },
+  created() {
+    this.isLoading = true;
+  },
   mounted() {
     let url = window.location.href.split("?");
-    if (url.length > 1 && url != null) this.isLoading = true;
+    this.isLoading = url != null && url.length > 1;
   },
   data() {
     return {
-      isLoading: false,
+      isLoading: true,
     };
   },
   head() {

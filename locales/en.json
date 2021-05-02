@@ -417,9 +417,10 @@
         "update": "Update",
         "delete": "Unregister",
         "close": "Close",
-        "regupdated": "Registration updated",
-        "regdone": "Registration confirmed",
-        "regdel": "Registrazion canceled",
+        "regupdated": "Registration updated.",
+        "regdone": "Registration confirmed.",
+        "regdel": "Registrazion canceled.",
+        "regerror":"An error occured.",
         "howtoregister": "How do I register?",
         "regsteps": [
             "Visit the WCA website and create a new account. If you already have one you can skip this step.",
@@ -465,7 +466,11 @@
     },
     "login": {
         "title": "Sign in",
-        "desc": ""
+        "desc": [
+            "To be able to register and compete for the Cubing in Spring 2021 you need a WCA account.",
+            "If you haven't got one yet, you can create it by visiting <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>this page</a>.",
+            "Once you've created the account, come back here to sign in and register and compete for the Cubing in Spring 2021!"
+        ]
     },
     "standings": {
         "title": "Rankings",
