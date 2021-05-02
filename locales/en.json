@@ -21,7 +21,7 @@
         "info": "General Info",
         "register": "Registration",
         "submit": "Compete",
-        "results": "Rankings",
+        "results": "Results",
         "live": "Livestream",
         "faq": "FAQ",
         "language": "Translation",
@@ -462,7 +462,8 @@
         "submit": "Submit",
         "cancel": "Cancel",
         "submitMessage": "Once the results have been submitted, you will no longer be able to edit them. Double-check the values entered before proceeding.",
-        "confirmSubmit": "Do you want to submit the results?"
+        "confirmSubmit": "Do you want to submit the results?",
+        "alldone":"No round available to compete in"
     },
     "login": {
         "title": "Sign in",
@@ -473,12 +474,13 @@
         ]
     },
     "standings": {
-        "title": "Rankings",
+        "title": "Results",
         "desc": "",
         "position": "#",
         "times": "Solves",
         "best": "Best",
-        "avg": "Average"
+        "avg": "Average",
+        "nothing":"Nothing to see here yet"
     },
     "competitors": {
         "title": "Competitors",

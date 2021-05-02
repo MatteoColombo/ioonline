@@ -19,10 +19,11 @@
         cols="12"
         lg="8"
         width="100%"
+        class="text-center"
         v-if="rounds.length == null || rounds.length === 0"
       >
-        <v-img v-if="this.$i18n.locale === 'it'" src="/nothing.png"></v-img>
-        <v-img v-else src="/eng-nothing.png"></v-img>
+        <h2>{{ $t("compete.alldone") }}</h2>
+        <v-img class="done-img" src="/done.gif"></v-img>
       </v-col>
       <v-col
         v-if="$auth.loggedIn && roundId !== '333fm_r1'"
@@ -266,11 +267,11 @@
     <v-dialog v-model="errordialog" max-width="290">
       <v-card>
         <v-card-title class="headline">
-          {{$t('generic.error')}}
+          {{ $t("generic.error") }}
         </v-card-title>
 
         <v-card-text>
-          {{$t('generic.errordesc')}}
+          {{ $t("generic.errordesc") }}
         </v-card-text>
 
         <v-card-actions>
@@ -289,7 +290,7 @@
 import { facade, filter } from "vue-input-facade";
 
 export default {
-  middleware:'auth',
+  middleware: "auth",
   directives: { facade },
   filters: { facade: filter },
   head() {
@@ -326,7 +327,7 @@ export default {
   },
   data() {
     return {
-      errordialog:false,
+      errordialog: false,
       panel: 0,
       roundId: false,
       roundName: "",
@@ -369,8 +370,8 @@ export default {
             this.resetAll();
           }
         } catch (e) {
-          this.errordialog=true;
-          this.loader=false
+          this.errordialog = true;
+          this.loader = false;
           console.log("error while submitting results");
         }
       } else {
@@ -394,8 +395,8 @@ export default {
             this.resetAll();
           }
         } catch (e) {
-          this.errordialog=true;
-          this.loader=false
+          this.errordialog = true;
+          this.loader = false;
           console.log("error while submitting results");
         }
       }
@@ -478,6 +479,11 @@ export default {
 @font-face {
   font-family: ScrambleFont;
   src: url("/fonts/cnr.woff");
+}
+
+.done-img {
+  max-width: 512px;
+  margin: 0 auto;
 }
 
 .v-list-item__title {

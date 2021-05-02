@@ -459,7 +459,8 @@
         "submit": "Invia",
         "cancel": "Annulla",
         "submitMessage": "Una volta inviati i risultati non potrai più modificarli. Controlla bene i valori inseriti prima di procedere.",
-        "confirmSubmit": "Vuoi inviare i risultati?"
+        "confirmSubmit": "Vuoi inviare i risultati?",
+        "alldone":"Non ci sono round disponibili a cui partecipare"
     },
     "login": {
         "title": "Accedi",
@@ -475,7 +476,8 @@
         "position": "#",
         "times": "Tempi",
         "best": "Migliore",
-        "avg": "Media"
+        "avg": "Media",
+        "nothing":"I risultati non sono ancora disponibili"
     },
     "competitors": {
         "title": "Iscritti",
