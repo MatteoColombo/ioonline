@@ -2,7 +2,29 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="10" xl="8" justify="center" align="center">
       <template>
-        <v-img width="300px" src="/WCAlogo_notext.svg"></v-img>
+        <h2>{{ $t("login.title") }}</h2>
+        <div style="margin-top:20px" v-if="!isLoading">
+          <div class="instructions">
+            <p
+              v-for="(item, index) in $t('login.desc')"
+              :key="index"
+              class="text-justify"
+              v-html="item"
+            />
+          </div>
+          <v-btn
+            @click="login"
+            color="secondary"
+            x-large
+            elevation="1"
+            class="black--text"
+            ><v-img width="30px" src="/WCAlogo_notext.svg"></v-img>
+            <span style="margin: 20px">{{ $t("generic.login") }}</span></v-btn
+          >
+        </div>
+        <div v-else>
+          <v-img src="/loading.gif" width="250" aspect-ratio="1" />
+        </div>
       </template>
     </v-col>
   </v-row>
@@ -10,6 +32,20 @@
 
 <script>
 export default {
+  methods: {
+    login() {
+      this.$auth.loginWith("social");
+    },
+  },
+  mounted() {
+    let url = window.location.href.split("?");
+    if (url.length > 1 && url != null) this.isLoading = true;
+  },
+  data() {
+    return {
+      isLoading: false,
+    };
+  },
   head() {
     return {
       title: this.$t("login.title"),
@@ -44,3 +80,28 @@ export default {
   },
 };
 </script>
+
+<style>
+a {
+  text-decoration: none;
+}
+</style>
+
+<style scoped>
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.instructions {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+.v-btn {
+  margin-top: 20px;
+}
+</style>

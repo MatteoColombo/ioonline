@@ -390,6 +390,7 @@
         "hours": "hours",
         "minutes": "minutes",
         "seconds": "seconds",
+        "signin":"Sign in to register",
         "steps": [
             {
                 "date": "May 10th, 14:00 (GMT+2)",

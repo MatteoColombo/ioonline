@@ -5,22 +5,26 @@
         <h1 class="text-center">{{ $t("register.title") }}</h1>
 
         <RegForm
-          v-if="!$auth.loggedIn && isRegistrationOpened"
+          v-if="$auth.loggedIn && isRegistrationOpened"
           :regClosed="isRegistrationClosed"
         />
 
         <v-btn
-          v-else-if="!$auth.loggedIn && isRegistrationOpened && !isRegistrationClosed"
+          v-else-if="
+            !$auth.loggedIn && isRegistrationOpened && !isRegistrationClosed
+          "
           to="/login"
           color="secondary"
           x-large
           elevation="1"
           class="timer-block black--text"
-          ><v-img width="30px" src="/WCAlogo_notext.svg"></v-img>
-          <span style="margin: 20px">{{ $t("generic.login") }}</span></v-btn
+          >{{ $t("register.signin") }}</v-btn
         >
 
-        <div class="timer-block" v-if="!isRegistrationOpened && !isRegistrationClosed">
+        <div
+          class="timer-block"
+          v-if="!isRegistrationOpened && !isRegistrationClosed"
+        >
           <RegSchedule :startAt="0" />
           <h2 class="text-center timer-desc">{{ $t("register.openin") }}</h2>
           <RegTimer :dateInMilliseconds="registrationOpens / 1000" />
@@ -39,9 +43,9 @@ export default {
   mounted() {
     this.isRegistrationOpened = this.checkIsRegistrationOpened();
     this.isRegistrationClosed = this.checkIsRegistrationClosed();
-    console.log(this.registrationOpens)
-    console.log(Date.now)
-    console.log(this.registrationCloses)
+    console.log(this.registrationOpens);
+    console.log(Date.now);
+    console.log(this.registrationCloses);
     window.setInterval(() => {
       this.isRegistrationOpened = this.checkIsRegistrationOpened();
       this.isRegistrationClosed = this.checkIsRegistrationClosed();
@@ -104,7 +108,7 @@ export default {
 </script>
 
 <style scoped>
-.timer-block{
-  margin-top:20px;
+.timer-block {
+  margin-top: 20px;
 }
 </style>

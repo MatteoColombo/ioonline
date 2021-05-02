@@ -289,6 +289,7 @@
 import { facade, filter } from "vue-input-facade";
 
 export default {
+  middleware:'auth',
   directives: { facade },
   filters: { facade: filter },
   head() {

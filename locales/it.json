@@ -11,8 +11,8 @@
         "logout": "Esci",
         "support": "Supporta Cubing Italy",
         "supportdesc": "La tua donazione aiuterà a coprire i costi amministrativi dell’associazione, permettendoci di superare questo periodo difficile in cui non è possibile svolgere alcuna attività.",
-        "refresh":"Aggiorna",
-        "refreshmessage":"Aggiorna la pagina per caricare il sito aggiornato",
+        "refresh": "Aggiorna",
+        "refreshmessage": "Aggiorna la pagina per caricare il sito aggiornato",
         "error": "ERRORE",
         "errordesc": "Errore durante l'invio dei risultati, riprova! Se l'errore persiste chiedi supporto agli organizzatori."
     },
@@ -387,6 +387,7 @@
         "hours": "ore",
         "minutes": "minuti",
         "seconds": "secondi",
+        "signin": "Accedi per iscriverti",
         "steps": [
             {
                 "date": "10 Maggio, 14:00 (GMT+2)",
@@ -461,7 +462,11 @@
     },
     "login": {
         "title": "Accedi",
-        "desc": ""
+        "desc": [
+            "Per iscriversi e partecipare al Cubing in Spring 2021 è necessario possedere un account WCA.",
+            "Se non ne possiedi ancora, puoi crearlo visitando <a href='https://www.worldcubeassociation.org/users/sign_up' target='_blank'>questa pagina</a>. Potrai utilizzarlo sia per l'iscrizione alle competizioni ufficiali che accedere a questo sito e al sito di Cubing Italy!",
+            "Una volta creato l'account WCA, torna in questa pagina per effettuare l'accesso e iscriverti o partecipare al Cubing in Spring 2021!"
+        ]
     },
     "standings": {
         "title": "Classifiche",

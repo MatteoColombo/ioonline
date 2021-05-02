@@ -8,7 +8,7 @@
     color="secondary"
     class="black--text"
   >
-    {{ text }}
+  {{ text }}
   </v-btn>
 </template>
 
@@ -20,7 +20,7 @@ export default {
     },
     sendTo: {
       type: String,
-    },
+    }
   },
 };
 </script>
