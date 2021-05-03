@@ -18,7 +18,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/preview_fb.png'
+        content: '/cubingspring-fb.png'
       },
     ],
     __dangerouslyDisableSanitizers: ['meta'],
