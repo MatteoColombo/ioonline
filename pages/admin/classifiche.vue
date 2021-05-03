@@ -89,8 +89,8 @@
             </v-data-table>
           </div>
           <div v-else>
-            <v-img v-if="this.$i18n.locale === 'it'" src="/nothing.png"></v-img>
-            <v-img v-else src="/eng-nothing.png"></v-img>
+            <img v-if="this.$i18n.locale === 'it'" src="/nothing.png"/>
+            <img v-else src="/eng-nothing.png"/>
           </div>
         </v-col>
       </template>

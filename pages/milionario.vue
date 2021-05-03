@@ -3,7 +3,7 @@
     <v-col cols="12" sm="10" xl="8" align="center">
       <template>
         <h1 class="text-center">{{ $t("millionaire.title") }}</h1>
-        <v-img src="/milionario.png" width="800"></v-img>
+        <img src="/milionario.png" width="800"/>
 
         <div class="text-justify" style="max-width:800px;">
           <h2>{{ $t("millionaire.what") }}</h2>

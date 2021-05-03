@@ -18,7 +18,7 @@
             x-large
             elevation="1"
             class="black--text"
-            ><v-img width="30px" src="/WCAlogo_notext.svg"></v-img>
+            ><img width="30" src="/WCAlogo_notext.svg"/>
             <span style="margin: 20px">{{ $t("generic.login") }}</span></v-btn
           >
         </div>

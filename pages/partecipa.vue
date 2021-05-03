@@ -7,7 +7,7 @@
         style="margin-top: 20px"
         x-large
         elevation="1"
-        ><v-img width="30px" src="/WCAlogo_notext.svg"></v-img>
+        ><img width="30" src="/WCAlogo_notext.svg"/>
         <span style="margin: 20px">{{ $t("generic.login") }}</span></v-btn
       >
     </v-row>
@@ -23,7 +23,7 @@
         v-if="rounds.length == null || rounds.length === 0"
       >
         <h2>{{ $t("compete.alldone") }}</h2>
-        <v-img class="done-img" src="/done.gif"></v-img>
+        <img class="done-img" src="/done.gif"/>
       </v-col>
       <v-col
         v-if="$auth.loggedIn && roundId !== '333fm_r1'"
