@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - Italian Open Online 2021',
-    title: 'Italian Open Online 2021',
+    titleTemplate: '%s - Cubing in Spring 2021',
+    title: 'Cubing in Spring 2021',
     meta: [
       { charset: 'UTF-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -105,13 +105,13 @@ export default {
       source: "@/static/icon.png",
     },
     manifest: {
-      name: "Italian Open Online 2021",
-      short_name: "IO Online 21",
+      name: "Cubing in Spring 2021",
+      short_name: "CI Sprint 21",
       display: "standalone",
       start_url: "/",
       lang: 'it',
       background_color: "#fff",
-      version: "10"
+      version: "12"
     }
   },
   
