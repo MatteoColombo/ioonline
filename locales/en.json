@@ -42,7 +42,7 @@
                 "schedule": [
                     {
                         "hour": "14:00",
-                        "activity": "Discord voice channels",
+                        "activity": "Discord voice channel",
                         "icon": "mdi-discord",
                         "color": "#8A9CFE"
                     },
@@ -66,7 +66,7 @@
                     },
                     {
                         "hour": "18:00",
-                        "activity": "Who wants to Be a Millionaire?",
+                        "activity": "Community games",
                         "icon": "mdi-brain",
                         "color": "primary"
                     },
@@ -75,12 +75,6 @@
                         "activity": "Dinner",
                         "icon": "mdi-silverware-fork-knife",
                         "color": "brown"
-                    },
-                    {
-                        "hour": "21:00",
-                        "activity": "Community night",
-                        "icon": "mdi-chess-king",
-                        "color": "blue"
                     }
                 ]
             },
@@ -88,63 +82,63 @@
                 "day": "Sunday, May 23rd",
                 "schedule": [
                     {
-                        "hour": "14:00",
+                        "hour": "13:30",
                         "activity": "Discord voice channels",
                         "icon": "mdi-discord",
                         "color": "#8A9CFE"
                     },
                     {
-                        "hour": "14:30",
-                        "activity": "Square-1 final",
-                        "icon": "cubing-icon event-sq1",
+                        "hour": "14:00",
+                        "activity": "3x3 OH Final",
+                        "icon": "cubing-icon event-333oh",
                         "color": "secondary"
+                    },
+                    {
+                        "hour": "14:30",
+                        "activity": "6x6x6 Final",
+                        "icon": "cubing-icon event-666",
+                        "color": "purple"
                     },
                     {
                         "hour": "15:00",
-                        "activity": "4x4x4",
-                        "icon": "cubing-icon event-444",
-                        "color": "purple"
-                    },
-                    {
-                        "hour": "15:30",
-                        "activity": "3BLD final",
-                        "icon": "cubing-icon event-333bf",
+                        "activity": "Megaminx Final",
+                        "icon": "cubing-icon event-minx",
                         "color": "secondary"
                     },
                     {
-                        "hour": "16:00",
-                        "activity": "Pyraminx final",
-                        "icon": "cubing-icon event-pyram",
+                        "hour": "15:30",
+                        "activity": "Skewb Final",
+                        "icon": "cubing-icon event-skewb",
                         "color": "purple"
                     },
                     {
-                        "hour": "16:30",
-                        "activity": "2x2x2 final",
-                        "icon": "cubing-icon event-222",
+                        "hour": "16:00",
+                        "activity": "5x5x5 Final",
+                        "icon": "cubing-icon event-555",
                         "color": "red"
                     },
                     {
-                        "hour": "17:00",
-                        "activity": "Clock final",
-                        "icon": "cubing-icon event-clock",
+                        "hour": "16:30",
+                        "activity": "4x4x4 Final",
+                        "icon": "cubing-icon event-444",
                         "color": "#8A9CFE"
                     },
                     {
+                        "hour": "17:00",
+                        "activity": "2x2x2 Final",
+                        "icon": "cubing-icon event-222",
+                        "color": "primary"
+                    },
+                    {
                         "hour": "17:30",
-                        "activity": "Awarding of quiz winners",
+                        "activity": "Break",
                         "icon": "mdi-trophy",
                         "color": "amber"
                     },
                     {
                         "hour": "18:00",
-                        "activity": "3x3x3 final",
+                        "activity": "3x3x3 Final",
                         "icon": "cubing-icon event-333",
-                        "color": "primary"
-                    },
-                    {
-                        "hour": "19:00",
-                        "activity": "Chi vuol essere Milionario?",
-                        "icon": "mdi-brain",
                         "color": "primary"
                     }
                 ]
