@@ -11,8 +11,8 @@
         "logout": "Log out",
         "support": "Support Cubing Italy",
         "supportdesc": "Your donation will be crucial in covering our administrative expenses. This will help us through this tough times where we can’t organise any competitions.",
-        "refresh":"Refresh",
-        "refreshmessage":"Refresh the page to update the content",
+        "refresh": "Refresh",
+        "refreshmessage": "Refresh the page to update the content",
         "error": "ERROR",
         "errordesc": "There was an error while submitting results! Please, try again and if the error persists contact the organizers."
     },
@@ -213,6 +213,13 @@
                 "steps": []
             },
             {
+                "question": "Where do I find the standings?",
+                "answer": [
+                    "You will be able to see the standings in a <a href='/classifiche'>dedicated section</a> during the competition days."
+                ],
+                "steps": []
+            },
+            {
                 "question": "Do I need to record myself?",
                 "answer": [
                     "A video proof will be demanded only for whoever gets on the podium, so if you think you could make it on the podium, make sure to record yourself!",
@@ -221,9 +228,10 @@
                 "steps": []
             },
             {
-                "question": "Where do I find the standings?",
+                "question": "How do I take part in the live event?",
                 "answer": [
-                    "You will be able to see the standings in a <a href='/classifiche'>dedicated section</a> during the competition days."
+                    "We will get in touch with the best competitors after the first rounds. If you think you can get a top spot, clear your schedule for Sunday afternoon!",
+                    "If someone declines the invite, we will ask the next person in the standings until we fill our slots."
                 ],
                 "steps": []
             },
@@ -390,7 +398,7 @@
         "hours": "hours",
         "minutes": "minutes",
         "seconds": "seconds",
-        "signin":"Sign in to register",
+        "signin": "Sign in to register",
         "steps": [
             {
                 "date": "May 10th, 14:00 (GMT+2)",
@@ -420,7 +428,7 @@
         "regupdated": "Registration updated.",
         "regdone": "Registration confirmed.",
         "regdel": "Registrazion canceled.",
-        "regerror":"An error occured.",
+        "regerror": "An error occured.",
         "howtoregister": "How do I register?",
         "regsteps": [
             "Visit the WCA website and create a new account. If you already have one you can skip this step.",
@@ -463,7 +471,7 @@
         "cancel": "Cancel",
         "submitMessage": "Once the results have been submitted, you will no longer be able to edit them. Double-check the values entered before proceeding.",
         "confirmSubmit": "Do you want to submit the results?",
-        "alldone":"No round available to compete in"
+        "alldone": "No round available to compete in"
     },
     "login": {
         "title": "Sign in",
@@ -480,7 +488,7 @@
         "times": "Solves",
         "best": "Best",
         "avg": "Average",
-        "nothing":"Nothing to see here yet"
+        "nothing": "Nothing to see here yet"
     },
     "competitors": {
         "title": "Competitors",

@@ -211,6 +211,13 @@
                 "steps": []
             },
             {
+                "question": "Dove trovo la classifica?",
+                "answer": [
+                    "La classifica è nella sezione apposita che sarà visibile solo il giorno della competizione nella <a href='/classifiche'>sezione apposita</a>."
+                ],
+                "steps": []
+            },
+            {
                 "question": "Devo registrare le mie risoluzioni?",
                 "answer": [
                     "Chiederemo una prova video solo a chi si piazzerà sul podio, quindi se pensi di avere qualche chance, ricordati di registrarti!",
@@ -219,9 +226,10 @@
                 "steps": []
             },
             {
-                "question": "Dove trovo la classifica?",
+                "question": "Come faccio a partecipare alla live?",
                 "answer": [
-                    "La classifica è nella sezione apposita che sarà visibile solo il giorno della competizione nella <a href='/classifiche'>sezione apposita</a>."
+                    "Sabato, dopo la competizione, contatteremo i primi classificati in ciascun evento per organizzare la diretta di domenica. Se pensi di poterti classificare nelle prime posizioni, tieniti libero!",
+                    "Se qualcuno si dovesse rifiutare, contatteremo il successivo per scorrimento finchè non avremo il numero di partecipanti necessario."
                 ],
                 "steps": []
             },
@@ -460,7 +468,7 @@
         "cancel": "Annulla",
         "submitMessage": "Una volta inviati i risultati non potrai più modificarli. Controlla bene i valori inseriti prima di procedere.",
         "confirmSubmit": "Vuoi inviare i risultati?",
-        "alldone":"Non ci sono round disponibili a cui partecipare"
+        "alldone": "Non ci sono round disponibili a cui partecipare"
     },
     "login": {
         "title": "Accedi",
@@ -477,7 +485,7 @@
         "times": "Tempi",
         "best": "Migliore",
         "avg": "Media",
-        "nothing":"I risultati non sono ancora disponibili"
+        "nothing": "I risultati non sono ancora disponibili"
     },
     "competitors": {
         "title": "Iscritti",

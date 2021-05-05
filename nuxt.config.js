@@ -129,7 +129,11 @@ export default {
           property: 'accessToken',
           prefix: '_wca',
           type: 'Bearer',
-          maxAge: 60 * 60 * 24 * 14
+          maxAge: 60 * 60 * 24 * 40
+        },
+        refreshToken: {
+          property: 'refresh_token',
+          maxAge: 60 * 60 * 24 * 21
         },
         user: {
           property: false
@@ -143,7 +147,7 @@ export default {
         responseMode: '',
         acrValues: '',
         autoLogout: true
-      },
+      }
     }
   },
 
