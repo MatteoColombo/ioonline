@@ -23,7 +23,7 @@
         v-if="rounds.length == null || rounds.length === 0"
       >
         <h2>{{ $t("compete.alldone") }}</h2>
-        <img class="done-img" src="/done.gif"/>
+        <img width="100%" class="done-img" src="/done.gif"/>
       </v-col>
       <v-col
         v-if="$auth.loggedIn && roundId !== '333fm_r1'"

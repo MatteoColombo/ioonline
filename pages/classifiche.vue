@@ -93,7 +93,7 @@
           </div>
           <div v-else>
             <h2>{{$t('standings.nothing')}}</h2>
-            <img aspect-ratio="1" class="nothing-img" src="/nothing.gif" />
+            <img aspect-ratio="1" width="100%" class="nothing-img" src="/nothing.gif" />
           </div>
         </v-col>
       </template>
