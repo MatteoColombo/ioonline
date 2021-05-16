@@ -421,7 +421,7 @@
         "close": "Close",
         "regupdated": "Registration updated.",
         "regdone": "Registration confirmed.",
-        "regdel": "Registrazion canceled.",
+        "regdel": "Registration canceled.",
         "regerror": "An error occured.",
         "howtoregister": "How do I register?",
         "regsteps": [
@@ -482,6 +482,7 @@
         "times": "Solves",
         "best": "Best",
         "avg": "Average",
+        "proceed":"Proceeds to next round",
         "nothing": "Nothing to see here yet"
     },
     "competitors": {

@@ -96,20 +96,44 @@
           :value="success"
           color="green"
           type="success"
-          text
-          border="left"
-          dismissible
-          >{{ message }}</v-alert
-        >
+          outlined
+          prominent
+          text>
+          <v-row align="center" no-gutters>
+            <v-col class="grow">
+              {{ message }}
+            </v-col>
+            <v-spacer></v-spacer>
+            <v-col class="shrink">
+              <v-btn
+                color="info"
+                @click="success=false">
+                Okay
+              </v-btn>
+            </v-col>
+          </v-row>
+         </v-alert>
         <v-alert
           :value="error"
           color="red"
           type="error"
+          outlined
           text
-          border="left"
-          dismissible
-          >{{ $t("register.regerror") }}</v-alert
-        >
+          prominent>
+          <v-row align="center" no-gutters>
+            <v-col class="grow">
+              {{ $t("register.regerror") }}
+            </v-col>
+            <v-spacer></v-spacer>
+            <v-col class="shrink">
+              <v-btn
+                color="info"
+                @click="error=false">
+                Okay
+              </v-btn>
+            </v-col>
+          </v-row>
+          </v-alert>
       </v-col>
       <v-col cols="12">
         <v-row v-if="isRegistered && !regClosed">

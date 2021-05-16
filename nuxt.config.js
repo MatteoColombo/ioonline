@@ -106,7 +106,7 @@ export default {
     },
     manifest: {
       name: "Cubing in Spring 2021",
-      short_name: "CI Sprint 21",
+      short_name: "CI Spring 21",
       display: "standalone",
       start_url: "/",
       lang: 'it',

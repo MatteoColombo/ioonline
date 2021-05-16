@@ -129,7 +129,6 @@
                     },
                     {
                         "hour": "17:30",
-                        "activity": "Premiazione Kahoot/Pausa",
                         "icon": "mdi-trophy",
                         "color": "amber"
                     },
@@ -479,6 +478,7 @@
         "times": "Tempi",
         "best": "Migliore",
         "avg": "Media",
+        "proceed":"Procede al round successivo",
         "nothing": "I risultati non sono ancora disponibili"
     },
     "competitors": {

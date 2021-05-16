@@ -11,12 +11,17 @@
               :label="roundName"
               @change="roundChanged($event)"
             ></v-select>
+              <v-row v-if="toNext >3" class="desc" align="center" justify="center">
+              <div class="square"/>
+              {{ $t('standings.proceed')}}
+              </v-row>
+
             <v-data-table
               :headers="[
                 {
                   text: $t('standings.position'),
                   value: 'position',
-                  width: '70px',
+                  width: '50px',
                 },
                 {
                   text: $t('competitors.name'),
@@ -30,65 +35,54 @@
                   text: $t('standings.avg'),
                   value: 'avg',
                 },
-                { text: 'Solve', value: 'times' },
+                { 
+                  text: 'Solve', 
+                  value: 'times'
+                },
               ]"
               disable-sort
               :items="results"
               disable-pagination
-              :item-class="itemRowBackground"
               hide-default-footer
               :mobile-breakpoint="0"
               class="elevation-1"
             >
-              <template v-slot:item.user="{ item }">
-                <label class="unbreakablelabel" v-if="!item.user.wca_id">{{
-                  item.user.name
-                }}</label>
-                <a
-                  class="unbreakablelable"
-                  v-else
-                  :href="
-                    'https://www.worldcubeassociation.org/persons/' +
-                    item.user.wca_id
-                  "
-                  target="_blank"
-                >
-                  {{ item.user.name }}</a
-                >
-              </template>
-
-              <template v-slot:item.times="{ item }">
-                <label
+             <template v-slot:item="{ item, index }">
+               <tr>
+                 <td class="position" :class="itemRowBackground(item)"><label>{{ item.position }}</label></td>
+                 <td>
+                    <label class="unbreakablelabel" v-if="!item.user.wca_id">{{ item.user.name }}</label>
+                    <a class="unbreakablelable"
+                      v-else
+                      :href="'https://www.worldcubeassociation.org/persons/' + item.user.wca_id"
+                      target="_blank">{{ item.user.name }}</a>
+                  </td>
+                 <td>
+                   <label v-if="roundId === '333fm_r1'">{{ formatFMC(item.best) }}</label>
+                   <label v-else>{{ formatTime(item.best) }}</label></td>
+                 <td>
+                <label>{{ formatTime(item.average) }}</label>
+                </td>
+                 <td>
+                   <label
                   v-if="roundId === '333bf_r1' || roundId === '333bf_r2'"
                   class="unbreakablelabel"
                   >{{ formatTime(item.value1) }} {{ formatTime(item.value2) }}
-                  {{ formatTime(item.value3) }}</label
-                >
+                  {{ formatTime(item.value3) }}</label>
                 <a
                   v-else-if="roundId === '333fm_r1'"
                   target="_blank"
                   :href="formatSolution(item.solution)"
                   class="unbreakablelabel"
-                  >Alg.cubing.net</a
-                >
+                  >Alg.cubing.net</a>
 
                 <label v-else class="unbreakablelabel"
                   >{{ formatTime(item.value1) }} {{ formatTime(item.value2) }}
                   {{ formatTime(item.value3) }} {{ formatTime(item.value4) }}
-                  {{ formatTime(item.value5) }}</label
-                >
-              </template>
-
-              <template v-slot:item.best="{ item }">
-                <label v-if="roundId === '333fm_r1'">{{
-                  formatFMC(item.best)
-                }}</label>
-                <label v-else>{{ formatTime(item.best) }}</label>
-              </template>
-
-              <template v-slot:item.avg="{ item }">
-                <label>{{ formatTime(item.average) }}</label>
-              </template>
+                  {{ formatTime(item.value5) }}</label>
+                </td>
+               </tr>
+             </template>
             </v-data-table>
           </div>
           <div v-else>
@@ -163,7 +157,7 @@ export default {
         this.roundId = round.id;
         this.toNext = round.peopleToNext;
         if(this.toNext === 0)
-          this.toNext =3;
+          this.toNext = 3;
         this.roundName = round.event.name + " Round " + round.roundNumber;
         this.results = await this.$axios.$get(
           `/api/results/done/${this.roundId}`
@@ -224,7 +218,8 @@ export default {
       }
     },
     itemRowBackground: function (item) {
-      return item.position <= this.toNext ? "style-1" : "";
+      console.log(item.position);
+      return item.position <= this.toNext ? "toNext" : "ded";
     },
   },
 };
@@ -244,13 +239,35 @@ a {
   max-width: 512px;
 }
 
+.toNext {
+  background-color: #ec95b9;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ded{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.square{
+  width: 20px;
+  height: 20px;
+  background-color: #ec95b9;
+  margin-right: 20px;
+ }
+
+ .desc{
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+
 </style>
 
 <style>
 a {
   text-decoration: none;
 }
-.style-1 {
-  background-color: #303030;
-}
+
 </style>
