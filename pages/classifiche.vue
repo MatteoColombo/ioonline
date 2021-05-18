@@ -218,7 +218,6 @@ export default {
       }
     },
     itemRowBackground: function (item) {
-      console.log(item.position);
       return item.position <= this.toNext ? "toNext" : "ded";
     },
   },

@@ -106,7 +106,7 @@
         </template></v-col
       >
       <v-col
-        v-if="$auth.loggedIn && roundId !== '333fm_r1'"
+        v-if="$auth.loggedIn"
         cols="12"
         lg="4"
         align="center"
@@ -116,7 +116,7 @@
         <template>
           <div style="margin-top: 20px">
             <v-row
-              v-for="(item, index) in results"
+              v-for="(item, index) in [{value:null,dnf:false},{value:null,dnf:false},{value:null,dnf:false},{value:null,dnf:false},{value:null,dnf:false}]"
               :key="'m' + index"
               style="width: fit-content"
             >
@@ -372,7 +372,6 @@ export default {
         } catch (e) {
           this.errordialog = true;
           this.loader = false;
-          console.log("error while submitting results");
         }
       } else {
         const subres = this.results.map((m) =>
@@ -397,7 +396,6 @@ export default {
         } catch (e) {
           this.errordialog = true;
           this.loader = false;
-          console.log("error while submitting results");
         }
       }
     },

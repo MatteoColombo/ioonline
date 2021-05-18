@@ -43,9 +43,6 @@ export default {
   mounted() {
     this.isRegistrationOpened = this.checkIsRegistrationOpened();
     this.isRegistrationClosed = this.checkIsRegistrationClosed();
-    console.log(this.registrationOpens);
-    console.log(Date.now);
-    console.log(this.registrationCloses);
     window.setInterval(() => {
       this.isRegistrationOpened = this.checkIsRegistrationOpened();
       this.isRegistrationClosed = this.checkIsRegistrationClosed();
