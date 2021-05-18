@@ -129,11 +129,12 @@
                     },
                     {
                         "hour": "17:30",
-                        "icon": "mdi-trophy",
+                        "activity":"Interviste",
+                        "icon": "mdi-microphone",
                         "color": "amber"
                     },
                     {
-                        "hour": "18:00",
+                        "hour": "18:30",
                         "activity": "Finale 3x3x3",
                         "icon": "cubing-icon event-333",
                         "color": "primary"
