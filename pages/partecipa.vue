@@ -106,7 +106,7 @@
         </template></v-col
       >
       <v-col
-        v-if="$auth.loggedIn"
+        v-if="$auth.loggedIn && roundId !== '333fm_r1'"
         cols="12"
         lg="4"
         align="center"
@@ -116,7 +116,7 @@
         <template>
           <div style="margin-top: 20px">
             <v-row
-              v-for="(item, index) in [{value:null,dnf:false},{value:null,dnf:false},{value:null,dnf:false},{value:null,dnf:false},{value:null,dnf:false}]"
+              v-for="(item, index) in results"
               :key="'m' + index"
               style="width: fit-content"
             >
