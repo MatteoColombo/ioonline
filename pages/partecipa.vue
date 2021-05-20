@@ -53,6 +53,7 @@
             :items="rounds"
             :menu-props="{ bottom: true, offsetY: true }"
             :label="roundName"
+            :placeholder="$t('compete.select')"
             @change="roundChanged"
           ></v-select>
           <v-expansion-panels v-model="panel">
@@ -142,7 +143,9 @@
 
           <v-dialog
             v-if="roundId"
-            transition="dialog-bottom-transition"
+            transition="d
+            
+            ialog-bottom-transition"
             v-model="dialog"
             max-width="300px"
           >
@@ -405,21 +408,6 @@ export default {
     async fetchEvents() {
       try {
         this.rounds = await this.$axios.$get("/api/results");
-        if (this.rounds.length > 0) {
-          this.roundId = this.rounds[0].value;
-          this.roundName = this.rounds[0].text;
-          let scrambles = await this.$axios.$get(
-            `/api/results/${this.roundId}/scrambles`
-          );
-          this.scrambles = scrambles.scrambles;
-          this.extras = scrambles.extras;
-          this.results = [];
-          for (let i = 0; i < this.scrambles.length; i++) {
-            this.results.push({ value: null, dnf: false });
-          }
-        } else {
-          this.resetAll();
-        }
       } catch (e) {
         console.log(e);
         this.resetAll();

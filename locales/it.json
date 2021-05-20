@@ -434,12 +434,13 @@
         "comment": "Commenti",
         "select": "Seleziona l'evento",
         "instr": "Istruzioni",
+        "order":"Seleziona l'evento a cui vuoi competere, puoi scegliere l'ordine che preferisci!",
         "instructions": [
             "Inserisci i tempi dell'evento nel formato XX:YY.ZZ (minuti:secondi.centesimi). Eventuali errori nell'inserimento verranno segnalati.",
             "Ricordati di spuntare la casella del DNF (Did not finish - Puzzle non completato) nel caso in cui il <a href='https://www.worldcubeassociation.org/regulations/translations/italian/' target='_blank'>Regolamento WCA</a> lo preveda.",
             "Se necessario, aggiungi tutte le penalità previste dal regolamento WCA che hai commesso al tuo tempo prima di inserirlo. Es: 18.89+2=20.89.",
             "Una volta inseriti tutti i tuoi tempi, il calcolo della media (se l'evento la prevede) sarà automatico.",
-            "Potrai inviare i risultati nell'ordine che preferisci e in qualsiasi momento durante queste fasce dedicate: <ul><li>Per il primo turno: Sabato: dalle 10 alle 18</li><li>Per le finali: Domenica: dalle 10 alle 20</li></ul>",
+            "Potrai inviare i risultati nell'ordine che preferisci e in qualsiasi momento durante queste fasce dedicate: <ul><li>Per il primo turno: Sabato: dalle 10 alle 20</li><li>Per le finali: Domenica: dalle 10 alle 20</li></ul>",
             "Una volta inviati i risultati di un evento, non sarà più possibile modificarli. Controlla due volte prima di inviarli!",
             "Alla chiusura di ogni giornata di gara pubblicheremo la classifica nella sezione apposita presente <a href='/classifiche'>sul sito</a>."
         ],
@@ -456,8 +457,8 @@
             "Per qualsiasi dubbio legato all’evento, consulta la sezione dedicata del <a href='https://www.worldcubeassociation.org/regulations/#article-E-fewest-moves' target='_blank'>Regolamento WCA</a>."
         ],
         "standby": "Perfavore, attendi",
-        "scrambles": "Scramble",
-        "extras": "Extra",
+        "scrambles": "Scramble (clicca per espandere)",
+        "extras": "Extra (clicca per espandere)",
         "submit": "Invia",
         "cancel": "Annulla",
         "submitMessage": "Una volta inviati i risultati non potrai più modificarli. Controlla bene i valori inseriti prima di procedere.",
