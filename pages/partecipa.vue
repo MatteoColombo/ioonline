@@ -146,7 +146,7 @@
             <h2>{{ $t("compete.alldone") }}</h2>
             <AllDone />
           </div>
-          <div>
+          <div style="margin-top:20px">
             <v-alert
               :value="success"
               color="green"
