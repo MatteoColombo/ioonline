@@ -428,6 +428,8 @@
         ]
     },
     "compete": {
+        "success":"Risultati inviati correttamente",
+        "error":"Errore nell'invio dei risultati, riprova.",
         "title": "Partecipa",
         "desc": "",
         "solution": "Soluzione",
@@ -456,7 +458,7 @@
             "Se la tua risoluzione fa uso di tecniche particolari, devi fornire una spiegazione all’interno del secondo box. Una risoluzione non commentata e che non possiamo comprendere semplicemente leggendo la soluzione (es una solve cfop lineare) sarà considerata DNF.",
             "Per qualsiasi dubbio legato all’evento, consulta la sezione dedicata del <a href='https://www.worldcubeassociation.org/regulations/#article-E-fewest-moves' target='_blank'>Regolamento WCA</a>."
         ],
-        "standby": "Perfavore, attendi",
+        "standby": "Per favore, attendi",
         "scrambles": "Scramble (clicca per espandere)",
         "extras": "Extra (clicca per espandere)",
         "submit": "Invia",

@@ -431,6 +431,8 @@
         ]
     },
     "compete": {
+        "success":"Results submitted successfully!",
+        "error":"There was an error, please retry.",
         "title": "Submit your results",
         "desc": "",
         "solution": "Solution",
