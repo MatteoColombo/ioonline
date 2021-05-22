@@ -193,7 +193,7 @@ export default {
     },
     formatSolution(solution) {
       if(solution == null)return ""
-      let sol ="https://alg.cubing.net/?setup=R-_U-_F_D-_B-_D2_U2_L_U2_R_D2_B_L_F_U_B_L2_U2_R2_B_R-_U-_F&alg=";
+      let sol ="https://alg.cubing.net/?setup=R-_U-_F_U_L-_B2_D2_B2_D2_U2_L2_F2_U-_B_D-_F-_L_B-_U_R2_F_U-_R-_U-_F&alg=";
       let filSol = solution.replaceAll(" ", "_");
       filSol = filSol.replaceAll("'", "-");
       return sol + filSol;
